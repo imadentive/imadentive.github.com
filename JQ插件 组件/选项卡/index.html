@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jq选项卡</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<style type="text/css">
+/* 默认样式重置（css reset）start*/
+body, h1, h2, h3, h4, h5, h6, p, dl, dd, ul, ol, pre, form, input, textarea, th, td, select{margin: 0; padding: 0;}
+em{font-style: normal;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: none; vertical-align: top;}
+table{border-collapse: collapse;}
+textarea{resize: none; overflow: auto;}
+.clear{/*用来处理IE6、7*/ zoom: 1;}
+.clear:after{/*用来处理其他浏览器*/ content: ""; display: block; /*或display: table;也可以*/ clear: both;}
+.fl{float:left}
+.fr{float:right}
+/* 默认样式重置（css reset） end*/
+	.tab{margin-top: 30px;width:306px;}
+	.tab .menu ul li{float: left;list-style: none;line-height: 30px;height: 30px;width:100px;text-align: center;border:1px solid #ddd;}
+	.tab .menu ul li.active{background: #337ab7}
+	.tab .content{padding:20px;background: #dff0d8;}
+	.tab .content .item{display: none}
+	.tab .content .item.active{display: block}
+</style>
+<body>
+    <div class="tab">
+        <div class="menu clear">
+        	<ul>
+        		<li class="active">11111</li>
+        		<li>22222</li>
+        		<li>33333</li>
+        	</ul>
+        </div>
+        <div class="content">
+        	<div class="item active">
+        		11111
+        	</div>
+        	<div class="item">
+        		22222
+        	</div>
+        	<div class="item">
+        		33333
+        	</div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    ;
+    (function($) {
+
+        $.fn.Tab = function(options) {
+            // 将defaults 和 options 参数合并到{}
+            var opts = $.extend({}, $.fn.Tab.defaults, options);
+
+            return this.each(function() {
+                var obj = $(this);
+
+            });
+            // each end
+        }
+
+        //定义默认
+        $.fn.Tab.defaults = {
+
+        };
+
+    })(jQuery);
+
+
+    $(function() {
+    	$('.tab .menu li').on('click', function(event) {
+    		$(this).addClass('active').siblings().removeClass('active');
+    		$(this).parents('.tab').find('.item').eq($(this).index()).addClass('active').siblings().removeClass('active');
+    	});
+
+    });
+    </script>
+</body>
+
+</html>

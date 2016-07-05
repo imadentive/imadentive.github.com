@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>联动下拉菜单</title>
+</head>
+<body>
+	<script type="text/javascript">
+		window.onload = function(){
+			var s1 = new Sel('div1');
+				// s1.add('0',['广东','江苏']);
+				// s1.add('0_0',['惠州','广州','河源']);
+				// s1.add('0_1',['无锡','苏州','徐州']);
+				// s1.add('0_0_0',['惠城','惠阳','惠东']);
+				// s1.add('0_0_1',['越秀','天河','荔湾']);
+				// s1.add('0_0_2',['龙川','东源','和平']);
+				// s1.add('0_1_0',['无锡1','无锡2','无锡3']);
+				// s1.add('0_1_1',['苏州1','苏州2','苏州3']);
+				// s1.add('0_1_2',['徐州1','徐州2','徐州3']);
+
+				s1.add('0' , ['1' , '2' , '3']);
+				s1.add('0_0' , ['1_1' , '1_2' , '1_3']);
+				s1.add('0_0_0' , ['1_1_1' , '1_1_2' , '1_1_3']);
+				s1.add('0_0_1' , ['1_2_1' , '1_2_2' , '1_2_3']);
+				s1.add('0_0_2' , ['1_3_1' , '1_3_2' , '1_3_3']);	
+				s1.add('0_1' , ['2_1' , '2_2' , '2_3']);
+				s1.add('0_1_0' , ['2_1_1' , '2_1_2' , '2_1_3']);
+				s1.add('0_1_1' , ['2_2_1' , '2_2_2' , '2_2_3']);
+				s1.add('0_1_2' , ['2_3_1' , '2_3_2' , '2_3_3']);
+				s1.add('0_2' , ['3_1' , '3_2' , '3_3']);
+				s1.add('0_2_0' , ['3_1_1' , '3_1_2' , '3_1_3']);
+				s1.add('0_2_1' , ['3_2_1' , '3_2_2' , '3_2_3']);
+				s1.add('0_2_2' , ['3_3_1' , '3_3_2' , '3_3_3']);
+				
+				s1.init(3);
+
+		};//end window.load
+
+		function Sel(id){
+			this.parent = document.getElementById(id);
+			this.data = [];
+			this.aSelect = document.getElementsByTagName('select');
+
+		}
+
+		Sel.prototype = {
+
+			init:function (number) {
+				var This = this;
+				 for (var i = 1; i <= number; i++) {
+				 	var sel = document.createElement('select');
+				 	var opt = document.createElement('option');
+				 		opt.innerHTML = '默认';
+				 	sel.appendChild(opt);
+				 	this.parent.appendChild(sel);
+				 	(function (i) {
+				 		sel.onchange = function () {
+				 			// console.log(This.aSelect[i-1].selectedIndex)
+				 			 This.change(This.aSelect[i-1].selectedIndex);
+				 		}
+				 	})(i)
+				 }
+
+				this.first();//在这里调用一下
+			},
+
+			add:function(key,value){
+				this.data[key] = value;
+			},
+
+			first:function () {//填充第一级的数据
+				 
+				  for (var i = 0; i < this.data['0'].length; i++) {
+				  	var opt = document.createElement('option');
+				  	 opt.innerHTML = this.data['0'][i];
+				  	 this.aSelect[0].appendChild(opt);
+				  }
+			},
+
+			change:function (iNow) {
+				var str = '0';
+				for (var i = 0; i < iNow; i++) {
+					str += '_'+i;
+				}
+				console.log(str)
+			}
+
+
+		};
+	</script>
+
+	<div id="div1">
+		
+	</div>
+</body>
+</html>
