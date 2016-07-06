@@ -1,0 +1,29 @@
+.ui-tips {
+	text-align: center;
+	position: fixed;
+	width: 640px*$n750_640;
+	left: 50%;
+	top: -36px*$n750_640;
+	margin-left: -320px*$n750_640;
+	height: 72px*$n750_640;
+	-webkit-transition: opacity 0.3s;
+	margin-top: -36px*$n750_640;
+	opacity: 0;
+	z-index: 10;
+}
+
+.ui-tips span {
+	display: inline-block;
+	height: 72px*$n750_640;
+	background: rgba(0,0,0,0.7);
+	color: #fff;
+	line-height: 72px*$n750_640;
+	font-size: 28px*$n750_640;
+	padding: 0px*$n750_640 40px*$n750_640;
+	border-radius: 12px*$n750_640;
+}
+
+.ui-tips-show .ui-tips {
+	top:200px*$n750_640;
+	opacity: 1;
+}

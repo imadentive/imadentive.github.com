@@ -1,0 +1,81 @@
+/**
+ *  CSS3动画
+ */
+
+/*淡入*/
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/*淡出*/
+@-webkit-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+/*由小到大显示*/
+@-webkit-keyframes zoomIn {
+	0% {
+		-webkit-transform: scale(0);
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+	}
+}
+
+/*由大到小隐藏*/
+@-webkit-keyframes zoomOut {
+	0% {
+		-webkit-transform: scale(1);
+	}
+
+	100% {
+		-webkit-transform: scale(0);
+	}
+}
+
+@-webkit-keyframes zoomBigIn {
+	0% {
+		-webkit-transform: scale(2);
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+	}
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes rotate {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}

@@ -1,0 +1,2559 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>妙味课堂 - JavaScript 实战开发课程大纲 - www.miaov.com</title>
+<script src="CourseDetails.js"></script>
+<link href="CourseDetails.css" rel="stylesheet" />
+</head>
+
+<body>
+
+<ul id="menu">
+	<li>+ 全部展开</li>
+	<li>- 全部收缩</li>
+    <li>↑返回顶部</li>
+</ul>
+
+<div id="CourseDetails">
+	<h1>妙味课堂 JS 实战开发课程大纲</h1>
+    <ol>
+        <li>
+        	<em>1</em>
+            <div class="CourseContent">
+
+                <h2>第一章（上）：JS入门基础</h2>
+
+                <dl>
+                	<dt>网页特效原理分析</dt>
+                    <dd class="indent1">腾讯、微博广场……</dd>
+                    <dd class="indent1">运用 JavaScript 完成浏览器端各种交互应用</dd>
+                </dl>
+
+                <dl>
+                	<dt>编写JS的流程</dt>
+                    <dd class="indent1">布局：HTML+CSS</dd>
+                    <dd class="indent1">原理：手动修改代码，使效果实现</dd>
+                </dl>
+
+				<dl>
+                	<dt>编程思路的形成</dt>
+                    <dd class="indent1">排除HTML+CSS兼容性问题</dd>
+                    <dd class="indent1">JS入门三部曲：找到谁、加什么事件、发生什么事</dd>
+                </dl>
+
+				<dl>
+                    <dt>第一个JS特效实例</dt>
+                    <dd class="indent1">获取元素、添加事件</dd>
+                    <dd class="indent2">getElementById</dd>
+                    <dd class="indent2">事件：鼠标、键盘、窗口、表单、自定义……</dd>
+                    <dd class="indent3">添加事件</dd>
+                    <dd class="indent3">检测代码：alert()方法</dd>
+                    <dd class="indent1">函数：定义、调用</dd>
+                    <dd class="indent1">声明变量、变量定义方式</dd>
+                    <dd class="indent1">window是什么、onload事件</dd>
+                    <dd class="indent1">匿名函数、用法、区别</dd>
+                    <dd class="indent2">代码重用</dd>
+                </dl>
+
+				<dl>
+                    <dt>JS中的属性操作</dt>
+                    <dd class="indent1">属性操作语法</dd>
+                    <dd class="indent1">属性读操作：获取</dd>
+                    <dd class="indent2">实例：获取input值</dd>
+                    <dd class="indent2">实例：获取select值</dd>
+                    <dd class="indent3">字符串连接</dd>
+                    <dd class="indent1">属性写操作：修改、添加</dd>
+                    <dd class="indent2">实例：修改value值</dd>
+                    <dd class="indent2">实例：添加图片的src地址</dd>
+                    <dd class="indent1">innerHTML</dd>
+                    <dd class="indent2">实例：模拟短信发送</dd>
+                </dl>
+
+                <dl>
+                    <dt>属性操作的注意事项</dt>
+                    <dd class="indent1">JS中不允许出现的特殊字符</dd>
+                    <dd class="indent2">实例：网页字体大小控制</dd>
+                    <dd class="indent1">给元素添加class</dd>
+                    <dd class="indent2">实例：替换皮肤</dd>
+                    <dd class="indent3">行间样式与className</dd>
+                    <dd class="indent1">关键字、保留字</dd>
+                    <dd class="indent1">相对路径的读取问题</dd>
+                    <dd class="indent1">表单元素的type值修改</dd>
+                    <dd class="indent2">IE6、IE7、IE8 兼容性问题及解决思路</dd>
+                    <dd class="indent1">float的兼容性问题</dd>
+                    <dd class="indent2">IE（styleFloat）、非IE（cssFloat）</dd>
+                    <dd class="indent1">属性操作中的：[]</dd>
+                    <dd class="indent2">实例：任意修改DIV的值</dd>
+                </dl>
+
+				<dl>
+                	<dt>if 判断</dt>
+                    <dd class="indent1">if 判断基本形式</dd>
+                    <dd class="indent2">if(){}</dd>
+                    <dd class="indent2">if(){}else{}</dd>
+                    <dd class="indent2">if(){}else if(){}</dd>
+                    <dd class="indent2">if(){}else if(){}else{}</dd>
+                    <dd class="indent3">实例：限制提交、输入错误提示</dd>
+                    <dd class="indent3">实例：隐藏、显示菜单</dd>
+                    <dd class="indent3">实例：通关口令</dd>
+                    <dd class="indent1">为A链接添加事件</dd>
+                    <dd class="indent2">&lt;a href=&quot;javascript:;&quot;&gt;&lt;/a&gt;</dd>
+                </dl>
+
+				<dl>
+                	<dt>图片切换综合实例</dt>
+                    <dd class="indent1">数组</dd>
+                    <dd class="indent2">存放数据</dd>
+                    <dd class="indent2">长度length和[]</dd>
+                    <dd class="indent1">图片切换综合实例</dd>
+                    <dd class="indent2">存放图片地址、图片说明</dd>
+                    <dd class="indent2">动态生成图片总数、图片说明</dd>
+                    <dd class="indent2">添加切换功能</dd>
+                    <dd class="indent2">合并函数</dd>
+                </dl>
+            </div>
+        </li>
+    	<li>
+        	<em>2</em>
+            <div class="CourseContent">
+
+			  <h2>第一章（下）：JS入门基础</h2>
+
+                <dl>
+                	<dt>元素获取的第二种方法</dt>
+                    <dd class="indent1">getElementsByTagName</dd>
+                    <dd class="indent1">获取一组元素、必须加[]</dd>
+                    <dd class="indent1">与getElementById方法的区别</dd>
+				</dl>
+
+				<dl>
+					<dt>for循环</dt>
+                    <dd class="indent1">for循环执行顺序</dd>
+                    <dd class="indent1">数字由小到大、从大到小</dd>
+                    <dd class="indent1">由一组数字推算出任意递增数字</dd>
+                    <dd class="indent2">实例：转化绝对定位坐标值</dd>
+                    <dd class="indent1">选取多个元素</dd>
+                    <dd class="indent1">生成多个元素：先生成、后获取</dd>
+                    <dd class="indent1">for套for筛选多组指定元素</dd>
+				</dl>
+
+                <dl>
+					<dt>关键字：this</dt>
+                    <dd class="indent1">this是什么</dd>
+                    <dd class="indent2">当前方法、函数的调用对象</dd>
+                    <dd class="indent2">通过事件调用函数的对象</dd>
+                    <dd class="indent1">函数套函数中的this指向</dd>
+                    <dd class="indent2">嵌套函数中的this</dd>
+                    <dd class="indent2">this的变量引用</dd>
+                    <dd class="indent1">this运用</dd>
+                    <dd class="indent2">this选取当前元素</dd>
+                    <dd class="indent2">this选取当前元素内的子元素</dd>
+				</dl>
+
+                <dl>
+					<dt>自定义属性</dt>
+                    <dd class="indent1">什么是自定义属性</dd>
+                    <dd class="indent2">运用for循环为一组元素添加开关</dd>
+                    <dd class="indent3">实例：点击当前列表，切换各自的class</dd>
+                    <dd class="indent1">添加索引值</dd>
+                    <dd class="indent2">index 索引值</dd>
+                    <dd class="indent2">索引值运用：图片切换实例</dd>
+                    <dd class="indent3">思路一：全部清除；</dd>
+                    <dd class="indent3">思路二：消除上一个；</dd>
+                    <dd class="indent1">图片切换实例扩展</dd>
+                    <dd class="indent2">this引用</dd>
+                    <dd class="indent2">函数合并</dd>
+				</dl>
+
+                <dl>
+					<dt>for循环嵌套</dt>
+                    <dd class="indent1">for 循环嵌套中 i 与 j 的使用</dd>
+                    <dd class="indent2">for 循环嵌套选取元素</dd>
+                    <dd class="indent1">for 循环嵌套实例</dd>
+				</dl>
+            </div>
+        </li>
+    	<li>
+        	<em>2</em>
+            <div class="CourseContent">
+
+				<h2>第二章（上）：JavaScript数据类型、函数传参</h2>
+
+                <dl>
+                	<dt>JS语言核心：ECMAScript</dt>
+                    <dd class="indent1">定义JS的语法、基本对象、数据类型……</dd>
+                    <dd class="indent1">JS的数据类型</dd>
+                    <dd class="indent2">typeof运算符</dd>
+                    <dd class="indent2">字符串、数字、布尔、函数、对象、未定义、数组、null…</dd>
+                    <dd class="indent2">数据类型使用原则：一个变量只存放一种类型数据</dd>
+                    <dd class="indent1">数据类型转换</dd>
+                    <dd class="indent2">强制类型转换：</dd>
+                    <dd class="indent3">Number、parseInt、parseFloat</dd>
+                    <dd class="indent3">实例：两个输入框相加</dd>
+                    <dd class="indent3">实例：判断输入值是否为小数</dd>
+                    <dd class="indent2">隐式类型转换：</dd>
+                    <dd class="indent3">+ - * / % < > == ! ++ --</dd>
+                    <dd class="indent1">数据类型转换不成功：</dd>
+                    <dd class="indent2">数字类型：NaN详解</dd>
+                    <dd class="indent2">特点：</dd>
+                    <dd class="indent3">非数字的数字类型</dd>
+                    <dd class="indent3">false</dd>
+                    <dd class="indent3">NaN!=NaN</dd>
+                    <dd class="indent1">检测数字的方法：isNaN()</dd>
+                    <dd class="indent2">特点：</dd>
+                    <dd class="indent3">讨厌数字：</dd>
+                    <dd class="indent3">isNaN内部实现机制</dd>
+                    <dd class="indent3">实例：判断输入值是否为数字</dd>
+                </dl>
+                
+                <dl>
+					<dt>函数传参</dt>
+                    <dd class="indent1">函数括号()的作用</dd>
+                    <dd class="indent2">传递各种数据类型</dd>
+                    <dd class="indent2">传递函数的调用</dd>
+                    <dd class="indent2">传递多个数据类型</dd>
+                    <dd class="indent1">函数传参实例</dd>
+                    <dd class="indent2">多组图片切换实例</dd>
+                    <dd class="indent2">商城价格加减计算</dd>
+                    <dd class="indent2">按钮控制元素左右移动</dd>
+				</dl>
+
+            </div>
+        </li>
+    	<li>
+        	<em>2</em>
+            <div class="CourseContent">
+
+				<h2>第二章（下）：作用域、JavaScript运算符、流程控制</h2>
+                
+                <dl>
+					<dt>JS作用域</dt>
+                    <dd class="indent1">作用域概念</dd>
+                    <dd class="indent1">JS解析器执行方式</dd>
+                    <dd class="indent2">标签解析、函数解析</dd>
+                    <dd class="indent2">JS预解析机制</dd>
+                    <dd class="indent2">函数内部执行环境、参数</dd>
+                    <dd class="indent2">获取函数内数据：全部变量、传参</dd>
+                    <dd class="indent1">作用域应用场景</dd>
+                    <dd class="indent2">this、for函数中 i 的取值</dd>
+				</dl>
+
+                <dl>
+                	<dt>运算符</dt>
+                    <dd class="indent1">算术：+ 加、- 减、* 乘、/ 除、% 取模（求余数）</dd>
+                    <dd class="indent2">实例：腾讯首页隔行变色</dd>
+                    <dd class="indent2">实例：隔行变色扩展</dd>
+                    <dd class="indent2">实例：京东商城秒转时间</dd>
+                    <dd class="indent1">赋值：=、+=、-=、*=、/=、%=</dd>
+                    <dd class="indent1">关系：<、>、<=、>=、==、!=、===、!==</dd>
+                    <dd class="indent1">逻辑：&& 与、|| 或、! 否</dd>
+                    <dd class="indent2">实例：全选、不选与反选</dd>
+                    <dd class="indent1">运算符优先级：括号</dd>
+                </dl>
+                
+                <dl>
+					<dt>程序流程控制</dt>
+                    <dd class="indent1">判断：if、switch（case break default）、?:</dd>
+                    <dd class="indent1">循环：while、for</dd>
+                    <dd class="indent1">跳出：break、continue</dd>
+                    <dd class="indent1">什么是真、什么是假</dd>
+                    <dd class="indent2">真：非零的数字、字符串、true、函数、object：[] {} 元素（存在）</dd>
+                    <dd class="indent2">假：零、NaN、空字符串、false、null、未定义</dd>
+				</dl>
+                
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+        	 <h2>第三章节（上）：函数详解、定时器基础</h2>
+                
+                <dl>
+					<dt>回顾函数传参</dt>
+                    <dt>函数返回值：return</dt>
+                    <dd class="indent1">JS的数据类型有哪些？函数可以是任何数据类型</dd>
+                    <dd class="indent1">实例：通过ID名、配合函数传参特性获取元素</dd>
+				</dl>
+                
+                <dl>
+                	<dt>可变参（不定参）：arguments</dt>
+                    <dd class="indent1">参数的个数： arguments.length</dd>
+                    <dd class="indent1">arguments 和 形参 的关系 </dd>
+                    <dd class="indent2">实例：求和函数</dd>
+                </dl>
+                
+                <dl>
+					<dt>封装getStyle函数</dt>
+                    <dd class="indent1">获取元素样式：</dd>
+                    <dd class="indent1">实例：通过ID名、配合函数传参特性获取元素</dd>
+                    <dd class="indent2">obj.currentStyle[attr]</dd>
+                    <dd class="indent2">getComputedStyle(obj,2)[attr]</dd>
+                    <dt>使用注意事项：</dt>
+                    <dd class="indent1">不能有空格</dd>
+                    <dd class="indent1">获取到的是计算后的样式</dd>
+                    <dd class="indent1">只能获取非复合样式</dd>
+                    <dd class="indent1">所获取的样式要设初使值</dd>
+                    <dd class="indent1">获得的值是字符串</dd>
+				</dl>
+                
+                <dl>
+					<dt>定时器基础</dt>
+                    <dd class="indent1">什么是定时器</dd>
+                    <dd class="indent2">每隔一段时间，执行一次函数</dd>
+                    <dd class="indent2">setInterval、clearInterval</dd>
+                    <dd class="indent2">setTimeout、clearTimeout</dd>
+                    <dd class="indent1">两种定时器的区别</dd>
+                    <dd class="indent2">实例：自动播放的焦点图</dd>
+                    <dd class="indent2">实例：查看QQ资料</dd>
+				</dl>
+                
+			</div>        
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第三章节（下）：定时器应用、倒计时</h2>
+                
+                <dl>
+					<dt>定时器深入应用：</dt>
+                    <dd class="indent1">案例研究：让元素移动</dd>
+                    <dd class="indent1">定时器管理原则：每次只开一个定时器</dd>
+                    <dd class="indent1">步骤：</dd>
+                    <dd class="indent2">配合getStyle获取速度</dd>
+                    <dd class="indent2">速度限制与赋值</dd>
+                    <dd class="indent2">定时器关闭</dd>
+				</dl>
+                
+                <dl>
+                	<dt>封装运动函数</dt>
+                    <dd class="indent1">设置参数</dd>
+                    <dd class="indent1">方向判断设置</dd>
+                    <dd class="indent1">区分判断条件</dd>                    
+                </dl>
+                
+                <dl>
+                	<dt>函数传参应用：回调函数</dt>
+                    <dt>实例："抖屏"实现原</dt>
+                    <dd class="indent1">获取关键数组</dd>
+                    <dd class="indent1">定时器控制抖屏</dd>
+                    <dd class="indent1">定时器清除</dd>
+                </dl>
+                
+                <dl>
+                	<dt>封装"抖动"函数</dt>
+                    <dd class="indent1">设置函数接口</dd>
+                    <dd class="indent1">设置回调函数</dd>
+                </dl>
+                
+                <dl>
+					<dt>时间对象实例研究</dt>
+                    <dd class="indent1">获取时间对象：new Date()</dd>
+                    <dd class="indent2">getFullYear()</dd>
+                    <dd class="indent2">getMonth()</dd>
+                    <dd class="indent2">getDate()</dd>
+                    <dd class="indent2">getDay()</dd>
+                    <dd class="indent2">getHours()</dd>
+                    <dd class="indent2">getMinutes()</dd>
+                    <dd class="indent2">getSeconds()</dd>
+                    <dd class="indent1">实例：网站电子时钟</dd>
+				</dl>
+                
+                <dl>
+					<dt>倒计时</dt>
+                    <dd class="indent1">Date对象参数</dd>
+                    <dd class="indent2">数字形式：new Date(2013,4,1,9,48,12);</dd>
+                    <dd class="indent2">字符串形式：new Date('June 10,2013  12:12:12');</dd>
+                    <dd class="indent1">月份取值</dd>
+                    <dd class="indent2">January、February、March、April、May、June、July、August、September、October、</dd>
+                     <dd class="indent2">November、December;</dd>
+                    <dd class="indent1">时间转换公式</dd>
+                    <dd class="indent2">天：Math.floor(t/86400)</dd>
+                    <dd class="indent2">时：Math.floor(t%86400/3600)</dd>
+                    <dd class="indent2">分：Math.floor(t%86400%3600/60)</dd>
+                    <dd class="indent2">秒：t%60</dd>
+                    <dd class="indent1">时间戳：getTime()</dd>
+                    <dd class="indent2">返回从1970年1月1日0点0分0秒0毫秒</dd>
+				</dl>
+                
+            </div>
+        </li>
+        	
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第四章节（上）：字符串方法、Json、数组方法</h2>
+                
+                 <dl>
+					<dt>获取类</dt>
+                    <dd class="indent1">charAt ——获取指定位置的字符</dd>
+                    <dd class="indent1">charCodeAt——获取指定位置字符的编码</dd>
+                    <dd class="indent2">数字、大小写字母、空格、制表符</dd>
+                    <dd class="indent1">fromCharCode——把编码转换成字符（静态方法）</dd>
+                    <dd class="indent2">Unicode 字符大全</dd>
+                    <dd class="indent1">substring</dd>
+                    <dt>查找类</dt>
+                    <dd class="indent1">indexOf，lastIndexOf</dd>
+                    <dd class="indent2">查找子字符串出现的位置和次数</dd>
+                    <dt>比较类：>, <, ==</dt>
+                    <dt>其他类</dt>
+                    <dd class="indent1">split</dd>
+                    <dd class="indent1">toUpperCase, toLowerCase</dd>
+				</dl>
+                
+                <dl>
+					<dt>Json与数组</dt>
+                    <dd class="indent1">什么是Json</dd>
+                    <dd class="indent2">json定义与访问</dd>
+                    <dd class="indent1">Json和数组</dd>
+                    <dd class="indent2">各自优缺点</dd>
+                    <dd class="indent2">组合使用</dd>
+                    <dd class="indent1">Json的循环：for、for…in</dd>
+                    <dd class="indent1">Json与数组的区别</dd>
+                    <dd class="indent2">下标不同、json没有length</dd>
+				</dl>
+                
+                 <dl>
+					<dt>数组详解</dt>
+                    <dd class="indent1">数组定义</dd>
+                    <dd class="indent2">var arr=[12, 5, 8, 9];</dd>
+                    <dd class="indent2">var arr=new Array(12, 5, 8, 9);</dd>
+                    <dd class="indent2">两种定义的差异</dd>
+                    <dd class="indent1">数组的属性</dd>
+                    <dd class="indent2">length：可读、可写</dd>
+                    <dd class="indent3">实例：快速清空数组</dd>
+                    <dd class="indent1">数组使用原则：数组中应该只存一种类型的数据</dd>
+				</dl>
+                
+                <dl>
+					<dt>数组的方法</dt>
+                    <dd class="indent1">添加</dd>
+                    <dd class="indent2">push(元素)，从尾部添加</dd>
+                    <dd class="indent2">unshift(元素)，从头部添加</dd>
+                    <dd class="indent1">删除</dd>
+                    <dd class="indent2">pop()，从尾部弹出</dd>
+                    <dd class="indent2">shift()，从头部弹出</dd>
+                    <dd class="indent1">返回值的区别</dd>
+				</dl>
+                
+                <dl>
+					<dt>splice</dt>
+                    <dd class="indent1">splice(开始, 长度,元素…)</dd>
+                    <dd class="indent1">先删除，后插入</dd>
+                    <dd class="indent1">删除</dd>
+                    <dd class="indent2">splice(开始,长度)</dd>
+                    <dd class="indent1">插入</dd>
+                    <dd class="indent2">splice(开始, 0, 元素…)</dd>
+                    <dd class="indent1">替换</dd>
+                    <dd class="indent2">实例：数组去重</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第四章节（下）：数组排序、Math对象、字符串与数组方法深入应用</h2>
+                <dl>
+					<dt>数组排序</dt>
+                    <dd class="indent1">sort([比较函数])，排序一个数组</dd>
+                    <dd class="indent2">排序一个字符串数组</dd>
+                    <dd class="indent2">排序一个数字数组</dd>
+                    <dd class="indent2">sort排序默认规则：</dd>
+                    <dd class="indent3">字符串排序规则</dd>
+                    <dd class="indent2">比较函数</dd>
+                    <dd class="indent2">正数交换位置、负数不交换。零表示两数相等</dd>
+				</dl>
+                
+                <dl>
+					<dt>Math对象</dt>
+                    <dd class="indent1">随机函数：random()</dd>
+                    <dd class="indent2">实例：打乱数组顺序</dd>
+                    <dd class="indent2">实例：求一组随机数字</dd>
+                    <dd class="indent1">常见方法：ceil()、floor()、round()</dd>
+                    <dd class="indent1">常用的取整公式</dd>
+                    <dd class="indent2"> x ~ y   :  Math.round(Math.random()*(y-x) + x)</dd>
+                    <dd class="indent2">0 ~ x   :  Math.round(Math.random()*x)</dd>
+                    <dd class="indent2">1 ~ x   :  Math.ceil(Math.random()*x)||1</dd>
+                    <dd class="indent2">0 ~ x-1 :  Math.floor(Math.random()*x)</dd>
+				</dl>
+                
+                <dl>
+					<dt>concat、reverse</dt>
+                    <dd class="indent1">concat() 连接多个数组，并生成新数组</dd>
+                    <dd class="indent2">arr1.concat(val1, val2, ...);</dd>
+                    <dd class="indent2">concat(arr1, arr2, ...)</dd>
+                    <dd class="indent1">reverse() 反转数组</dd>
+                    <dd class="indent2">实例：反转数组、字符串</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第五章节（上）：DOM  \ BOM </h2>
+                
+                <dl>
+					<dt>DOM基础</dt>
+                    <dd class="indent1">JS 组成：ECMAScript \ DOM \ BOM</dd>
+                    <dd class="indent1">什么是DOM</dd>
+                    <dd class="indent1">用 iframe 查看document位置</dd>
+                    <dd class="indent1">DOM节点</dd>
+                    <dd class="indent1">childNodes</dd>
+                    <dd class="indent2">1、在标准及ie9以上 ： 会获取空文本节点。</dd>
+                    <dd class="indent2">2、在ie6/7/8 : 没有空文本节点。</dd>
+				</dl>
+                
+                <dl>
+					<dt>查看节点类型：nodeType、nodeName、nodeValue</dt>
+                    <dt>节点类型</dt>
+                    <dd class="indent1">1 - 元素节点</dd>
+                    <dd class="indent1">2 - 属性节点</dd>
+                    <dd class="indent1">3 - 文本节点</dd>
+                    <dd class="indent1">8 - 注释节点</dd>
+                    <dd class="indent1">9 - document</dd>
+				</dl>
+                
+                <dl>
+					<dt>children 属性</dt>
+                    <dd class="indent1">children 与 childNodes 的区别</dd>
+                    <dd class="indent2">标准属性、非标准属性</dd>
+                    <dd class="indent1">实例：childNodes 的类型判断</dd>
+                    <dd class="indent1">注意：xhtml 文档的严谨：符合标签嵌套规则</dd>
+				</dl>
+                
+                <dl>
+					<dt>DOM节点-子节点</dt>
+                    <dd class="indent1">firstChild : 第一个子节点   在标准和ie9下会获取到空白文本节点。</dd>
+                    <dd class="indent1">firstElementChild : 标准下获取第一个子元素节点，ie6/7/8不支持。</dd>
+                    <dd class="indent1">lastChild :  最后一个子节点   在标准和ie9下会获取到空白文本节点。</dd>
+                    <dd class="indent1">lastElementChild :  标准下获取最后一个子元素节点，ie6/7/8不支持。</dd>
+                    <dd class="indent1">nextSibling：下一个兄弟节点  在标准和ie9下会获取到空白文本节点。</dd>
+                    <dd class="indent1">nextElementSibling：标准下获取下一个兄弟节点，ie6/7/8不支持。</dd>
+                    <dd class="indent1">previousSibling：上一个兄弟节点   在标准和ie9下会获取到空白文本节点。</dd>
+                    <dd class="indent1">previousElementSibling：标准下获取上一个兄弟节点，ie6/7/8不支持。</dd>
+                    <dd class="indent1">实例：兼容性处理</dd>
+                    <dd class="indent1">原则：标准在左，非标准在右</dd>
+                    <dd class="indent1">实例：封装四个方法 first()、last()、next()、prev();</dd>
+				</dl>
+                
+                <dl>
+					<dt>parentNode</dt>
+                    <dd class="indent1">获取父节点，点击链接隐藏整个li</dd>
+				</dl>
+                
+                <dl>
+					<dt>offsetParent</dt>
+                    <dd class="indent1">1.当前节点上面没有节点有定位属性：</dd>
+                    <dd class="indent2">在ie8及标准以上浏览器 ： body</dd>
+                    <dd class="indent2">在ie6/7 ： html</dd>
+                    <dd class="indent1">2.当前节点上面有节点有定位属性： 最近的一个有定位属性的节点。</dd>
+                    <dd class="indent2">注意： 在ie6/7下，如果当前节点没有定位属性，那么它的offsetParent其实就是它的parentNode.</dd>
+                    <dt>offsetLeft : 当前节点的左外边框到offsetParent的左内边框之间的距离。</dt>
+    				<dt>offsetTop : 当前节点的上外边框到offsetParent的上内边框之间的距离。</dt>
+                    <dd class="indent1">实例：封装元素在document中的绝对位置：posLeft()、posTop()</dd>
+                    <dt>offsetWidth\offsetHeight\clientWidth\clientHeight :</dd>
+                    <dd class="indent1">指的是元素在页面所占的空间大小, 如果元素没有占页面空间，那么这四属性的值都为0</dt>
+                    <dd class="indent1">(比如给元素设置了 display: none; 属性)</dd>
+				</dl>
+                
+                <dl>
+					<dt>操作元素属性的第三种方式：</dt>
+                    <dd class="indent1">前两种方式：  [] 和  .  </dd>
+                    <dd class="indent1">第三种方式：</dd>
+                    <dd class="indent2">获取属性：getAttribute('')</dd>
+                    <dd class="indent3">好处：</dd>
+                    <dd class="indent3">1.可以获取行间的自定义属性。</dd>
+                    <dd class="indent3">2.可以获取到src,href,url等的相对地址。(需要带上第二个参数 ： 2)</dd>
+                    <dd class="indent2">设置属性： setAttribute('','')</dd>
+                    <dd class="indent2">删除属性： removeAttribute('')</dd>
+                    <dd class="indent2">兼容：</dd>
+                    <dd class="indent3">1.当碰到关键字、保留字的时候，ie6/7需要避开，而ie8以上不需要考虑。</dd>
+                    <dd class="indent3">2.操作第二层以上属性的时候，标准浏览器不支持。</dd>
+				</dl>
+                
+                <dl>
+					<dt>创建和插入元素</dt>
+                    <dd class="indent1">createElement : 创建一个dom节点。</dd>
+                    <dd class="indent1">appendChild ： 往一个节点里面追加一个新的子节点。</dd>
+                    <dd class="indent2">实例：留言板插入内容</dd>
+                    <dd class="indent1">insertBefore ： 往一个子节点里面的某个子节点前面插入一个新的子节点。</dd>
+                    <dd class="indent2">insertBefore(准备要插入的节点，插入到哪个节点的前面)</dd>
+                    <dd class="indent2">实例：倒序留言板插入内容</dd>
+                    <dd class="indent1">removeChild : 从一个节点里面删除掉某个指定的子节点。</dd>
+                    <dd class="indent2">实例：删除留言</dd>
+                    <dd class="indent1">replaceChild ： 用一个节点替换掉另一个节点里面的指定子节点。</dd>
+                    <dd class="indent2">实例：只显示一条留言</dd>
+                    <dd class="indent1">appendChild / insertBefore / replaceChild :</dd>
+                    <dd class="indent2">1.既可以操作创建的元素，也可以操作页面已有的元素。</dd>
+                    <dd class="indent2">2.操作已有元素时，是直接把元素从一个位置移动到另一个位置，而不是复制。</dd>
+				</dl>
+                
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第五章节（下）：DOM  \ BOM</h2>
+                
+                <dl>
+					<dt>用className选择元素</dt>
+                    <dd class="indent1">getElementsByClassName - 不兼容低版本浏览器。</dd>
+                    <dd class="indent1">自定义方法：</dd>
+                    <dd class="indent2">如何用className选择元素</dd>
+                    <dd class="indent2">选出所有元素</dd>
+                    <dd class="indent2">通过className条件筛选</dd>
+                    <dd class="indent2">封装成函数</dd>
+                    <dd class="indent1">getByClass()</dd>
+                    <dd class="indent1">addClass() 添加class</dd>
+                    <dd class="indent1">removeClass() 移除class</dd>
+				</dl>
+                
+                <dl>
+					<dt>表格应用</dt>
+                    <dd class="indent1">获取</dd>
+                    <dd class="indent2">tBodies、tHead、tFoot、rows、cells</dd>
+                    <dd class="indent1">表格的创建</dd>
+                    <dd class="indent2">实例：数据添加</dd>
+                    <dd class="indent2">实例：表格版隔行变色</dd>
+                    <dd class="indent2">实例：删除一行</dd>
+                    <dd class="indent1">选择</dd>
+                    <dd class="indent2">checkbox 全选、反选</dd>
+				</dl>
+                
+                <dl>
+					<dt>BOM</dt>
+                    <dd class="indent1">打开、关闭窗口</dd>
+                    <dd class="indent2">window.open : 打开一个新窗口。</dd>
+                    <dd class="indent2"> 参数： 四个</dd>
+                    <dd class="indent3">1、指定要打开的页面地址。</dd>
+                    <dd class="indent3">2、打开方式 ： _blank \ _self ...   （target）</dd>
+                    <dd class="indent3">3、浏览器的窗口特征 （宽，高，窗口位置等）</dd>
+                    <dd class="indent3">4、是否覆盖历史记录。</dd>
+                    <dd class="indent3">实例： 新窗口运行代码</dd>
+                    <dd class="indent2">window.close : 关闭当前窗口</dd>
+                    <dd class="indent3">不同的浏览器有不同的处理方式，存在兼容问题。</dd>
+                    <dd class="indent3">在ff/O下面 : 只允许关闭由window.open方法所打开的窗口。</dd>
+                    <dd class="indent1">常用属性</dd>
+                    <dd class="indent2">window.navigator.userAgent ： 用户代理信息</dd>
+                    <dd class="indent3">操作系统 、 浏览器内核 、浏览器版本等</dd>
+                    <dd class="indent3"> 实例 ： 判断ie6函数</dd>
+                    <dd class="indent2">window.location ： 地址栏信息。</dd>
+                    <dd class="indent3">search : 地址栏查询信息  （问号到#号之间的所有内容）</dd>
+                    <dd class="indent3">hash : 锚信（#号后面的所有内容）</dd>
+                    <dd class="indent1">窗口尺寸</dd>
+                    <dd class="indent2">可视区尺寸</dd>
+                    <dd class="indent3">document.documentElement.clientWidth</dd>
+                    <dd class="indent3">document.documentElement.clientHeight</dd>
+                    <dd class="indent3">viewW() / viewH()</dd>
+                    <dd class="indent2">滚动距离</dd>
+                    <dd class="indent3">滚动高度： document.body.scrollTop / document.documentElement.scrollTop</dd>
+                    <dd class="indent3">滚动宽度： document.body.scrollLeft / document.documentElement.scrollLeft</dd>
+                    <dd class="indent3">scrollY() / scrollX()</dd>
+                    <dd class="indent2">内容高度 : 被内容所撑出来的高度</dd>
+                    <dd class="indent3">document.body.scrollHeight</dd>
+                    <dd class="indent3">chrome: 内容高度没有可视区高，scrollHeight就是可视区的高度。</dd>
+                    <dd class="indent3">其它浏览器 : 内容的实际高度。</dd>
+                    <dd class="indent3">scrollH()</dd>
+                    <dd class="indent2">文档高度 ：容器设置的高度</dd>
+                    <dd class="indent3">document.body.offsetHeight</dd>
+                    <dd class="indent3">如果没有设置初始值，就是与scrollHeight相等</dd>
+                    <dd class="indent3">offsetH()</dd>
+                    <dd class="indent1">window对象常用事件</dd>
+                    <dd class="indent2">onscroll : 滚动条滚动所触发的事件。</dd>
+                    <dd class="indent2">onresize : 窗口尺寸发生改变所触发的事件。</dd>
+                    <dd class="indent2">实例： 优酷弹窗的实例</dd>
+				</dl>
+            </div>
+        </li>
+        
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第六章节：事件基础</h2>
+                 <dl>
+					<dt>焦点事件</dt>
+                    <dd class="indent1">获取焦点事件onfocus \  失去焦点事件 onblur</dd>
+                    <dd class="indent2">实例：输入框提示文字</dd>
+                    <dd class="indent2">select()、focus()、blur()应用</dd>
+                </dl>
+                <dl>
+					<dt>This关键字</dt>
+                    <dd class="indent1">This指向 ：谁调用的this就指向谁</dd>
+                </dl>
+                <dl>
+                    <dt>Event对象</dt>
+                    <dd class="indent1">获取事件详细信息（事件信息清单）</dd>
+                    <dd class="indent1">Event对象的兼容：ev = ev || window.event</dd>
+                    <dd class="indent1">Event对象下的获取鼠标位置：clientX clientY</dd>
+                    <dd class="indent1">实例：方块跟着鼠标移动（消除滚动条影响）</dd>
+				</dl>
+                <dl>
+					<dt>事件流</dt>
+                    <dd class="indent1">事件冒泡</dd>
+                    <dd class="indent2">取消冒泡：ev.cancelBubble=true</dd>
+                    <dd class="indent2">实例：仿select控件</dd>
+                    <dd class="indent2">实例："分享到"实例</dd>
+                    <dd class="indent1">事件函数绑定的第2种机制</dd>
+                    <dd class="indent2">addEventListener \ attachEvent</dd>
+                    <dd class="indent2">call()：改变函数内 this 指向</dd>
+                    <dd class="indent2">实例：封装bind()方法</dd>
+                    <dd class="indent1">事件捕获</dd>
+                    <dd class="indent2">实例：捕获特性演示</dd>
+                    <dd class="indent1">事件注销：</dd>
+                    <dd class="indent2">DOM1事件注销</dd>
+                    <dd class="indent2">DOM2事件注销</dd>
+				</dl>
+                <dl>
+					 <dt>键盘事件详解</dt>
+                    <dd class="indent1">基于键盘事件：onkeydown、onkeyup、onkeypress</dd>
+                    <dd class="indent1">keyCode 键值</dd>
+                    <dd class="indent2">获取用户按下键盘的哪个按键</dd>
+                    <dd class="indent2">实例：键盘控制Div移动</dd>
+                    <dd class="indent1">其他属性</dd>
+                    <dd class="indent2">ctrlKey、shiftKey、altKey</dd>
+                    <dd class="indent2">实例：提交留言（回车、ctrl+回车）</dd>
+                    <dd class="indent2">注：ios 下的 control 键</dd>
+				</dl>
+                <dl>
+					 <dt>事件默认行为</dt>
+                    <dd class="indent1">什么是事件默认行为</dd>
+                    <dd class="indent1">阻止事件默认行为</dd>
+                    <dd class="indent2">DOM1事件默认行为的阻止：return false;</dd>
+                    <dd class="indent2">实例：屏蔽右键菜单（oncontextmenu）</dd>
+                    <dd class="indent2">实例：弹出自定义右键菜单</dd>
+				</dl>
+            </div>
+        </li>
+        
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第七章节：事件应用及cookie</h2>
+                
+                <dl>
+					<dt>简易拖拽</dt>
+                    <dd class="indent1">拖拽原理</dd>
+                    <dd class="indent2">鼠标和Div的相对距离不变</dd>
+                    <dd class="indent2">三大事件</dd>
+                    <dd class="indent2">把拖拽加到document上</dd>
+                    <dd class="indent3">注：FF下, 空Div拖拽bug（18.0版本前）</dd>
+                    <dd class="indent2">实例：简易拖拽</dd>
+                    <dd class="indent1">修复简易拖拽bug</dd>
+                    <dd class="indent2">Ie下设置全局捕获: setCapture(选中文字)</dd>
+                    <dd class="indent2">标准下阻止默认事件（拖拽图片）</dd>
+                    <dd class="indent2">封装拖拽函数：drag(obj)</dd>
+                    <dd class="indent2">实例：限制拖拽范围</dd>
+                    <dd class="indent2">实例：磁性吸附</dd>
+				</dl>
+                
+                <dl>
+					<dt>碰撞检测</dt>
+                    <dd class="indent1">碰撞检测原理：</dd>
+                    <dd class="indent2">半径检测（Math.abs）</dd>
+                    <dd class="indent2">九宫格（检测重叠、排除法）</dd>
+                    <dd class="indent1">实例：拖拽中的碰撞检测</dd>
+                    <dd class="indent1">实例：拖拽改变层大小</dd>
+				</dl>
+                
+                <dl>
+					<dt>自定义滚动条</dt>
+                    <dd class="indent1">滚动条实现原理：</dd>
+                    <dd class="indent2">限制范围——范围的大小</dd>
+                    <dd class="indent2">计算比例——当前值/最大值</dd>
+                    <dd class="indent1">控制其他对象变化（比例值应用）</dd>
+                    <dd class="indent2">实例1：控制物体的大小</dd>
+                    <dd class="indent2">实例2：控制物体的透明度</dd>
+                    <dd class="indent2">实例3：控制文字滚动</dd>
+				</dl>
+                
+                <dl>
+					<dt>鼠标滚轮事件</dt>
+                    <dd class="indent1">Ie/chrome：onmousewheel</dd>
+                    <dd class="indent1">firefox：DOMMouseScroll</dd>
+                    <dd class="indent1">滚轮属性：wheelDelta \ detail</dd>
+                    <dd class="indent1">DOM2事件默认行为的阻止：</dd>
+                    <dd class="indent2">attachEvent：return false;</dd>
+                    <dd class="indent2">addEventListener：event下的preventDefault();</dd>
+                    <dd class="indent1">实例：滚轮控制图片缩放</dd>
+                    <dd class="indent1">实例：鼠标滚轮与自定义滚动条结合</dd>
+                    <dd class="indent1">滚轮事件封装：addMouseWhell(obj, upFn, downFn);</dd>
+				</dl>
+                <dl>
+					<dt>cookie</dt>
+                    <dd class="indent1">cookie的作用：保存数据到客户端浏览器</dd>
+                    <dd class="indent1">cookie的存储范围</dd>
+                    <dd class="indent1">cookie的存储格式：document.cookie = '名字＝值';</dd>
+                    <dd class="indent1">cookie使用限制：</dd>
+                    <dd class="indent2">个数限制</dd>
+                    <dd class="indent2">大小限制</dd>
+                    <dd class="indent1">cookie过期时间限制：toUTCString();</dd>
+                    <dd class="indent1">cookie读取：'username=miaov; age=3'</dd>
+                    <dd class="indent1">cookie相关函数封装：</dd>
+                    <dd class="indent2">setCookie();</dd>
+                    <dd class="indent2">getCookie();</dd>
+                    <dd class="indent2">delCookie();</dd>
+                    <dd class="indent1">实例：用cookie记录上一次拖拽的位置</dd>
+                    <dd class="indent1">实例：Cookie登录后删除信息</dd>
+				</dl>
+            </div>
+        </li>
+        
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第八章节：jQuery</h2>
+                <dl>
+					<dt>什么是JQ？</dt>
+                    <dd class="indent1">一个优秀的JS库，大型开发必备</dd>
+                    <dt>JQ的好处？</dt>
+                    <dd class="indent1">简化JS的复杂操作</dd>
+                    <dd class="indent1">不再需要关心兼容性</dd>
+                    <dd class="indent1">提供大量实用方法</dd>
+                    <dt>如何学习JQ？</dt>
+                    <dd class="indent1">官网：www.jquery.com</dd>
+                    <dd class="indent1">JQ只是辅助工具，要正确面对</dd>
+                    <dd class="indent1">需要分阶段学习</dd>
+				</dl>
+                
+                <dl>
+					<dt>JQ设计思想</dt>
+                    <dd class="indent1">选择网页元素</dd>
+                    <dd class="indent2">模拟CSS选择元素</dd>
+                    <dd class="indent2">独有表达式选择</dd>
+                    <dd class="indent2">多种筛选方法</dd>
+                    <dd class="indent1">JQ写法</dd>
+                    <dd class="indent2">方法函数化</dd>
+                    <dd class="indent2">链式操作</dd>
+                    <dd class="indent2">取值赋值合体</dd>
+                    <dd class="indent1">JQ与JS关系</dd>
+                    <dd class="indent2">可以共存，不能混用</dd>
+                    <dd class="indent1">JQ演示实例</dd>
+				</dl>
+                
+                <dl>
+					<dt>$()下的常用方法：获取元素相关操作</dt>
+                    <dd class="indent1">has()&nbsp;&nbsp;not()&nbsp;&nbsp;filter()&nbsp;&nbsp;next() prev()&nbsp;&nbsp;find()&nbsp;&nbsp;eq()&nbsp;&nbsp;index()&nbsp;&nbsp;attr()</dd>
+                    <dd class="indent1">实例：JQ版选项卡</dd>
+				</dl>
+                
+                <dl>
+					<dt>$()下的常用方法：DOM操作</dt>
+                    <dd class="indent1">addClass()&nbsp;&nbsp;removeClass()&nbsp;&nbsp;width()&nbsp;&nbsp;innerWidth()&nbsp;&nbsp;outerWidth()&nbsp;&nbsp;insertBefore()&nbsp;&nbsp;before()&nbsp;&nbsp;</dd>
+                    <dd class="indent1">insertAfter()&nbsp;&nbsp;after()&nbsp;&nbsp;appendTo()&nbsp;&nbsp;append()&nbsp;&nbsp;prependTo()&nbsp;&nbsp;prepend()&nbsp;&nbsp;remove()&nbsp;&nbsp;on()&nbsp;&nbsp;off()&nbsp;&nbsp; scrollTop()</dd>
+                    <dd class="indent1">实例：JQ版弹窗</dd>
+				</dl>
+                
+                <dl>
+					<dt>$()下的常用方法：事件</dt>
+                    <dd class="indent1">ev&nbsp;&nbsp;pageX&nbsp;&nbsp;which&nbsp;&nbsp;preventDefault&nbsp;&nbsp;stopPropagation</dd>
+                    <dd class="indent1">one()&nbsp;&nbsp;offset()&nbsp;&nbsp;offsetParent()&nbsp;&nbsp;val()&nbsp;&nbsp;size()&nbsp;&nbsp;each()</dd>
+                    <dd class="indent1">实例：JQ版拖拽</dd>
+				</dl>
+                
+                <dl>
+					<dt>$()下的常用方法：运动</dt>
+                    <dd class="indent1">toggle()&nbsp;&nbsp;hover()&nbsp;&nbsp;show()&nbsp;&nbsp;hide()&nbsp;&nbsp;fadeIn()&nbsp;&nbsp;fadeOut()&nbsp;&nbsp;fadeTo()&nbsp;&nbsp;slideDown()&nbsp;&nbsp;slideUp()&nbsp;&nbsp;slice()</dd>
+				</dl>
+            </div>
+        </li>
+        
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第九章节：AJAX基础、瀑布流项目开发、留言本实战开发</h2>
+                <dl>
+					<dt>什么是Ajax</dt>
+                    <dd class="indent1">Asynchronous JavaScript and XML（异步JavaScript和XML) </dd>
+                    <dd class="indent1">节省用户操作，时间，提高用户体验，减少数据请求</dd>
+                    <dd class="indent1">传输获取数据</dd>
+                    <dt>使用Ajax</dt>
+                    <dd class="indent1">实例：使用ajax获取某一文本文件的内容</dd>
+                    <dt>Ajax过程详解</dt>
+                    <dd class="indent1">创建对象XMLHttpRequest()</dd>
+                    <dd class="indent1">ActiveXObject('Microsoft.XMLHTTP')</dd>
+				</dl>
+                
+                <dl>
+					<dt>Open方法</dt>
+                    <dd class="indent1">三个参数的含义</dd>
+                    <dd class="indent2">1、提交方式 Form-method</dd>
+                    <dd class="indent2">2、提交地址 Form-action</dd>
+                    <dd class="indent2">3、异步（同步）</dd>
+                    <dt>Send方法</dt>
+                    <dd class="indent1">发送数据请求，相当于Form的submit</dd>
+				</dl>
+                
+                <dl>
+					<dt>请求状态监控</dt>
+                    <dd class="indent1">onreadystatechange事件</dd>
+                    <dd class="indent2">readyState属性：请求状态</dd>
+                    <dd class="indent2">0（未初始化）还没有调用open()方法</dd>
+                    <dd class="indent2">1（载入）已调用send()方法，正在发送请求</dd>
+                    <dd class="indent2">2（载入完成）send()方法完成，已收到全部响应内容</dd>
+                    <dd class="indent2">3（解析）正在解析响应内容</dd>
+                    <dd class="indent2">4（完成）响应内容解析完成，可以在客户端调用了</dd>
+                    <dd class="indent1">status属性：服务器(请求资源)的状态</dd>
+                    <dd class="indent1">返回的内容：</dd>
+                    <dd class="indent2">responseText：返回以文本形式存放的内容</dd>
+                    <dd class="indent2">responseXML：返回XML形式的内容</dd>
+				</dl>
+                <dl>
+					<dt>发送请求(get和post的区别)</dt>
+                    <dd class="indent1">send(要发送的数据)：发送请求</dd>
+                    <dd class="indent2">中文编码</dd>
+                    <dd class="indent2">缓存</dd>
+                    <dd class="indent2">POST：setRequestHeader(类型, 内容)：设置请求头</dd>
+                    <dd class="indent2">"Content-Type","application/x-www-form-urlencoded"</dd>
+                   
+				</dl>
+                <dl>
+                    <dt>数据类型(返回数据的处理)</dt>
+                    <dd class="indent1">服务器返回的数据</dd>
+                    <dd class="indent2">XML或文本（html\类数组\类JSON）</dd>
+                    <dd class="indent1">数据解析处理</dd>
+                    <dd class="indent2">Eval解析JSON的时候需要注意的地方（不推荐）</dd>
+                    <dd class="indent2">JSON.parse() : 字符串解析成对象</dd>
+				</dl>
+                <dl>
+					<dt>AJAX的封装：ajax(json)</dt>
+                    <dd class="indent1">参数</dd>
+                    <dd class="indent1">回调函数</dd>
+                    <dd class="indent1">JSON格式的参数</dd>
+				</dl>
+        
+        <dl>
+					<dt>瀑布流项目开发</dt>
+                    <dd class="indent1">瀑布流实现原理分析</dd>
+                    <dd class="indent1">浮动与定位、优缺点</dd>
+                    <dd class="indent1">数据格式分析</dd>
+                    <dd class="indent1">页面数据填充</dd>
+                    <dd class="indent1">判断数据加载时机</dd>
+				</dl>
+                
+                <dl>
+					<dt>留言本实战开发</dt>
+                    <dd class="indent1">用户名验证</dd>
+                    <dd class="indent1">用户注册</dd>
+                    <dd class="indent1">用户登陆</dd>
+                    <dd class="indent1">留言</dd>
+                    <dd class="indent1">顶功能</dd>
+                    <dd class="indent1">踩功能</dd>
+                    <dd class="indent1">留言数据获取</dd>
+                    <dd class="indent1">留言列表展现（瀑布流的形式）</dd>
+				</dl>
+        
+            </div>
+        </li>
+        
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第十章节（上）：JS中的运动-基础</h2>
+                <dl>
+					<dt>基础运动过程回顾</dt>
+                    <dt>基础运动框架形成：startMove();</dt>
+                    <dt>运动框架实例</dt>
+                    <dd class="indent1">实例：淡入淡出的图片</dd>
+                    <dd class="indent2">用变量存储透明度</dd>
+                    <dd class="indent1">实例："分享到"侧边栏</dd>
+				</dl>
+                <dl>
+					<dt>缓冲运动</dt>
+                    <dd class="indent1">与摩擦力的区别:可以精确的停到指定目标点</dd>
+                    <dd class="indent1">距离越远速度越大</dd>
+                    <dd class="indent1">速度由距离决定</dd>
+                    <dd class="indent1">速度=(目标值-当前值)/缩放系数</dd>
+                    <dd class="indent1">Bug：速度取整</dd>
+                    <dd class="indent1">当前值取整：由 offsetLeft \ getComputedStyle……引发的"数值血案"</dd>
+                    <dd class="indent1">实例：一个Div，鼠标移入变宽</dd>
+				</dl>
+                <dl>
+					<dt>多物体运动</dt>
+                    <dd class="indent1">实例：多个Div，鼠标移入变宽</dd>
+                    <dd class="indent2">单定时器，存在问题</dd>
+                    <dd class="indent2">每个元素一个定时器</dd>
+                    <dd class="indent1">实例：多个图片淡入淡出</dd>
+				</dl>
+                <dl>
+					<dt>任意值运动</dt>
+                    <dd class="indent1">支持不同属性，能让某个值运动起来</dd>
+                    <dd class="indent1">用currentStyle代替offset</dd>
+                    <dd class="indent1">运动属性作为参数</dd>
+                    <dd class="indent1">封装opacity</dd>
+                    <dd class="indent1">给属性默认值</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第十章节（下）：JS中的运动-应用</h2>
+                 <dl>
+					<dt>经典运动框架（速度版）——原"完美运动框架"</dt>
+                    <dd class="indent1">所有的值都到达目标点的时候，才停止</dd>
+                 </dl>
+                 <dl>
+                    <dt>链式运动框架（回调函数）</dt>
+                    <dd class="indent1">动作接口</dd>
+                    <dd class="indent1">运动停止时，执行函数</dd>
+                    <dd class="indent1">运动停止时，开始下一次运动</dd>
+                    <dd class="indent1">实例：方块先变宽，再变高</dd>
+				</dl>
+                <dl>
+					<dt>经典运动框架应用</dt>
+                    <dd class="indent1">实例：多图片展开、收缩（照片墙）</dd>
+                    <dd class="indent2">布局转换</dd>
+                    <dd class="indent1">实例：新浪微博（动画效果的留言本）</dd>
+                    <dd class="indent1">实例：缓冲运动的幻灯片</dd>
+                    <dd class="indent1">实例：返回顶部</dd>
+				</dl>
+                <dl>
+					<dt>图片预加载、延迟加载</dt>
+                    <dd class="indent1">原理：不直接修改img元素的src，加载完成后，再显示</dd>
+                    <dd class="indent1">图片对象：new Image();</dd>
+                    <dd class="indent1">图片预加载事件</dd>
+                    <dd class="indent2">onload，加载完成后显示图片</dd>
+                    <dd class="indent2">onerror，加载失败时，进行其他处理(跳过、显示信息等)</dd>
+                    <dd class="indent2">实例：淡雅图片预加载实例</dd>
+                    <dd class="indent1">图片预加载——自动加载下一张图片</dd>
+                    <dd class="indent1">图片延迟加载——加载可视区图片，其他图片等进入可视区再加载</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第十一章：面向对象</h2>
+                <dl>
+					<dt>什么是对象</dt>
+                    <dd class="indent1">数组 Array  时间 Date 字符串 String</dd>
+                    <dd class="indent1">对象是一个整体，对外提供一些操作</dd>
+                    <dd class="indent2">数组 sort()  时间 getHours() 字符串 charAt()</dd>
+				</dl>
+                <dl>
+					<dt>什么是面向对象</dt>
+                    <dd class="indent1">用对象的思想去编程，对外提供方法的接口</dd>
+                    <dd class="indent1">其他人使用的时候，只要告诉他怎么用，不用关心内部实现的细节</dd>
+                    <dd class="indent1">面向对象是一种通用思想，并非只有编程中能用，任何事情都可以用</dd>
+				</dl>
+                <dl>
+					<dt>对象的组成</dt>
+                    <dd class="indent1">方法（行为、操作）——函数：过程、动态的</dd>
+                    <dd class="indent1">属性——变量：状态、静态的</dd>
+				</dl>
+                <dl>
+					<dt>面向对象编程(OOP)的特点</dt>
+                    <dd class="indent1">抽象：抓住核心问题</dd>
+                    <dd class="indent1">封装：不考虑内部实现，只考虑功能使用</dd>
+                    <dd class="indent1">继承：从已有对象上，继承出新的对象</dd>
+                    <dt>编写复杂效果就像搭积木</dt>
+				</dl>
+                <dl>
+					<dt>第一个面向对象程序</dt>
+                    <dd class="indent1">为对象添加方法和属性</dd>
+                    <dd class="indent2">this详解，事件处理中this的本质</dd>
+                    <dd class="indent1">object对象：</dd>
+                    <dd class="indent2">实例：创建两个人，重复代码太多</dd>
+                    <dd class="indent1">工厂方式</dd>
+                    <dd class="indent2">用构造函数创建一个类</dd>
+                    <dd class="indent2">什么是类、对象（实例）：模具和零件</dd>
+                    <dd class="indent2">对象的引用问题</dd>
+                    <dd class="indent2">问题：所有操作集中在构造函数中、函数重复定义</dd>
+				</dl>
+                <dl>
+					<dt>原型：prototype</dt>
+                    <dd class="indent1">为Array添加sum方法</dd>
+                    <dd class="indent2">一次只能为一个对象添加，类似于行间样式</dd>
+                    <dd class="indent1">什么是原型</dd>
+                    <dd class="indent2">原型是class，修改他可以影响一类元素</dd>
+                    <dd class="indent2">原型是加到构造函数上的(Sum方法添加到原型上)</dd>
+                    <dd class="indent2">普通方法优先级高于原型方法</dd>
+                    <dd class="indent1">系统对象注意事项</dd>
+                    <dd class="indent2">1.不要覆盖原有方法</dd>
+                    <dd class="indent2">2.不要轻易添加方法</dd>
+				</dl>
+                <dl>
+					<dt>流行的面向对象编写方式</dt>
+                    <dd class="indent1">用混合方式构造对象</dd>
+                    <dd class="indent2">混合的的构造函数/原型方式(这坑爹的名字，真长)</dd>
+                    <dd class="indent2">Mixed Constructor Function/Prototype Method</dd>
+                    <dd class="indent1">原则</dd>
+                    <dd class="indent2">构造函数：加属性</dd>
+                    <dd class="indent2">原型：加方法</dd>
+                    <dd class="indent1">对象命名规范</dd>
+                    <dd class="indent2">类名首字母大写</dd>
+				</dl>
+                <dl>
+					<dt>面向对象的选项卡</dt>
+                    <dd class="indent1">把面向过程的程序，改写成面向对象的形式</dd>
+                    <dd class="indent1">原则</dd>
+                    <dd class="indent2">不能有函数套函数、但可以有全局变量</dd>
+                    <dd class="indent2">过程</dd>
+                    <dd class="indent2">onload	→	构造函数</dd>
+                    <dd class="indent2">全局变量	→	属性</dd>
+                    <dd class="indent2">函数		→	方法</dd>
+                    <dd class="indent1">改错</dd>
+                    <dd class="indent2">this、事件、闭包、传参</dd>
+                    <dd class="indent1">对象与闭包</dd>
+                    <dd class="indent2">通过闭包传递this</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第十二章：正则表达式（火星文）</h2>
+                <dl>
+					<dt>复习字符串操作</dt>
+                    <dd class="indent1">indexOf	    查找</dd>
+                    <dd class="indent1">substring   获取子字符串</dd>
+                    <dd class="indent1">charAt		获取某个字符</dd>
+                    <dd class="indent1">split		分割字符串，获得数组</dd>
+				</dl>
+                <dl>
+					<dt>找出字符串中的所有数字</dt>
+                    <dd class="indent1">用传统字符串操作完成</dd>
+                    <dd class="indent1">用正则表达式完成</dd>
+				</dl>
+                <dl>
+					<dt>什么是正则表达式</dt>
+                    <dd class="indent1">什么叫"正则"</dd>
+                    <dd class="indent2">规则、模式</dd>
+                    <dd class="indent1">强大的字符串匹配工具</dd>
+				</dl>
+                <dl>
+					<dt>正则的写法</dt>
+                    <dd class="indent1">new RegExp("a")</dd>
+                    <dd class="indent1">/a/</dd>
+				</dl>
+                <dl>
+					<dt>正则表达式常用方法</dt>
+                    <dd class="indent1">test</dd>
+                    <dd class="indent1">字符串判断</dd>
+                    <dd class="indent2">返回真假</dd>
+                    <dd class="indent2">正则.test(字符串)</dd>
+                    <dd class="indent2">实例：是否有不是数字的字符</dd>
+				</dl>
+                <dl>
+					<dt>search</dt>
+                    <dd class="indent1">字符串搜索</dd>
+                    <dd class="indent2">返回出现的位置</dd>
+                    <dd class="indent2">字符串.search(正则)</dd>
+                    <dd class="indent2">忽略大小写：i——ignore</dd>
+				</dl>
+                <dl>
+					<dt>match</dt>
+                    <dd class="indent1">获取匹配的项目</dd>
+                    <dd class="indent2">返回数组</dd>
+                    <dd class="indent2">量词：+</dd>
+                    <dd class="indent2">全局匹配：g——global</dd>
+                    <dd class="indent2">实例：找出所有数字</dd>
+				</dl>
+                <dl>
+					<dt>replace</dt>
+                    <dd class="indent1">替换所有匹配</dd>
+                    <dd class="indent2">返回替换后的字符串</dd>
+                    <dd class="indent2">字符串.replace(正则,想替换的)</dd>
+                    <dd class="indent2">实例：敏感词过滤</dd>
+                    <dd class="indent2">匹配子项</dd>
+                    <dd class="indent2">实例：日期格式化</dd>
+				</dl>
+                <dl>
+					<dt>正则表达式字符类</dt>
+                    <dd class="indent1">任意字符 - [abc]</dd>
+                    <dd class="indent2">实例：o[usb]t——obt、ost、out</dd>
+                    <dd class="indent1">范围 - [a-z]、[0-9]</dd>
+                    <dd class="indent2">实例：id[0-9]——id0、id5</dd>
+                    <dd class="indent1">排除 - [^a]</dd>
+                    <dd class="indent2">实例：o[^0-9]t——oat、o?t、o t</dd>
+                    <dd class="indent1">组合 - [a-z0-9A-Z]</dd>
+                    <dd class="indent2">实例：偷小说</dd>
+                    <dd class="indent3">过滤HTML标签</dd>
+                    <dd class="indent3">自定义innerText方法</dd>
+				</dl>
+                <dl>
+					<dt>转义字符</dt>
+                    <dd class="indent1">.（点）——任意字符</dd>
+                    <dd class="indent1">\d、\w、\s 、\b</dd>
+                    <dd class="indent1">\D、\W、\S 、\B</dd>
+                    <dd class="indent1">\1  重复的元素</dd>
+                    <dd class="indent1">实例</dd>
+                    <dd class="indent2">获取class元素</dd>
+                    <dd class="indent2">找重复项最多的字符和个数</dd>
+				</dl>
+                <dl>
+					<dt>量词</dt>
+                    <dd class="indent1">什么是量词</dd>
+                    <dd class="indent2">出现的次数</dd>
+                    <dd class="indent2">{n,m}，至少出现n次，最多m次</dd>
+                    <dd class="indent2">实例：查找QQ号</dd>
+                    <dd class="indent1">常用量词</dd>
+                    <dd class="indent2">{n,}	至少n次</dd>
+                    <dd class="indent2">*		任意次	{0,}</dd>
+                    <dd class="indent2">？	零次或一次	{0,1}</dd>
+                    <dd class="indent2">+	一次或任意次{1,}</dd>
+                    <dd class="indent2">{n}	正好n次</dd>
+				</dl>
+                <dl>
+					<dt>正则首尾</dt>
+                    <dd class="indent1">^ 开始</dd>
+                    <dd class="indent1">$ 结束</dd>
+                    <dd class="indent1">实例：是不是QQ号</dd>
+                    <dd class="indent2">实例：去掉前后空格</dd>
+				</dl>
+                <dl>
+					<dt>常用正则实例（数据校验）</dt>
+                    <dd class="indent1">匹配中文：[\u4e00-\u9fa5]</dd>
+                    <dd class="indent1">行首行尾空格：^\s*|\s*$</dd>
+                    <dd class="indent1">Email：^\w+@[a-z0-9]+(\.[a-z]+){1,3}$</dd>
+                    <dd class="indent1">网址：[a-zA-z]+://[^\s]*</dd>
+                    <dd class="indent1">QQ号：[1-9][0-9]{4,9}</dd>
+                    <dd class="indent1">邮政编码：[1-9]\d{5}</dd>
+                    <dd class="indent1">身份证：[1-9]\d{14}|[1-9]\d{17}|[1-9]\d{16}x</dd>
+				</dl>
+                <dl>
+					<dt>正则与JSON</dt>
+                    <dd class="indent1">静态类：正则静态类化</dd>
+                    <dd class="indent1">使用：对象方法访问</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>JS高级专题之一：JS中面试题</h2>
+                <dl>
+					<dt>课程知识点总结</dt>
+                    <dd class="indent1">事件、DOM、BOM、js基础、Ajax、面向对象、常用方法、常用技巧、运动</dd>
+				</dl>
+                <dl>
+					<dt>概念题</dt>
+                    <dd class="indent1">闭包</dd>
+                    <dd class="indent2">理解函数声明与函数表达式</dd>
+                    <dd class="indent2">什么是闭包，作用有那些</dd>
+                    <dd class="indent2">闭包面试题实例解析</dd>
+                    <dd class="indent1">callee和caller</dd>
+                    <dd class="indent2">函数自身和被调用的函数</dd>
+                    <dd class="indent1">call和apply</dd>
+                    <dd class="indent2">作用</dd>
+                    <dd class="indent2">参数的区别</dd>
+				</dl>
+                <dl>
+					<dt>运行题</dt>
+                    <dd class="indent1">作用域</dd>
+                    <dd class="indent2">变量预解析</dd>
+                </dl>
+                <dl>
+					<dt>this指向</dt>
+                    <dd class="indent1">谁调用指向谁</dd>
+				</dl>
+                <dl>
+					<dt>语法</dt>
+                    <dd class="indent1">Null == undefined</dd>
+                    <dd class="indent1">true == 5</dd>
+				</dl>
+                <dl>
+					<dt>算法题</dt>
+                    <dd class="indent1">数组排序</dd>
+                    <dd class="indent1">取个随机数</dd>
+                    <dd class="indent1">数组去重</dd>
+				</dl>
+                <dl>
+					<dt>兼容性</dt>
+                    <dd class="indent1">样式的获取currentStyle getComputedStyle</dd>
+                    <dd class="indent1">Event对象：ev  || window.event</dd>
+                    <dd class="indent1">滚动距离: document.documentElement.scrollTop || document.body.scrollTop</dd>
+                    <dd class="indent1">childNodes:  空白节点</dd>
+                    <dd class="indent1">滚轮事件：mousewheel  DOMMouseScroll</dd>
+				</dl>
+                <dl>
+					<dt>优化类</dt>
+                    <dd class="indent1">减少全局变量：作用域链</dd>
+                    <dd class="indent1">只加载可视区的内容</dd>
+                    <dd class="indent1">减少dom操作：事件委托、文档碎片document.createDocumentFragment()</dd>
+                    <dd class="indent1">能使用正则的尽量用正则</dd>
+				</dl>
+                <dl>
+					<dt>数据类</dt>
+                    <dd class="indent1">Get和post区别</dd>
+                    <dd class="indent1">json、字符串互转</dd>
+				</dl>
+                <dl>
+					<dt>其他要了解的</dt>
+                    <dd class="indent1">后台、数据库、seo、Jquery(或任意类库)、Firebug、svn、html5、css3、node.js、响应式设计……</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>JS高级专题之二：JS综合应用实例</h2>
+                <dl>
+					<dt>放大镜</dt>
+                    <dd class="indent1">效果展示</dd>
+                    <dd class="indent1">标签嵌套+运动时出现子级影响父级的问题</dd>
+                    <dd class="indent1">解决方案：</dd>
+                    <dd class="indent2">1、JS：</dd>
+                    <dd class="indent3">onmouseenter、onmouseleave（chrome不支持）</dd>
+                    <dd class="indent3">兼容chrome实现原理：判断标签是否存在包含关系</dd>
+                    <dd class="indent2">2、CSS：覆盖透明度（缺陷：生成多余标签）</dd>
+				</dl>
+                
+                <dl>
+					<dt>苹果菜单</dt>
+                    <dd class="indent1">苹果菜单展示</dd>
+                    <dd class="indent1">勾股定理、计算鼠标当前位置与各图片中心点距离</dd>
+                    <dd class="indent1">计算比例关系</dd>
+				</dl>
+                
+                <dl>
+					<dt>照片墙（WEB-QQ图标拖拽换位）</dt>
+                    <dd class="indent1">照片墙展示</dd>
+                    <dd class="indent1"> 布局转换、拖拽+层级设置、碰撞检测、中心点距离计算、运动切换、随机切换位置</dd>
+				</dl>
+                
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>JS高级专题之三：JS游戏开发实战</h2>
+                <dl>
+					<dt>WEB版小蜜蜂演示</dt>
+                    <dd class="indent1">开发模式：单体模式、命名空间、与面向对象差异</dd>
+                    <dd class="indent1">游戏开发功能确定：游戏开发规则和游戏难点分析</dd>
+                    <dt>JS项目开发规范：</dt>
+                    <dd class="indent1">注释、数据与操作分离、函数功能模块化、功能难点独立demo实现</dd>
+                    <dt>具体开发流程：</dt>
+                    <dd class="indent1">1、创建积分</dd>
+                    <dd class="indent1">2、创建敌人</dd>
+                    <dd class="indent1">3、敌人移动</dd>
+                    <dd class="indent1">4、相关数据：敌人数据、关卡数据、飞机数据……</dd>
+                    <dd class="indent1">5、创建飞机</dd>
+                    <dd class="indent1">6、操作飞机</dd>
+                    <dd class="indent1">7、创建子弹</dd>
+                    <dd class="indent1">8、子弹飞行</dd>
+                    <dd class="indent1">9、碰撞检测</dd>
+                    <dd class="indent1">10、单兵作战（单兵追踪算法）</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>JS高级专题之四：模块化开发</h2>
+                <dl>
+					<dt>为什么要进行模块化开发：</dt>
+                    <dt>当你的网站开发越来越复杂的时候，会经常遇到这些问题吗？</dt>
+                    <dd class="indent1">1、冲突</dd>
+                    <dd class="indent1">2、性能</dd>
+                    <dd class="indent1">3、依赖</dd>
+				</dl>
+                
+                <dl>
+					<dt>seajs</dt>
+                    <dd class="indent1">一个适合web端的模块加载器</dd>
+                    <dd class="indent1">解决冲突、性能、依赖等问题，提升代码的可维护性</dd>
+                    <dd class="indent1">http://seajs.org</dd>
+                    <dd class="indent1">模块的概念</dd>
+                    <dt>seajs如何解决?</dt>
+                    <dd class="indent1">①引入sea.js的库</dd>
+                    <dd class="indent1">②如何变成模块？</dd>
+                    <dd class="indent2">define</dd>
+                    <dd class="indent1">③如何调用模块？</dd>
+                    <dd class="indent2">exports</dd>
+                    <dd class="indent2">seajs.use</dd>
+                    <dd class="indent1">④如何依赖模块？</dd>
+                    <dd class="indent2">require</dd>
+                    <dt>实例：seajs模块化开发 Web-QQ</dt>
+				</dl>
+                
+                <dl>
+					<dt>深入学习seajs</dt>
+                    <dd class="indent1">define、require、seajs.use、seajs.config、alias、preload、debug、seajs.modify、插件</dd>
+				</dl>
+                
+                <dl>
+					<dt>模块化历史</dt>
+                    <dd class="indent1">ECMAScrpt第六版将正式支持模块语法</dd>
+                    <dd class="indent1">nodeJS</dd>
+                    <dd class="indent1">commonJS</dd>
+                    <dd class="indent2">AMD</dd>
+                    <dd class="indent2">requireJS</dd>
+                    <dd class="indent2">跟seajs一样，web端模块化</dd>
+                    <dd class="indent1">seajs采用cmd规范</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>JS高级专题之五：高级运动</h2>
+                <dl>
+					<dt>加减速运动</dt>
+                    <dd class="indent1">速度不断增加或减少</dd>
+                    <dd class="indent1">速度减小到负值，会向反方向运动</dd>
+				</dl>
+                
+                <dl>
+					<dt>弹性运动</dt>
+                    <dd class="indent1">在目标点左边，加速；在目标点右边，减速</dd>
+                    <dd class="indent1">根据距离，计算加速度</dd>
+				</dl>
+                 <dl>
+					<dt>带摩擦力的弹性运动</dt>
+                    <dd class="indent1">弹性运动+摩擦力</dd>
+				</dl>
+                 <dl>
+					<dt>弹性公式</dt>
+                    <dd class="indent1">速度+=(目标值-初始值)/5</dd>
+                    <dd class="indent1">速度*=0.7</dd>
+				</dl>
+                
+                <dl>
+					<dt>终止条件</dt>
+                    <dd class="indent1">距离足够近 并且 速度足够小</dd>
+                    <dd class="indent1">实例：仿官网导航条效果</dd>
+				</dl>
+                
+                <dl>
+					<dt>弹性菜单</dt>
+                    <dd class="indent1">弹性运动的问题：运动过界</dd>
+				</dl>
+                
+                <dl>
+					<dt>碰撞运动</dt>
+                    <dd class="indent1">撞到目标点，速度反转</dd>
+                    <dd class="indent1">无重力的漂浮Div</dd>
+                    <dd class="indent2">速度反转</dd>
+                    <dd class="indent3">滚动条闪烁的问题</dd>
+                    <dd class="indent3">过界后反弹</dd>
+                    <dd class="indent2"></dd>
+                    <dd class="indent1"></dd>
+				</dl>
+                <dl>
+					<dt>加入重力</dt>
+                    <dd class="indent1">反转速度的同时，减小速度</dd>
+                    <dd class="indent1">纵向碰撞，横向速度也减小</dd>
+                    <dd class="indent1">横向速度小数问题（负数）</dd>
+                    <dd class="indent1">实例：Iphone弹性拖拽</dd>
+                    <dd class="indent1">实例：碰撞弹窗：两点间距离求出速度</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>JS高级专题之六：VQuery</h2>
+                <dl>
+					<dt>什么是VQuery</dt>
+                    <dd class="indent1">一个小型的JQuery</dd>
+				</dl>
+                
+                <dl>
+					<dt>学习VQuery具备的知识</dt>
+                    <dd class="indent1">Jquery</dd>
+                    <dd class="indent1">面向对象</dd>
+                    <dd class="indent1">常用方法:bindEvent getByClass</dd>
+				</dl>
+                <dl>
+					<dt>VQuery选择器</dt>
+                    <dd class="indent1">elements属性，存储选中的元素</dd>
+                    <dd class="indent1">typeof的使用</dd>
+                    <dd class="indent1">字符串</dd>
+                    <dd class="indent2">class、ID、tagName</dd>
+                    <dd class="indent1">函数</dd>
+                    <dd class="indent2">事件绑定</dd>
+                    <dd class="indent1">对象</dd>
+                    <dd class="indent2">直接插入</dd>
+				</dl>
+                <dl>
+					<dt>核心方法：</dt>
+                    <dd class="indent1">$函数、click方法、on方法、show方法、hide方法、hover方法</dd>
+				</dl>
+                <dl>
+					<dt>css方法</dt>
+                    <dd class="indent1">简单形式——设置、获取</dd>
+                    <dd class="indent1">arguments</dd>
+                    <dd class="indent1">获取计算后的样式</dd>
+				</dl>
+                <dl>
+					<dt>attr方法</dt>
+                    <dd class="indent1">类似于css</dd>
+                    <dt>eq方法</dt>
+                    <dd class="indent1">包装</dd>
+                    <dt>index方法</dt>
+                    <dd class="indent1">找父级, 找子集, 循环所有兄弟</dd>
+                    <dt>find方法 </dt>
+                    <dd class="indent1">实例: VQuery选项卡</dd>
+                    <dt>链式操作</dt>
+                    <dd class="indent1">函数"链式操作"</dd>
+                    <dd class="indent1">css方法链式操作</dd>
+                    <dt>阻止冒泡、默认事件</dt>
+                    <dt>插件机制 extend</dt>
+                    <dd class="indent1">可以任意扩展库的功能</dd>
+                    <dt> $.fn</dt>
+                    <dd class="indent1">为VQuery添加方法</dd>
+                    <dd class="indent2">原型</dd>
+                    <dd class="indent2">实例：size</dd>
+                    <dt>动画类</dt>
+                    <dd class="indent1">animate</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>JS高级专题之七：JS高级面向对象</h2>
+                <dl>
+					<dt>包装对象</dt>
+          					<dd class="indent1">JS基于原型的程序</dd>
+                    <dd class="indent1">String Number Boolean</dd>
+				</dl>
+                
+                <dl>
+					<dt>原型链</dt>
+                    <dd class="indent1">实例对象与原型之间的连接，叫做原型链</dd>
+                    <dd class="indent1">__proto__( 隐式连接 )</dd>
+                    <dd class="indent1">Object对象类型是原型链的最外层</dd>
+				</dl>
+                 <dl>
+					<dt>面向对象的一些属性和方法</dt>
+                    <dd class="indent1">toString() :  object上的方法</dd>
+                    <dd class="indent1">hasOwnProperty()  : 看是不是对象自身下面的属性</dd>
+                    <dd class="indent1">constructor :  查看对象的构造函数</dd>
+                    <dd class="indent2">每个原型都会自动添加constructor属性</dd>
+                    <dd class="indent2">For in 的时候有些属性是找不到的</dd>
+                    <dd class="indent2">避免修改construtor属性</dd>
+                    <dd class="indent1">instanceof :  运算符</dd>
+                    <dd class="indent2">对象与构造函数在原型链上是否有关系</dd>
+				</dl>
+                 <dl>
+					<dt>什么是继承</dt>
+                    <dd class="indent1">在原有对象的基础上，略作修改，得到一个新的对象</dd>
+                    <dd class="indent1">不影响原有对象的功能</dd>
+					<dt>如何添加继承</dt>
+                    <dd class="indent1">属性：call</dd>
+                    <dd class="indent1">方法：for in</dd>
+                    <dd class="indent1">例子  :   继承的拖拽</dd>
+				</dl>
+                 <dl>
+					<dt>继承的其他形式</dt>
+                    <dd class="indent1">类式继承</dd>
+                    <dd class="indent2">利用构造函数(类)继承的方式</dd>
+                    <dd class="indent1">原型继承</dd>
+                    <dd class="indent2">借助原型来实现对象继承对象</dd>
+				</dl>
+                
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>JS高级专题之八：JS组件开发</h2>
+                <dl>
+					<dt>对象的多种表现形态</dt>
+          					<dd class="indent1">提高对象的复用性</dd>
+                    <dd class="indent1">如何配置参数和默认参数</dd>
+                    <dd class="indent2">例子 : 拖拽</dd>
+                    <dd class="indent2">例子 : 弹窗</dd>
+				</dl>
+                
+                <dl>
+					<dt>什么是组件？</dt>
+                    <dd class="indent1">对面向对象的深入应用（UI组件，功能组件）</dd>
+                    <dd class="indent1">将 配置参数、方法、事件，三者进行分离</dd>
+				</dl>
+                 <dl>
+					<dt>创建自定义事件</dt>
+                    <dd class="indent1">有利于多人协作开发代码</dd>
+                    <dd class="indent1">如何去挂载自定义事件与事件函数</dd>
+                    <dd class="indent2">例子 :  基于JQ的选项卡的组件开发模式</dd>
+                    <dd class="indent2">例子 :  Trigger() extend()等方法的使用</dd>
+				</dl>
+         </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>JS高级专题之九：运动框架(时间版)</h2>
+                <dl>
+					<dt>JQ的animate</dt>
+          					<dd class="indent1">一个典型的时间版的运动框架</dd>
+                    <dd class="indent1">与经典startMove的区别</dd>
+                    <dd class="indent2">以时间为单位，而不是以速度为单位</dd>
+                    <dd class="indent2">例子 : 从中间放大的图片</dd>
+				</dl>
+                
+                <dl>
+					<dt>Tween介绍</dt>
+                    <dd class="indent1">一个来自flash的运动算法</dd>
+                    <dd class="indent1">JQ中也在使用tween算法</dd>
+				</dl>
+                 <dl>
+					<dt>Tween公式</dt>
+                    <dd class="indent1">4个参数:</dd>
+                    <dd class="indent2">t：current  time（当前时间）</dd>
+                    <dd class="indent2">b：beginning  value（初始值）</dd>
+                    <dd class="indent2">c： change  in  value（变化量）</dd>
+                    <dd class="indent2">d：duration（持续时间）</dd>
+                    <dd class="indent2">return  （目标点）</dd>
+				</dl>
+                 <dl>
+					<dt>新运动框架</dt>
+                    <dd class="indent1">如何获取当前时间</dd>
+                    <dd class="indent2">( new Date()  ).getTime()</dd>
+                    <dd class="indent1">老版本中的BUG，可以在新版本中修复</dd>
+                    <dd class="indent2">定时器缓慢的问题（切换页面时）</dd>
+                    <dd class="indent2">例子  :   循环轮播图</dd>
+				</dl>
+                 <dl>
+					<dt>扩展JQ的运动形式</dt>
+                    <dd class="indent1">默认两种</dd>
+                    <dd class="indent2">swing   linear</dd>
+                    <dd class="indent2">通过extend进行扩展</dd>
+				</dl>
+         </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>JS高级专题之十：jQuery高级开发</h2>
+                <dl>
+					<dt>基础方法扩充</dt>
+                    <dd class="indent1">get():下标和length属性</dd>
+                    <dd class="indent1">outerWidth(): 针对隐藏元素和参数true</dd>
+                    <dd class="indent1">text():合体的特例</dd>
+                    <dd class="indent1">remove():detach()</dd>
+                    <dd class="indent1">$():$(document).ready()</dd>
+				</dl>
+                
+                <dl>
+					<dt>$()下的常用方法1</dt>
+                    <dd class="indent1">parents()&nbsp;&nbsp;closest()&nbsp;&nbsp;siblings()&nbsp;&nbsp;nextAll()&nbsp;&nbsp;prevAll()&nbsp;&nbsp;parentsUntil()</dd>
+                    <dd class="indent1">nextUntil()&nbsp;&nbsp;prevUntil()&nbsp;&nbsp;clone()&nbsp;&nbsp;end()&nbsp;&nbsp;wrap()&nbsp;&nbsp;wrapAll()</dd>
+                    <dd class="indent1">wrapInner()&nbsp;&nbsp;unwrap()&nbsp;&nbsp;add()&nbsp;&nbsp;andSelf()&nbsp;&nbsp;serialize()&nbsp;&nbsp;serializeArray()</dd>
+				</dl>
+                
+                <dl>
+					<dt> $()下的常用方法2</dt>
+                    <dd class="indent1">animate()&nbsp;&nbsp;stop()&nbsp;&nbsp;delay()&nbsp;&nbsp;focusin()&nbsp;&nbsp;focusout()&nbsp;&nbsp;mouseenter()&nbsp;&nbsp;mouseleave()&nbsp;&nbsp;delegate()&nbsp;&nbsp;undelegate()</dd>
+                    <dd class="indent1">delegateTarget&nbsp;&nbsp;trigger()&nbsp;&nbsp;ev.data&nbsp;&nbsp;ev.target&nbsp;&nbsp;ev.type</dd>
+				</dl>
+                
+                <dl>
+					<dt>$下的常用方法1</dt>
+                    <dd class="indent1">type()&nbsp;&nbsp;trim()&nbsp;&nbsp;each()&nbsp;&nbsp;inArray()&nbsp;&nbsp;contains():只针对原生对象</dd>
+                    <dd class="indent1">proxy()&nbsp;&nbsp;noConflict()&nbsp;&nbsp;extend()&nbsp;&nbsp;parseJSON()&nbsp;&nbsp;param()&nbsp;&nbsp;makeArray()&nbsp;&nbsp;fx.off</dd>
+				</dl>
+                
+                <dl>
+					<dt>$下的常用方法2</dt>
+                    <dd class="indent1">ajax():json形式的配置参数&nbsp;&nbsp;&nbsp;&nbsp;url&nbsp;&nbsp;success&nbsp;&nbsp;error&nbsp;&nbsp;contentType&nbsp;&nbsp;data&nbsp;&nbsp;type&nbsp;&nbsp;dataType&nbsp;&nbsp;cache&nbsp;&nbsp;timeout</dd>
+                    <dd class="indent1">抽象出来的方法&nbsp;&nbsp;get()&nbsp;&nbsp;post()&nbsp;&nbsp;getJSON()&nbsp;&nbsp;支持jsonp的形式:指定?callback=?</dd>
+				</dl>
+                
+                <dl>
+					<dt>插件</dt>
+                    <dd class="indent1">$</dd>
+                    <dd class="indent2">$.extend</dd>
+                    <dd class="indent1">$.fn</dd>
+                    <dd class="indent2">$.fn.extend</dd>
+				</dl>
+                
+                <dl>
+					<dt>继续深入的话，我们还应该掌握哪些？</dt>
+                    <dd class="indent1">$.Callbacks():回调对象</dd>
+                    <dd class="indent1">deferred():延迟对象</dd>
+                    <dd class="indent1">$.hodeReady():持有和释放ready</dd>
+                    <dd class="indent1">$.sub():新的JQ副本</dd>
+                    <dd class="indent1">$.dequeue():执行队列</dd>
+                    <dd class="indent1">$.support:功能检测</dd>
+				</dl>
+            </div>
+        </li>
+        
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>JS高级专题之十一：AJAX跨域问题解决方案之-JSONP</h2>
+                <dl>
+					<dt>跨域请求</dt>
+					<dt>跨域的问题和常用解决方式</dt>
+					<dt>JSONP 的概念</dt>
+					<dt>JSONP 的原理</dt>
+					<dt>JSONP 的实际应用</dt>
+                    <dd class="indent1">百度/淘宝下拉提示</dd>
+                    <dd class="indent1">豆瓣应用</dd>
+                    <dd class="indent2">接口分析</dd>
+                    <dd class="indent2">书籍（或者电影）搜索</dd>
+                    <dd class="indent2">搜索数据（书籍）的展现</dd>
+                    <dd class="indent2">获取特定数据（书籍）的详细信息</dd>
+                    <dd class="indent1">获取特定数据（书籍）的评论信息</dd>
+				</dl>
+            </div>
+        </li>
+        
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2 class="Standard">妙味课堂 - JS 结课标准：JavaScript 课程实战项目开发辅导</h2>
+                <dl>
+					<dt class="indent1">1、考验程序逻辑、算法、代码组织能力，完成一款至少3关以上的<a href="#" target="_blank">JS版游戏</a></dt>
+                </dl>
+                <dl>
+                	<dt class="indent1">2、考验AJAX，独立完成一个<a href="http://huaban.com/" target="_blank">JS瀑布流布局</a>项目、或<a href="http://weibo.com/" target="_blank">新浪微博</a>前端功能实现</dt>
+                </dl>
+                <dl>
+                	<dt class="indent1">3、考验前端开发综合实例，独立完成一款RIA-桌面级项目，如：<a href="http://web2.qq.com/" target="_blank">Web-QQ</a></dt>
+                </dl>
+            </div>
+        </li>
+
+        <li>
+        	<em></em>
+            <div class="CourseContent">
+            	<h2 class="note">注意：学完以上课程以后，可继续学习《HTML5+CSS3》课程</h2>
+                <dl>
+                	<dt>说明：</dt>
+                </dl>
+                <dl>
+                	<dt>学完以上 JS 课程以后，妙味课堂再赠送全套《HTML5+CSS3》课程视频</dt>
+                </dl>
+            </div>
+        </li>
+        
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第一章：CSS3课程入门</h2>
+                <dl>
+					<dt>前言内容介绍：</dt>
+                    <dd class="indent1">css3主要内容在各个浏览器的兼容情况</dd>
+				</dl>
+                
+                <dl>
+					<dt>浏览器内核前缀:</dt>
+                    <dd class="indent1">Transition简介</dd>
+                    <dd class="indent1">各浏览器下的兼容性写法</dd>
+                    <dd class="indent2">老版Chrome&nbsp;&nbsp;-webkit-xxx</dd>
+                    <dd class="indent2">FF&nbsp;&nbsp;-moz-xxx </dd>
+                    <dd class="indent2">IE9&nbsp;&nbsp;-ms-xxx</dd>
+                    <dd class="indent2">opera&nbsp;&nbsp;-o-xxx</dd>
+                    <dd class="indent2">标准、高版本Chrome&nbsp;xxx</dd>
+				</dl>
+                
+                <dl>
+					<dt>JS兼容型写法</dt>
+                    <dd class="indent1">大写：Webkit Transition =…</dd>
+                    <dd class="indent1">全都加一遍：Webkit…、Moz…、O…、ms…、…</dd>
+				</dl>
+                
+                <dl>
+					<dt>CSS3 选择器 -- 属性选择器</dt>
+                    <dd class="indent1">E[attr]只使用属性名，但没有确定任何属性值</dd>
+                    <dd class="indent1">E[attr="value"]指定属性名，并指定了该属性的属性值</dd>
+                    <dd class="indent1">E[attr~="value"]指定属性名，并且具有属性值，此属性值是一个词列表，并且以空格隔开，其中词列表中包含了一个value词，而且等号前面的"〜"不能不写</dd>
+                    <dd class="indent1">E[attr^="value"]指定了属性名，并且有属性值，属性值是以value开头的</dd>
+                    <dd class="indent1">E[attr$="value"]指定了属性名，并且有属性值，而且属性值是以value结束的</dd>
+                    <dd class="indent1">E[attr*="value"]指定了属性名，并且有属性值，而且属值中包含了value</dd>
+                    <dd class="indent1">E[attr|="value"]指定了属性名，并且属性值是value或者以"value-"开头的值（比如说zh-cn）</dd>
+                    <dd class="indent1">实例：百度文库;</dd>
+                    <dd class="indent1">备注：IE7及以上支持; </dd>
+				</dl>
+                <dl>
+					<dt>CSS3 选择器 -- 结构性伪类</dt>
+                    <dd class="indent1">E:nth-child(n)  表示E父元素中的第n个字节点</dd>
+                    <dd class="indent2">p:nth-child(odd){background:red}/*匹配奇数行*/</dd>
+                    <dd class="indent2">p:nth-child(even){background:red}/*匹配偶数行*/</dd>
+                    <dd class="indent2">p:nth-child(2n){background:red}</dd>
+                    <dd class="indent1">E:nth-last-child(n) 表示E父元素中的第n个字节点，从后向前计算</dd>
+                    <dd class="indent1">E:nth-of-type(n)  表示E父元素中的第n个字节点，且类型为E</dd>
+                    <dd class="indent1">E:nth-last-of-type(n)表示E父元素中的第n个字节点，且类型为E,从后向前计算</dd>
+                    <dd class="indent1">E:empty 表示E元素中没有子节点。注意：子节点包含文本节点</dd>
+                    <dd class="indent1">E:first-child 表示E元素中的第一个子节点</dd>
+                    <dd class="indent1">E:last-child 表示E元素中的最后一个子节点</dd>
+                    <dd class="indent1">E:first-of-type 表示E父元素中的第一个子节点且节点类型是E的</dd>
+                    <dd class="indent1">E:last-of-type 表示E父元素中的最后一个子节点且节点类型是E的</dd>
+                    <dd class="indent1">E:only-child表示E元素中只有一个子节点。注意：子节点不包含文本节点</dd>
+                    <dd class="indent1">E:only-of-type 表示E的父元素中只有一个子节点，且这个唯一的子节点的类型必须是E。注意：子节点不包含文本节点</dd>
+                    <dd class="indent1">实例：新浪头部导航</dd>
+				</dl>
+                <dl>
+					<dt>CSS3 选择器 -- 伪类</dt>
+                    <dd class="indent1">E:target 表示当前的URL片段的元素类型，这个元素必须是E</dd>
+                    <dd class="indent1">E:disabled 表示不可点击的表单控件</dd>
+                    <dd class="indent1">E:enabled 表示可点击的表单控件</dd>
+                    <dd class="indent1">E:checked 表示已选中的checkbox或radio</dd>
+                    <dd class="indent1">E:first-line 表示E元素中的第一行</dd>
+                    <dd class="indent1">E:first-letter 表示E元素中的第一个字符</dd>
+                    <dd class="indent1">E::selection表示E元素在用户选中文字时</dd>
+                    <dd class="indent1">E::before 生成内容在E元素前</dd>
+                    <dd class="indent1">E::after 生成内容在E元素后</dd>
+                    <dd class="indent1">E:not(s) 表示E元素不被匹配</dd>
+                    <dd class="indent1">E~F表示E元素毗邻的F元素</dd>
+                    <dd class="indent1">Content 属性</dd>
+				</dl>
+                
+                <dl>
+					<dt>新增颜色模式</dt>
+                    <dd class="indent1">rgba</dd>
+                    <dd class="indent2">实例: 背景透明，文字不透明</dd>
+                    <dd class="indent2">问题：注意边框颜色透明有问题</dd>
+                    <dd class="indent1">Hsl</dd>
+                    <dd class="indent2">H	Hue			色调</dd>
+                    <dd class="indent2">S	saturation	饱和度</dd>
+                    <dd class="indent2">L	Lightness	亮度</dd>
+				</dl>
+                
+                <dl>
+					<dt>文字阴影：</dt>
+                    <dd class="indent1">text-shadow：x y blur color, …</dd>
+                    <dt>文字阴影应用：</dt>
+                    <dd class="indent1">常规用法</dd>
+                    <dd class="indent2">text-shadow:2px 2px 4px black</dd>
+                    <dd class="indent1">阴影叠加</dd>
+                    <dd class="indent2">text-shadow:2px 2px 0px red, 2px 2px 4px green;</dd>
+                    <dd class="indent1">先渲染后面的，再渲染前面的</dd>
+                    <dd class="indent1">代码艺术实践：</dd>
+                    <dd class="indent2">光晕：color:white; font-size:100px; text-shadow:0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;</dd>
+                    <dd class="indent2">层叠：color:red; font-size:100px; font-weight:bold; text-shadow:2px 2px 0px white, 4px 4px 0px red;</dd>
+                    <dd class="indent2">火焰：text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e; font-family:Verdana, Geneva, sans-serif; font-size:100px; font-weight:bold; color:white;</dd>
+                    <dt>文字描边：</dt>
+                    <dd class="indent1">-webkit-text-stroke:宽度 颜色</dd>
+				</dl>
+                
+                <dl>
+					<dt>新增文本功能</dt>
+                    <dd class="indent1">Direction  定义文字排列方式(全兼容)</dd>
+                    <dd class="indent1">Rtl 从右向左排列</dd>
+                    <dd class="indent1">Ltr 从右向左排列</dd>
+                    <dd class="indent1">配合unicode-bidi 使用</dd>
+				</dl>
+                
+                <dl>
+					<dt>Text-overflow 定义省略文本的处理方式</dt>
+                    <dd class="indent1">clip  无省略号</dd>
+                    <dd class="indent1">Ellipsis 省略号 (配合overflow:hidden、white-space:nowrap) </dd>
+				</dl>
+                
+                <dl>
+					<dt>自定义文字</dt>
+                    <dd class="indent1">@font-face {</dd>
+                    <dd class="indent2">font-family: 'miaov';</dd>
+                    <dd class="indent2">src: url('111-webfont.eot');</dd>
+                    <dd class="indent2">src: url('111-webfont.eot?#iefix') format('embedded-opentype'),</dd>
+                    <dd class="indent2">url('111-webfont.woff') format('woff'),</dd>
+                    <dd class="indent2">url('111-webfont.ttf') format('truetype'),</dd>
+                    <dd class="indent2">url('111-webfont.svg#untitledregular') format('svg');</dd>
+                    <dd class="indent2">font-weight: normal;</dd>
+                    <dd class="indent2">font-style: normal;</dd>
+                    <dd class="indent1">}</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第二章：盒模型设计、响应式布局</h2>
+                <dl>
+					<dt>弹性盒模型：</dt>
+                    <dd class="indent1">display:box 或 display:inline-box</dd>
+				</dl>
+                
+                 <dl>
+					<dt>Box-orient 定义盒模型的布局方向</dt>
+                    <dd class="indent1">Horizontal	    水平显示</dd>
+                    <dd class="indent1">vertical		垂直方向</dd>
+				</dl>
+                
+                 <dl>
+					<dt>box-direction 元素排列顺序</dt>
+                    <dd class="indent1">Normal		正序</dd>
+                    <dd class="indent1">Reverse		反序</dd>
+				</dl>
+                 <dl>
+					<dt>box-ordinal-group 设置元素的具体位置</dt>
+				</dl>
+                 <dl>
+					<dt>Box-flex 定义盒子的弹性空间</dt>
+                    <dd class="indent1">子元素的尺寸=盒子的尺寸*子元素的box-flex属性值 / 所有子元素的box-flex属性值的和</dd>
+				</dl>
+                 <dl>
+					<dt>box-pack 对盒子富裕的空间进行管理</dt>
+                    <dd class="indent1">Star 所有子元素在盒子左侧显示，富裕空间在右侧</dd>
+                    <dd class="indent1">End 所有子元素在盒子右侧显示，富裕空间在左侧</dd>
+                    <dd class="indent1">Center 所有子元素居中</dd>
+                    <dd class="indent1">Justify	富余空间在子元素之间平均分布</dd>
+				</dl>
+                <dl>
+					<dt>box-align 在垂直方向上对元素的位置进行管理</dt>
+                    <dd class="indent1">Star 所有子元素在据顶</dd>
+                    <dd class="indent1">End 所有子元素在据底</dd>
+                    <dd class="indent1">Center 所有子元素居中</dd>
+				</dl>
+                 <dl>
+					<dt>盒模型阴影</dt>
+                    <dd class="indent1">box-shadow:[inset] x y blur [spread] color</dd>
+				</dl>
+                 <dl>
+					<dt>参数</dt>
+                    <dd class="indent1">inset：投影方式</dd>
+                    <dd class="indent1">inset：内投影</dd>
+                    <dd class="indent1">不给：外投影</dd>
+                    <dd class="indent1">x、y：阴影偏移</dd>
+                    <dd class="indent1">blur：模糊半径</dd>
+                    <dd class="indent1">spread：扩展阴影半径</dd>
+                    <dd class="indent1">color</dd>
+				</dl>
+                
+                <dl>
+					<dt>盒模型新增属性</dt>
+                    <dd class="indent1">box-reflect 倒影</dd>
+                    <dd class="indent2">direction  方向     above|below|left|right;</dd>
+                    <dd class="indent2">距离</dd>
+                    <dd class="indent2">渐变（可选）</dd>
+                    <dd class="indent1">resize 自由缩放</dd>
+                    <dd class="indent2">Both 水平垂直都可以缩放</dd>
+                    <dd class="indent2">Horizontal 只有水平方向可以缩放</dd>
+                    <dd class="indent2">Vertical 只有垂直方向可以缩放</dd>
+                    <dd class="indent2">注：配合overflow:auto、水平方向可以缩放</dd>
+				</dl>
+                
+                <dl>
+					<dt>box-sizing 盒模型解析模式</dt>
+                    <dd class="indent1">Content-box	标准盒模型 width/height=border+padding+content</dd>
+                    <dd class="indent1">Border-box		怪异盒模型 width/height=content</dd>
+				</dl>
+                
+                <dl>
+					<dt>CSS3 分栏布局</dt>
+                    <dd class="indent1">column-width		栏目宽度</dd>
+                    <dd class="indent1">column-count		栏目列数</dd>
+                    <dd class="indent1">column-gap		栏目距离</dd>
+                    <dd class="indent1">column-rule		栏目间隔线</dd>
+                    <dd class="indent1">column-fill			栏目高度是否统一</dd>
+				</dl>
+                
+                <dl>
+					<dt>CSS3 响应式布局</dt>
+                    <dd class="indent1">link rel="stylesheet" media="all and (orientation:portrait)" href="portrait.css"</dd>
+                    <dd class="indent1">link rel="stylesheet" media="all and (orientation:landscape)"href="landscape.css"</dd>
+                    <dd class="indent1">@media screen and (min-width:400px) and (max-width:500px) {.box {margin: 0 auto;}}</dd>
+                    <dd class="indent1">link rel="stylesheet" type="text/css" href="styleA.css"  media="screen and (min-width: 800px)"</dd>
+                    <dd class="indent1">link rel="stylesheet" type="text/css" href="styleB.css" media="screen and (min-width: 600px) and (max-width: 800px)"</dd>
+                    <dd class="indent1">link rel="stylesheet" type="text/css" href="styleC.css"    media="screen and (max-width: 600px)"</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第三章：新的UI方案</h2>
+                <dl>
+					<dt>圆角</dt>
+                    <dd class="indent1">border-radius: 1-4个数字 / 1-4个数字</dd>
+                    <dd class="indent2">前面是水平，后面是垂直</dd>
+                    <dd class="indent2">不给"/"则水平和垂直一样</dd>
+                    <dd class="indent3">border-radius: 10px/5px;</dd>
+                    <dd class="indent1">参数</dd>
+                    <dd class="indent2">各种长度单位都可以：px，%，…</dd>
+                    <dd class="indent2">%有时很方便</dd>
+                    <dd class="indent3">宽高不一致时不太好</dd>
+                    <dd class="indent1">用法</dd>
+                    <dd class="indent2">1个：都一样</dd>
+                    <dd class="indent3">border-radius: 一样</dd>
+                    <dd class="indent2">2个：对角</dd>
+                    <dd class="indent3">border-radius: 左上&右下	右上&左下</dd>
+                    <dd class="indent2">3个：斜对角</dd>
+                    <dd class="indent3">border-radius: 左上	右上&左下	右下</dd>
+                    <dd class="indent2">4个：全部，顺时针</dd>
+                    <dd class="indent3">border-radius: 左上	右上	右下	左下</dd>
+				</dl>
+                
+                <dl>
+					<dt>边框</dt>
+                    <dd class="indent1">边框图片 border-image</dd>
+                    <dd class="indent2">border-image-sourceg 引入图片</dd>
+                    <dd class="indent2">border-image-slice 切割图片</dd>
+                    <dd class="indent2">border-image-width 边框宽度</dd>
+                    <dd class="indent2">border-image-repeat 图片的排列方式</dd>
+                    <dd class="indent2">round 平铺,repeat 重复,stretch拉伸 </dd>
+                    <dd class="indent1">边框颜色 border-colors</dd>
+				</dl>
+                
+                <dl>
+					<dt>线性渐变</dt>
+                    <dd class="indent1">线性渐变格式</dd>
+                    <dd class="indent2">linear-gradient([<起点> || <角度>,]? <点>, <点>…)</dd>
+                    <dd class="indent2">只能用在背景上</dd>
+                    <dd class="indent2">IE：filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#ff0000',GradientType='1');</dd>
+                    <dd class="indent1">参数</dd>
+                    <dd class="indent2">起点：从什么方向开始渐变		默认：top</dd>
+                    <dd class="indent2">left、top、left top</dd>
+                    <dd class="indent2">角度：从什么角度开始渐变</dd>
+                    <dd class="indent2">xxx deg的形式</dd>
+                    <dd class="indent2">点：渐变点的颜色和位置</dd>
+                    <dd class="indent2">black 50%，位置可选</dd>
+				</dl>
+                
+                <dl>
+					<dt>线性渐变实例（1）</dt>
+                    <dd class="indent1">最简单</dd>
+                    <dd class="indent2">red, green</dd>
+                    <dd class="indent2">从上到下</dd>
+                    <dd class="indent1">起点位置</dd>
+                    <dd class="indent2">left top, red, green</dd>
+                    <dd class="indent2">30deg, red, green</dd>
+                    <dd class="indent2">逆时针</dd>
+                    <dd class="indent1">repeating-linear-gradient</dd>
+				</dl>
+                
+                <dl>
+					<dt>线性渐变实例(2)</dt>
+                    <dd class="indent1">加入点的位置</dd>
+                    <dd class="indent2">top, red 40%, green 60%</dd>
+                    <dd class="indent2">top, red 50%, green 50%</dd>
+                    <dd class="indent2">同一个位置两个点——直接跳变</dd>
+                    <dd class="indent2">也可以用px</dd>
+                    <dd class="indent1">配合rgba</dd>
+                    <dd class="indent2">top, rgba(255,255,255,1), rgba(255,255,255,0)</dd>
+                    <dd class="indent1">加入背景图片</dd>
+                    <dd class="indent2">background: -webkit-linear-gradient (top, rgba(255,255,255,1) 30%, rgba(255,255,255,0)), url(a.gif)</dd>
+                    <dd class="indent1">实例：百度音乐图片光影效果</dd>
+				</dl>
+                
+                <dl>
+					<dt>径向渐变</dt>
+                    <dd class="indent1">radial-gradient([<起点>]? [<形状> || <大小>,]? <点>, <点>…);</dd>
+                    <dd class="indent2">起点：可以是关键字（left,top,right,bottom），具体数值或百分比</dd>
+                    <dd class="indent2">形状：ellipse、circle</dd>
+                    <dd class="indent2">大小：具体数值或百分比，也可以是关键字（最近端，最近角，最远端，最远角，包含或覆盖 (closest-side, closest-corner, farthest-side, farthest-corner, contain or cover)）;</dd>
+                    <dd class="indent2">注意firefox目前只支持关键字</dd>
+				</dl>
+                
+                <dl>
+					<dt>背景</dt>
+                    <dd class="indent1">多背景</dd>
+                    <dd class="indent2">逗号分开：background: url(a.jpg) 0 0, url(b.jpg) 0 100%;</dd>
+                    <dd class="indent1">背景尺寸</dd>
+                    <dd class="indent2">background-size:x y</dd>
+                    <dd class="indent3">background-size:100% 100%</dd>
+                    <dd class="indent3">Cover 放大</dd>
+                    <dd class="indent3">Contain 缩小</dd>
+                    <dd class="indent2">background-origin ： border | padding | content </dd>
+                    <dd class="indent3">border-box：从border区域开始显示背景。</dd>
+                    <dd class="indent3">padding-box：从padding区域开始显示背景。</dd>
+                    <dd class="indent3">content-box：从content区域开始显示背景。</dd>
+                    <dd class="indent2">background-clip</dd>
+                    <dd class="indent3">border：从border区域向外裁剪背景。</dd>
+                    <dd class="indent3">padding：从padding区域向外裁剪背景。 </dd>
+                    <dd class="indent3">content：从content区域向外裁剪背景。</dd>
+                    <dd class="indent3">no-clip：从border区域向外裁剪背景。</dd>
+                    <dd class="indent1">实例：iphone开机动画</dd>
+				</dl>
+                
+                <dl>
+					<dt>遮罩</dt>
+                    <dd class="indent1">Mask-image</dd>
+                    <dd class="indent1">Mask-position</dd>
+                    <dd class="indent1">Mask-repeat</dd>
+                    <dd class="indent1">实例：特殊形状的幻灯片效果</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第四章：过渡和2d变换</h2>
+                <dl>
+					<dt>Transition过渡</dt>
+                    <dd class="indent1">transition-property  要运动的样式  （all || [attr] || none）</dd>
+                    <dd class="indent1">transition-duration 运动时间</dd>
+                    <dd class="indent1">transition-delay 延迟时间</dd>
+                    <dd class="indent1">transition-timing-function 运动形式 </dd>
+                    <dd class="indent2">ease：（逐渐变慢）默认值</dd>
+                    <dd class="indent2">linear：（匀速）</dd>
+                    <dd class="indent2">ease-in：(加速)</dd>
+                    <dd class="indent2">ease-out：（减速）</dd>
+                    <dd class="indent2">ease-in-out：（先加速后减速）</dd>
+                    <dd class="indent2">cubic-bezier 贝塞尔曲线（ x1, y1, x2, y2 ） http://matthewlein.com/ceaser/</dd>
+                    <dd class="indent1">实例：幻灯片效果</dd>
+				</dl>
+                
+                <dl>
+					<dt>过渡完成事件</dt>
+                    <dd class="indent1">Webkit内核： obj.addEventListener('webkitTransitionEnd',function(){},false);</dd>
+                    <dd class="indent1">firefox: obj.addEventListener('transitionend',function(){},false);</dd>
+                    <dd class="indent1">实例2：360浏览器 ipad 版导航</dd>
+				</dl>
+                
+                <dl>
+					<dt>2D变换</dt>
+                    <dd class="indent1">transform</dd>
+                    <dd class="indent2">rotate()  旋转函数 取值度数</dd>
+                    <dd class="indent3">deg  度数</dd>
+                    <dd class="indent3">Transform-origin 旋转的基点</dd>
+                    <dd class="indent2">skew() 倾斜函数 取值度数 </dd>
+                    <dd class="indent3">skewX()</dd>
+                    <dd class="indent3">skewY()</dd>
+                    <dd class="indent2">scale() 缩放函数 取值 正数、负数和小数</dd>
+                    <dd class="indent3">scaleX()</dd>
+                    <dd class="indent3">scaleY()</dd>
+                    <dd class="indent2">translate() 位移函数</dd>
+                    <dd class="indent3">translateX()</dd>
+                    <dd class="indent3">translateY()</dd>
+                    <dd class="indent1">实例1：钟表效果</dd>
+                    <dd class="indent1">实例2：怪异的导航</dd>
+				</dl>
+                
+                <dl>
+					<dt>Transform 执行顺序问题 — 后写先执行</dt>
+				</dl>
+                
+                <dl>
+					<dt>matrix(a,b,c,d,e,f) 矩阵函数</dt>
+                    <dd class="indent1">通过矩阵实现缩放</dd>
+                    <dd class="indent2">x轴缩放 a=x*a    c=x*c     e=x*e;</dd>
+                    <dd class="indent2">y轴缩放 b=y*b   d=y*d     f=y*f;</dd>
+                    <dd class="indent1">通过矩阵实现位移</dd>
+                    <dd class="indent2">x轴位移: e=e+x</dd>
+                    <dd class="indent2">y轴位移: f=f+y</dd>
+                    <dd class="indent1">通过矩阵实现倾斜</dd>
+                    <dd class="indent2">x轴倾斜: c=Math.tan(xDeg/180*Math.PI)</dd>
+                    <dd class="indent2">y轴倾斜: b=Math.tan(yDeg/180*Math.PI)</dd>
+                    <dd class="indent1">通过矩阵实现旋转</dd>
+                    <dd class="indent2">a=Math.cos(deg/180*Math.PI); </dd>
+                    <dd class="indent2">b=Math.sin(deg/180*Math.PI);</dd>
+                    <dd class="indent2">c=-Math.sin(deg/180*Math.PI);</dd>
+                    <dd class="indent2">d=Math.cos(deg/180*Math.PI);</dd>
+                    <dt>变换兼容IE9以下IE版本只能通过矩阵来实现</dt>
+                    <dd class="indent1">filter: progid:DXImageTransform.Microsoft.Matrix( M11= 1, M12= 0, M21= 0 , M22=1,SizingMethod='auto expand');</dd>
+                    <dd class="indent1">IE下的矩阵没有E和F两个参数 M11==a; M12==c; M21==b; M22==d</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第五章：3d变换和动画</h2>
+                <dl>
+					<dt>3d变换</dt>
+                    <dd class="indent1">transform-style（preserve-3d） 建立3D空间</dd>
+                    <dd class="indent1">Perspective 景深</dd>
+                    <dd class="indent1">Perspective- origin 景深基点</dd>
+                    <dd class="indent1">backface-visibility 隐藏背面</dd>
+                    <dd class="indent1">Transform 新增函数</dd>
+                    <dd class="indent2">rotateX()</dd>
+                    <dd class="indent2">rotateY()</dd>
+                    <dd class="indent2">rotateZ()</dd>
+                    <dd class="indent2">translateZ()</dd>
+                    <dd class="indent2">scaleZ()</dd>
+                    <dd class="indent1">实例1：3D盒子</dd>
+                    <dd class="indent1">实例2：3D图片切换</dd>
+                    <dd class="indent1">实例3：折纸效果</dd>
+				</dl>
+                
+                <dl>
+					<dt>animation</dt>
+                    <dd class="indent1">关键帧——keyFrames</dd>
+                    <dd class="indent2">类似于flash</dd>
+                    <dd class="indent3">只需指明两个状态，之间的过程由计算机自动计算</dd>
+                    <dd class="indent2">关键帧的时间单位</dd>
+                    <dd class="indent3">数字：0%、25%、100%等</dd>
+                    <dd class="indent3">字符：from(0%)、to(100%)</dd>
+                    <dd class="indent2">格式（1）</dd>
+                    <dd class="indent3">@keyframes 动画名称</dd>
+                    <dd class="indent3">{</dd>
+                    <dd class="indent3">动画状态</dd>
+                    <dd class="indent3">}</dd>
+                    <dd class="indent2">格式（2）</dd>
+                    <dd class="indent3">@keyframes  miaov_test</dd>
+                    <dd class="indent3">{</dd>
+                    <dd class="indent3">from { background:red; }</dd>
+                    <dd class="indent3">to { background:green; }</dd>
+                    <dd class="indent3">}</dd>
+                    <dd class="indent3">可以只有to</dd>
+				</dl>
+                
+                <dl>
+					<dt>animate——调用动画</dt>
+                    <dd class="indent1">调用的标签(#div1、xxx:hover之类的)</dd>
+                    <dd class="indent2">必要属性</dd>
+                    <dd class="indent3">animation-name		动画名称（关键帧名称）</dd>
+                    <dd class="indent3">animation-duration		动画持续时间</dd>
+                    <dd class="indent2">例如：</dd>
+                    <dd class="indent3">-webkit-animation-name: 'miaov';</dd>
+                    <dd class="indent3">-webkit-animation-duration: 4s;</dd>
+                    <dd class="indent2">实例：进度条</dd>
+                    <dd class="indent3">animation-play-state 播放状态（ running 播放 和paused 暂停 ）</dd>
+				</dl>
+                
+                <dl>
+					<dt>animate——可选属性</dt>
+                    <dd class="indent1">animation-timing-function	动画运动形式</dd>
+                    <dd class="indent2">linear 匀速。</dd>
+                    <dd class="indent2">ease 缓冲。</dd>
+                    <dd class="indent2">ease-in	由慢到快</dd>
+                    <dd class="indent2">ease-out	由快到慢</dd>
+                    <dd class="indent2">ease-in-out	由慢到快再到慢。</dd>
+                    <dd class="indent2">cubic-bezier(number, number, number, number)：特定的贝塞尔曲线类型，4个数值需在[0, 1]区间内</dd>
+                    <dd class="indent1">animation-delay 动画延迟</dd>
+                    <dd class="indent2">只是第一次</dd>
+                    <dd class="indent1">animation-iteration-count 重复次数</dd>
+                    <dd class="indent2">infinite为无限次</dd>
+                    <dd class="indent1">animation-direction 播放前重置</dd>
+                    <dd class="indent2">动画是否重置后再开始播放</dd>
+                    <dd class="indent2">alternate 动画直接从上一次停止的位置开始执行</dd>
+                    <dd class="indent2">normal 动画第二次直接跳到0%的状态开始执行</dd>
+                </dl>
+                <dl>
+					<dt>animate——和JS结合</dt>
+                    <dd class="indent1">通过class</dd>
+                    <dd class="indent2">在class里加入animation的各种属性</dd>
+                    <dd class="indent2">直接给元素加-webkit-animation-xxx样式</dd>
+                    <dd class="indent1">animation的问题</dd>
+                    <dd class="indent2">写起来麻烦</dd>
+                    <dd class="indent2">没法动态改变目标点位置</dd>
+                    <dd class="indent1">obj.addEventListener('webkitAnimationEnd', function (){}, false);</dd>
+                    <dd class="indent1">实例1：无缝滚动</dd>
+                    <dd class="indent1">实例2：3D图片轮换</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第一章：初识 HTML5</h2>
+                <dl>
+					<dt>HTML5页面结构、宽松的语法规范</dt>
+                    <dd class="indent1">&#8249;!doctype html&#8250;</dd>
+                    <dd class="indent1">&#8249;meta charset="utf-8"/&#8250;</dd>
+                    <dd class="indent1">&#8249;title&#8250;miaov—html5&#8249;/title&#8250;</dd>
+                    <dd class="indent1">&#8249;h1&#8250;妙味课堂html5语义化标签&#8249;/h1&#8250;</dd>
+				</dl>
+                
+                <dl>
+					<dt>新的结构化元素</dt>
+                    <dd class="indent1">语义化标签的由来</dd>
+                    <dd class="indent1">http://devfiles.myopera.com/articles/572/idlist-url.htm</dd>
+				</dl>
+                
+                <dl>
+					<dt>语义化标签</dt>
+                    <dd class="indent1">header：页眉-主要用于页面的头部的信息介绍，也可用于板块头部</dd>
+                    <dd class="indent1">hgroup：页面上的一个标题组合</dd>
+                    <dd class="indent1">nav：导航 （包含链接的的一个列表）列举nav实际应用框架</dd>
+                    <dd class="indent1">footer：页脚  页面的底部 或者 版块底部</dd>
+                    <dd class="indent1">section：页面上的版块-用于划分页面上的不同区域,或者划分文章里不同的节</dd>
+                    <dd class="indent1">article：用来在页面中表示一套结构完整且独立的内容部分</dd>
+                    <dd class="indent1">aside：元素标签可以包含与当前页面或主要内容相关的引用、侧边栏、广告、nav元素组，以及其他类似的有别与主要内容的部分</dd>
+                    <dd class="indent1">figure：用于对元素进行组合。一般用于图片或视频</dd>
+                    <dd class="indent1">figcaption：figure的子元素 用于对figure的内容 进行说明</dd>
+                    <dd class="indent1">figure、figcaption</dd>
+                    <dd class="indent1">time：用来表现时间或日期</dd>
+                    <dd class="indent1">datalist：选项列表。与 input 元素配合使用，来定义 input 可能的值</dd>
+                    <dd class="indent1">details：用于描述文档或文档某个部分的细节</dd>
+                    <dd class="indent1">summary：details 元素的标题</dd>
+                    <dd class="indent1">dialog：定义一段对话</dd>
+                    <dd class="indent1">address：定义文章 或页面作者的详细联系信息</dd>
+                    <dd class="indent1">mark：需要标记的词或句子</dd>
+                    <dd class="indent1">keygen：给表单添加一个公钥</dd>
+                    <dd class="indent1">progress：定义进度条</dd>
+				</dl>
+                <dl>
+					<dt>IE下的兼容</dt>
+                    <dd class="indent1">标签兼容性解决方案</dd>
+                    <dd class="indent2">&#8249;script&#8250;</dd>
+                    <dd class="indent3">document.createElement("header");</dd>
+                    <dd class="indent3">document.createElement("nav");</dd>
+                    <dd class="indent3">document.createElement("footer");</dd>
+                    <dd class="indent3">……</dd>
+                    <dd class="indent2">&#8249;/script&#8250;</dd>
+                    <dd class="indent1">样式兼容性解决方案</dd>
+                    <dd class="indent2">HTML5语义化标签用js创建后全新设置默认样式</dd>
+				</dl>
+                
+                <dl>
+					<dt>Forms 新的输入型控件</dt>
+                    <dd class="indent1">email：电子邮箱文本框，跟普通的没什么区别</dd>
+                    <dd class="indent2">当输入不是邮箱的时候，验证通不过</dd>
+                    <dd class="indent2">移动端的键盘会有变化</dd>
+                    <dd class="indent1">tel：电话号码</dd>
+                    <dd class="indent1">url：网页的URL</dd>
+                    <dd class="indent1">search：搜索引擎</dd>
+                    <dd class="indent1">chrome下输入文字后，会多出一个关闭的X</dd>
+                    <dd class="indent1">range：特定范围内的数值选择器</dd>
+                    <dd class="indent1">min、max、step( 步数 )</dd>
+                    <dd class="indent1">实例 :  用JS来显示当前数值</dd>
+                    <dd class="indent1">number：只能包含数字的输入框</dd>
+                    <dd class="indent1">color：颜色选择器</dd>
+                    <dd class="indent1">datetime：显示完整日期</dd>
+                    <dd class="indent1">datetime-local：显示完整日期，不含时区</dd>
+                    <dd class="indent1">time：显示时间，不含时区</dd>
+                    <dd class="indent1">date：显示日期</dd>
+                    <dd class="indent1">week：显示周</dd>
+                    <dd class="indent1">month：显示月</dd>
+				</dl>
+                
+                <dl>
+					<dt>新的表单特性和函数</dt>
+                    <dd class="indent1">placeholder  :  输入框提示信息</dd>
+                    <dd class="indent2">实例 :  微博的密码框提示</dd>
+                    <dd class="indent1">autocomplete  :  是否保存用户输入值</dd>
+                    <dd class="indent2">默认为on，关闭提示选择off</dd>
+                    <dd class="indent1">autofocus  :  指定表单获取输入焦点</dd>
+                    <dd class="indent1">list和datalist  :  为输入框构造一个选择列表</dd>
+                    <dd class="indent2">list值为datalist标签的id</dd>
+                    <dd class="indent1">required  :  此项必填，不能为空</dd>
+                    <dd class="indent1">Pattern : 正则验证  pattern="\d{1,5}"</dd>
+                    <dd class="indent1">Formaction 在submit里定义提交地址</dd>
+				</dl>
+                
+                <dl>
+					<dt>表单验证</dt>
+                    <dd class="indent1">validity对象</dd>
+                    <dd class="indent2">oText.addEventListener("invalid",fn1,false);</dd>
+                    <dd class="indent2">ev.preventDefault()</dd>
+                    <dd class="indent3">valueMissing  :  输入值为空时</dd>
+                    <dd class="indent3">typeMismatch :  控件值与预期类型不匹配</dd>
+                    <dd class="indent3">patternMismatch  :  输入值不满足pattern正</dd>
+                    <dd class="indent3">tooLong  :  超过maxLength最大限制</dd>
+                    <dd class="indent3">rangeUnderflow : 验证的range最小值</dd>
+                    <dd class="indent3">rangeOverflow：验证的range最大值</dd>
+                    <dd class="indent3">stepMismatch: 验证range 的当前值 是否符合min、max及step的规则</dd>
+                    <dd class="indent3">customError 不符合自定义验证</dd>
+                    <dd class="indent3">setCustomValidity(); 自定义验证</dd>
+                    <dd class="indent1">Invalid事件  :  验证反馈</dd>
+                    <dd class="indent1">input.addEventListener('invalid',fn,false)</dd>
+                    <dd class="indent2">阻止默认验证：ev.preventDefault()</dd>
+                    <dd class="indent1">formnovalidate属性  :  关闭验证</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第二章：HTML5的新特性</h2>
+                <dl>
+					<dt>课程内容介绍:</dt>
+                    <dd class="indent1">HTML5新特性的浏览器支持情况</dd>
+                    <dd class="indent2">http://www.caniuse.com/#index</dd>
+                    <dd class="indent1">新的选择器——querySelector querySelectorAll</dd>
+                    <dd class="indent1">新的选择器——getElementsByClassName</dd>
+                    <dd class="indent1">获取class列表属性——classList length add remove toggle</dd>
+                    <dd class="indent1">Json的新方法——parse():把字符串转成json</dd>
+                    <dd class="indent1">Json的新方法—stringify():把json转化成字符串</dd>
+                    <dd class="indent1">Json的新方法——新方法与eval的区别及应用</dd>
+                    <dd class="indent1">Json的新方法应用——深度克隆新对象</dd>
+                    <dd class="indent1">Json的新方法兼容性——json2.js</dd>
+                    <dd class="indent1">data自定义数据 dataset Data数据在jquery mobile中有着重要作用</dd>
+                    <dd class="indent1">Html5的defer和async</dd>
+                    <dd class="indent1">defer:延迟加载，会按顺序执行，在onload执行前被触发</dd>
+                    <dd class="indent1">async:异步加载，加载完就触发，有顺序问题</dd>
+                    <dd class="indent1">Labjs库介绍</dd>
+                    <dd class="indent1">历史管理——onhashchange：改变hash值来管理</dd>
+                    <dd class="indent1">历史管理——pushState : 三个参数：数据 标题(都没实现)地址(可选)</dd>
+                    <dd class="indent1">历史管理——popstate事件:读取数据 event.state</dd>
+                    <dd class="indent1">拖放事件——draggable：设置为true，元素就可以拖拽了</dd>
+                    <dd class="indent1">拖放事件——拖拽元素事件 dragstart drag dragend</dd>
+                    <dd class="indent1">拖放事件——事件的执行顺序 drop不触发的时候如何执行</dd>
+                    <dd class="indent1">dragstart > drag > dragenter > dragover > dragleave > dragend</dd>
+                    <dd class="indent1">拖放事件——事件的执行顺序 drop触发的时候如何执行</dd>
+                    <dd class="indent1">dragstart > drag > dragenter > dragover > drop > dragend</dd>
+                    <dd class="indent1">解决火狐拖放问题：必须设置dataTransfer对象才可以拖拽除图片外的其他标签</dd>
+                    <dd class="indent1">dataTransfer对象——setData() :设置数据 key和value(必须是字符串)</dd>
+                    <dd class="indent1">dataTransfer对象——getData() :获取数据，根据key值，获取对应的value</dd>
+                    <dd class="indent1">dataTransfer对象——effectAllowed:设置光标样式</dd>
+                    <dd class="indent1">dataTransfer对象——dropEffect:获取光标样式</dd>
+                    <dd class="indent1">dataTransfer对象——dropEffect:必须写在dragover中</dd>
+                    <dd class="indent1">dataTransfer对象——setDragImage 三个参数：指定的元素，坐标X，坐标Y</dd>
+                    <dd class="indent1">dataTransfer对象——files 获取外部拖拽的文件，返回一个filesList列表</dd>
+                    <dd class="indent1">FileReader——readAsDataURL参数为要读取的文件对象</dd>
+                    <dd class="indent1">FileReader——当读取文件成功完成的时候触发此事件</dd>
+                    <dd class="indent1">FileReader——实例 拖拽删除列表 拖拽购物车 上传图片预览功能</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第三章：canvas（上）</h2>
+                <dl>
+					<dt>课程内容介绍:</dt>
+                    <dd class="indent1">标签canvas——不支持canvas的浏览器可以看到的内容</dd>
+                    <dd class="indent1">绘制环境——getContext('2d') : 目前支持2d的场景</dd>
+                    <dd class="indent1">绘制方块——fillRect(L,T,W,H) :默认颜色是黑色</dd>
+                    <dd class="indent1">绘制方块—— strokeRect(L,T,W,H):带边框的方块</dd>
+                    <dd class="indent1">设置绘图——fillStyle填充颜色 lineWidth线宽度 strokeStyle边线颜色</dd>
+                    <dd class="indent1">边界绘制——lineJoin:边界连接点样式lineCap:端点样式</dd>
+                    <dd class="indent1">绘制路径——beginPath closePath moveTo lineTo stroke</dd>
+                    <dd class="indent1">绘制路径——fill rect clearRect save restore</dd>
+                    <dd class="indent1">实例——鼠标画线 方块移动</dd>
+                    <dd class="indent1">绘制圆——arc(x, y, 半径, 起始弧度, 结束弧度, 旋转方向)</dd>
+                    <dd class="indent1">实例——用arc去画个钟表</dd>
+                    <dd class="indent1">绘制其他曲线——arcTo(x1,y1,x2,y2,r)第一组坐标、第二组坐标、半径</dd>
+                    <dd class="indent1">quadraticCurveTo(dx,dy,x1,y1)贝塞尔曲线：一组控制点的</dd>
+                    <dd class="indent1">bezierCurveTo(dx1,dy1,dx2,dy2,x1,y1)贝塞尔曲线 ：两组控制点的</dd>
+                    <dd class="indent1">变换——translate rotate scale</dd>
+                    <dd class="indent1">变换实例：旋转加缩放的小方块</dd>
+                    <dd class="indent1">插入图片——等图片加载完，再执行canvas操作drawImage(oImg,x,y,w,h)</dd>
+                    <dd class="indent1">实例——微博的图片旋转效果</dd>
+                    <dd class="indent1">设置背景——createPattern(oImg,平铺方式)</dd>
+                    <dd class="indent1">渐变——createLinearGradient(x1,y1,x2,y2) 线性渐变</dd>
+                    <dd class="indent1">渐变——createRadialGradient(x1,y1,r1,x2,y2,r2)放射性渐变</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第四章：canvas（下）</h2>
+                <dl>
+					<dt>课程内容介绍：</dt>
+                    <dd class="indent1">文本——strokeText(文字,x,y) 文字边框 fillText(文字,x,y) 文字填充</dd>
+                    <dd class="indent1">文本——font 文字大小 : '60px impact'</dd>
+                    <dd class="indent1">文本——textAlign 默认是start 跟left一样的效果 end right center</dd>
+                    <dd class="indent1">文本——textBaseline 文字上下的位置的方式 默认 : alphabetic</dd>
+                    <dd class="indent1">文本——measureText() measureText(str).width : 只有宽度，没有高度</dd>
+                    <dd class="indent1">阴影——shadowOffsetX、shadowOffsetY X轴偏移、Y轴偏移</dd>
+                    <dd class="indent1">阴影——shadowBlur 高斯模糊值 shadowColor 阴影颜</dd>
+                    <dd class="indent1">像素——getImageData(x,y,w,h) 获取图像数据</dd>
+                    <dd class="indent1">像素——putImageData(获取图像,x,y) 设置新的图像数据</dd>
+                    <dd class="indent1">像素——属性 width Height data</dd>
+                    <dd class="indent1">像素——createImageData(w,h)生成新的像素矩阵，即(0,0,0,0)</dd>
+                    <dd class="indent1">实例——像素显字</dd>
+                    <dd class="indent1">像素——获取和设置指定坐标 封装 : getXY、setXY</dd>
+                    <dd class="indent1">像素——图片的像素操作 必须是同源下 实例：反色、倒影、渐变等</dd>
+                    <dd class="indent1">实例——马赛克效果</dd>
+                    <dd class="indent1">合成——globalAlpha  globalCompositeOperation属性</dd>
+                    <dd class="indent1">source-over     destination-over     source-atop</dd>
+                    <dd class="indent1">destination-atop    source-in     destination-in等</dd>
+                    <dd class="indent1">将画布导出为图像——toDataURL</dd>
+                    <dd class="indent1">事件操作——isPointInPath:是否在点击范围内</dd>
+                    <dd class="indent1">jCanvaScript(canvas中的jquery)库:简单使用</dd>
+                    <dd class="indent1">让IE支持canvas jCanvaScript(canvas中的jquery)</dd>
+                    <dd class="indent1">Three.js(canvas中的3D库) Box2dWeb(canvas中的物理引擎库)</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第五章：跨文档消息通信</h2>
+                <dl>
+					<dt>课程内容介绍：</dt>
+                    <dd class="indent1">postMessage对象—— 一参 : 发送的数据，二参 : 发送的域</dd>
+                    <dd class="indent1">交互方式iframe父页面 : contentWindow、子页面 : window.top</dd>
+                    <dd class="indent1">交互方式窗口页 : 父页面 : window.open、子页面 : window.opener</dd>
+                    <dd class="indent1">接收事件：message ev.origin : 发送数据来源的域 ev.data : 发送的数据</dd>
+                    <dd class="indent1">XMLHttpRequest 改进版 请求页面与数据页面必须属性不同的域</dd>
+                    <dd class="indent1">服务器要设置响应头信息 Origin值展现 新的事件 : onload等</dd>
+                    <dd class="indent1">进度事件 upload. onprogress : 上传onprogress : 下载</dd>
+                    <dd class="indent1">实例:仿QQ邮箱上传文件，带进度条</dd>
+                    <dd class="indent1">websocket——互联网协议 TCP/IP协议 HTTP协议 实时web交互</dd>
+                    <dd class="indent1">websocket——基于TCP的双向的、全双工的数据连接 建立socket应用</dd>
+                    <dd class="indent1">node.JS——环境搭建和基础语法</dd>
+                    <dd class="indent1">node.JS一个简单的web服务器——创建HTTP服务 监听客户端HTTP请求连接</dd>
+                    <dd class="indent1">node.JS——处理请求响应，向客户端输出返回内容,基于http</dd>
+                    <dd class="indent1">Websocket连接——客户端发送Websocket连接请求</dd>
+                    <dd class="indent1">Websocket连接——服务器监听来自Websocket连接请求</dd>
+                    <dd class="indent1">实例:基于Websocket的聊天室</dd>
+                    <dd class="indent1">JS跨域总结方案</dd>
+				</dl>
+                
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第六章：地理信息 本地存储 离线存储</h2>
+                <dl>
+					<dt>课程内容介绍：</dt>
+                    <dd class="indent1">地理位置——IP地址 GPS全球定位系统 Wi-Fi无线网络</dd>
+                    <dd class="indent1">地理位置对象——navigator.geolocation</dd>
+                    <dd class="indent1">单次定位请求：getCurrentPosition(请求成功，请求失败，数据收集方式)</dd>
+                    <dd class="indent1">请求成功函数——经度 : coords.longitude 纬度 : coords.latitude</dd>
+                    <dd class="indent1">准确度 : coords.accuracy 海拔 : coords.altitude</dd>
+                    <dd class="indent1">海拔准确度 : coords.altitudeAcuracy 行进方向 : coords.heading</dd>
+                    <dd class="indent1">地面速度 : coords.speed</dd>
+                    <dd class="indent1">navigator.geolocation 时间戳 : new Date(position.timestamp)</dd>
+                    <dd class="indent1">国家 : address.country 省 : address.region 市 : address.city</dd>
+                    <dd class="indent1">navigator.geolocation 请求失败函数 失败编号 ：code</dd>
+                    <dd class="indent1">数据收集 : json的形式 enableHighAcuracy : 更精确的查找，默认false</dd>
+                    <dd class="indent1">timeout : 获取位置允许最长时间，默认infinity</dd>
+                    <dd class="indent1">maximumAge : 位置可以缓存的最大时间，默认0</dd>
+                    <dd class="indent1">navigator.geolocation 多次定位请求</dd>
+                    <dd class="indent1">关闭更新请求 : clearWatch(像clearInterval)</dd>
+                    <dd class="indent1">百度地图API实例</dd>
+                    <dd class="indent1">本地存储——Cookie Cookie的特点</dd>
+                    <dd class="indent1">本地存储——Storage sessionStorage localStorage</dd>
+                    <dd class="indent1">本地存储——Storage的特点存储量限制(5M)客户端完成，不会请求服务器处理</dd>
+                    <dd class="indent1">本地存储——sessionStorage数据是不共享、 localStorage共享</dd>
+                    <dd class="indent1">Storage API——setItem() getItem() removeItem() clear()</dd>
+                    <dd class="indent1">Storage API——存储事件 Key newValue oldValue storageArea</dd>
+                    <dd class="indent1">实例——保存注册信息 同步购物车</dd>
+                    <dd class="indent1">applicationCache 离线应用 离线存储 搭建离线应用程序 检测离线状态</dd>
+                    <dd class="indent1">服务器设置头信息 : AddType text/cache-manifest .manifest</dd>
+                    <dd class="indent1">navigator.onLine : 当前是否在线 online\offline:在线离线的两个事件</dd>
+                    <dd class="indent1">applicationCache API——status(0,1,2,3,4,5): 缓存状态</dd>
+                    <dd class="indent1">事件——oncached onchecking ondownloading onupdateready</dd>
+                    <dd class="indent1">事件——onobsolete onerror onnoupdate onprogress</dd>
+                    <dd class="indent1">综合实例——行走日记APP  离线  地图  本地存储</dd>
+				</dl>
+                
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第七章：音频与视频 webWorkers 移动端HTML5</h2>
+                <dl>
+					<dt>课程内容介绍：</dt>
+                    <dd class="indent1">音频和视频——标签audio，video，source</dd>
+                    <dd class="indent1">音频和视频——视频容器，容器文件，类似于压缩了一组文件</dd>
+                    <dd class="indent1">编解码器 原始的视频容器非常大，添加需编码，播放需解码</dd>
+                    <dd class="indent1">媒体元素——controls : 显示或隐藏用户控制界面</dd>
+                    <dd class="indent1">媒体元素——autoplay : 媒体是否自动播放</dd>
+                    <dd class="indent1">媒体元素——loop :媒体是否循环播放</dd>
+                    <dd class="indent1">媒体元素——currentTime : 开始到播放现在所用的时间</dd>
+                    <dd class="indent1">媒体元素——duration : 媒体总时间(只读)</dd>
+                    <dd class="indent1">媒体元素——volume : 0.0-1.0的音量相对值</dd>
+                    <dd class="indent1">媒体元素——muted : 是否静音 等。。。</dd>
+                    <dd class="indent1">相关方法——play() pause()  load() </dd>
+                    <dd class="indent1">相关事件——play  pause ended等</dd>
+                    <dd class="indent1">Video额外特性——poster : 视频播放前的预览图片</dd>
+                    <dd class="indent1">Video额外特性——width、height : 设置视频的尺寸</dd>
+                    <dd class="indent1">Video额外特性——videoWidth、 videoHeight : 视频的实际尺寸(只读)</dd>
+                    <dd class="indent1">实例：视频与canvas结合</dd>
+                    <dd class="indent1">实例：自制播放器</dd>
+                    <dd class="indent1">什么是worker——JS的单线程，可以让web应用程序具备后台处理能力。</dd>
+                    <dd class="indent1">Worker API——new Worker 利用postMessage传输数据 importScripts</dd>
+                    <dd class="indent1">Worker运行环境——navgator: appName、appVersion、userAgent</dd>
+                    <dd class="indent1">Worker运行环境——location: 所有属性都是只读的</dd>
+                    <dd class="indent1">Worker运行环境——self: 指向全局 worker 对象</dd>
+                    <dd class="indent1">Worker运行环境——所有的ECMA对象，Object、Array、Date等</dd>
+                    <dd class="indent1">Worker运行环境——XMLHttpRequest构造器</dd>
+                    <dd class="indent1">Worker运行环境——setTimeout和setInterval方法</dd>
+                    <dd class="indent1">Worker运行环境——close()方法，立刻停止worker运行</dd>
+                    <dd class="indent1">实例：利用Worker来提高canvas的性能</dd>
+                    <dd class="indent1">内容编辑——contenteditable="true"</dd>
+                    <dd class="indent1">语言输入——&#8249;input type="text" x-webkit-speech /&#8250</dd>
+                    <dd class="indent1">桌面提醒——window.webkitNotifications</dd>
+                    <dd class="indent1">app是什么——Web App Native App  Hybrid App</dd>
+                    <dd class="indent1">视口——viewport : width=device-width,initial-scale=1</dd>
+                    <dd class="indent1">样式模块——Media Queries适配不同设备</dd>
+                    <dd class="indent1">横向和纵向设置</dd>
+                    <dd class="indent1">移动端事件——touchstart touchmove touchend</dd>
+                    <dd class="indent1">移动端事件——方向事件orientationchange</dd>
+                    <dd class="indent1">移动端事件——多手指事件gesturestart gesturechange</dd>
+				</dl>
+                
+            </div>
+        </li>
+    </ol>
+    <p>妙味咨询QQ：2265389082（小美）  <a href="http://www.miaov.com/" target="_blank">www.miaov.com</a></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,464 @@
+@import "variable";
+@import "border";
+@import "icon";
+@import "tips";
+@import "dialog";
+@import "animate";
+@import "loading";
+@import "actionsheet";
+@media (device-height:480px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone4/4s */
+  body{
+
+  }
+}
+@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
+  body{
+    //background-color: red!important;
+  }
+}
+@mixin px2px($name, $px,$important:null){
+  //  #{$name}: $px * 1px;
+  #{$name}: round($px / 2) * 1px $important;/*no*/
+  [data-dpr="2"] & {
+    #{$name}: $px*1px $important; /*no*/
+  }
+  // for mx3
+  [data-dpr="2.5"] & {
+    #{$name}: round($px * 2.5 / 2) * 1px $important;/*no*/
+  }
+  // for 小米note
+  [data-dpr="2.75"] & {
+    #{$name}: round($px * 2.75 / 2) * 1px $important;/*no*/
+  }
+  [data-dpr="3"] & {
+    #{$name}: round($px / 2 * 3) * 1px $important;/*no*/
+  }
+  // for 三星note4
+  [data-dpr="4"] & {
+    #{$name}: $px * 2px $important;/*no*/
+  }
+}
+html,body{
+  height: 100%;
+  background: $bgColor;
+  line-height:1.8;
+}
+#wrapper{
+  width:750px;
+  margin:0 auto;
+  min-height: 100%;
+  padding-bottom:30px;
+}
+*,a:active,a:hover{outline:0;}
+.my-icon{background-size: 100% 100%!important}
+.my-iconR{margin-right:6px;}
+.my-iconL{margin-left:6px;}
+.tc{
+  text-align: center;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+
+.hide{
+  display: none;
+}
+.ui-nowrap{//一行截断
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.mainColor{
+  color:$mainColor !important;
+}
+.h80{
+  height:80px;
+}
+
+.mb20{
+  margin-bottom:20px;
+}
+.mr20{
+  margin-right:20px;
+}
+/* 内边距 */
+@mixin plr($dis: 20px) {
+  padding-right:$dis;
+  margin-left:$dis;
+}
+@mixin padLR($dis: 20px) {
+  padding-right:$dis;
+  padding-left:$dis;
+}
+//组件
+#header{
+  height:72px;
+  background: $subColor;
+  font-size: 32px;
+  color:$c333;
+  .header-left,.header-right{
+    width: 80px;
+  }
+  padding:0 20px;
+}
+
+.v-line {
+  width: 64px;
+  height: 120px;
+  background: url("../images/v-line.png") no-repeat 20px;
+}
+
+//固定导航
+.wrap_scroll{
+  overflow: hidden;
+  //position: absolute;
+}
+.fixedNav{
+  position: fixed;
+  z-index: 99;
+  width: 750px;
+  top:0;
+}
+.header-nav-fixed{
+  //position: fixed;
+  z-index: 99;
+  width:750px;
+  height: 80px;
+}
+.header-nav{
+  height: 80px;
+  background: #fff;
+  padding:0 20px;
+  .logo-pic{
+    width:50px;
+    height:50px;
+    margin-right:20px;
+    border-radius: 50%;
+    overflow: hidden;
+    img{
+      width:50px;
+      height:50px;
+    }
+  }
+  .logo{
+    height:30px;
+    width:114px;
+    a{display: block}
+    img{
+      height:30px;
+      width:114px;
+    }
+  }
+  .i-back{
+    height:30px;
+    width:50px;
+    a{display: block}
+    img{
+      height:30px;
+      width:16px;
+    }
+  }
+  .nav{
+    width:50px;
+    height:50px;
+    background: url("../images/nav.png") no-repeat center center;
+    background-size: 32px 32px;
+  }
+  .title {
+    text-align: center;
+    font-size:30px;
+    color:$mainColor;
+    a{
+      color:$mainColor;
+    }
+  }
+}
+.footer-nav{
+  height:88px;
+  width:750px;
+  position: fixed;
+  bottom:0;
+  left:50%;
+  margin-left:-375px;
+  .active{color:$mainColor}
+  .fnav{
+    margin-top:5px;
+  }
+  .fnav1{
+    width:26px;
+    height:27px;
+    background: url("../images/fnav1.png");
+    background-size: 100% 100%;
+    &.active{
+      background-image: url("../images/fnav1-active.png");
+      color:$mainColor;
+    }
+  }
+
+
+  .fnav2{
+    width:26px;
+    height:28px;
+    background: url("../images/fnav2.png") no-repeat;
+    background-size: 100% 100%;
+    &.active{
+      background-image: url("../images/fnav2-active.png");
+      color:$mainColor;
+    }
+  }
+
+  .fnav3{
+    width:25px;
+    height:30px;
+    background: url("../images/fnav3.png") no-repeat;
+    background-size: 100% 100%;
+    &.active{
+      background-image: url("../images/fnav3-active.png");
+      color:$mainColor;
+    }
+  }
+
+  .fnav4{
+    width:25px;
+    height:28px;
+    background: url("../images/fnav4.png") no-repeat;
+    background-size: 100% 100%;
+    &.active{
+      background-image: url("../images/fnav4-active.png");
+      color:$mainColor;
+    }
+  }
+}
+.footer-nav-box{
+  height:88px;
+  width:750px;
+  background: #fff;
+  a{
+    display:block;
+    font-size:22px;
+    color:#999;
+  }
+}
+.fix-nav-full{
+  line-height:1.8;
+  opacity:0;
+  display: none;
+  font-size:26px;
+  .fix-quick-nav{
+    padding:100px 50px 20px;
+    a{color:#666;}
+    .item-nav{
+      float: left;
+      width:25%;
+      margin-bottom:30px;
+      text-align: center;
+      img{
+        width:80px;
+        height:81px;
+        border-radius: 50%;
+        margin-bottom:10px;
+      }
+    }
+  }
+  .quick-menu{
+    //padding:0 20px;
+    .item-nav{
+      .pic{
+        width:80px;
+        height:81px;
+        margin-bottom:10px;
+        &.i-nav1{background: url("../images/i-nav1.png") no-repeat;background-size: 100% 100%;}
+        &.i-nav2{background: url("../images/i-nav2.png") no-repeat;background-size: 100% 100%;}
+        &.i-nav3{background: url("../images/i-nav3.png") no-repeat;background-size: 100% 100%;}
+        &.i-nav4{background: url("../images/i-nav4.png") no-repeat;background-size: 100% 100%;}
+      }
+    }
+  }
+  .menu{
+    margin:0  40px;
+  }
+  .menu-box{
+    padding:45px 0;
+  }
+  a{
+    color:#666;
+    display:block;
+  }
+  .btn-back{
+    height: 52px;
+    width: 218px;
+    line-height:52px;
+    text-align: center;
+    color:$mainColor;
+    position: fixed;
+    bottom:50px;
+    left:50%;
+    margin-left:-109px;
+    border:1px solid $mainColor;/* no */
+    border-radius:  26px;
+  }
+  position: fixed;
+  z-index:999;
+  height:100%;
+  width:750px;
+  background: rgba(255,255,255,0.95);
+  .close{
+    position: absolute;
+    right:10px;
+    height: 80px;
+    width: 80px;
+    background: url("../images/close.png") no-repeat center center;
+    background-size: 29px 30px;
+  }
+}
+.load-more{
+  margin-bottom:20px;
+  font-size:24px;
+  color:#999;
+  text-align: center;
+  line-height:100px;
+  height:100px;
+}
+.go-to-top{
+  .icon-circle{
+    line-height:74px;
+    text-align: center;
+  }
+  color:#666;
+  font-size:24px;
+  display: none;
+  position: fixed;
+  right:20px;
+  bottom:100px;
+  .icon-toTop{
+    margin-bottom:10px;
+  }
+}
+.long-btn{
+  display: block;
+  margin:0 auto;
+  width:710px;
+  font-size:28px;
+  line-height:72px;
+  height:72px;
+  text-align: center;
+  color:#fff;
+  background: $mainColor;
+  border-radius: 36px;
+}
+.pt80{padding-top:80px;}
+.blank10{height:10px;}
+
+body.navshow .fix-nav-full {
+  -webkit-animation: menuin 0.3s forwards;
+  -o-animation: menuin 0.3s forwards;
+  animation: menuin 0.3s forwards;
+  -webkit-transform:translateX(0px);
+  opacity: 1;
+  display:block;
+}
+@-webkit-keyframes menuin {
+  0% {
+    -webkit-transform: scale(3);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+@keyframes menuin {
+  0% {
+    transform: scale(3);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes menuout {
+  0% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(3);
+    opacity: 0;
+  }
+}
+@keyframes menuout {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+
+.swiper-pagination-bullet{
+  width:12px;
+  height:12px;
+  background:#fff;
+  opacity: 0.8;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #ff6c00;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets{
+  text-align: right;
+  width:96%;
+}
+
+.no-result{
+  width:192px;
+  margin:0 auto;
+  margin-top:200px;
+  .text{
+    font-size:24px;
+    color:#999;
+    margin-top:40px;
+    text-align: center;
+
+  }
+}
+%base-btn{
+  font-size: 30px;
+  height:72px;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 6px;
+}
+.sbig-btn-primary{
+  color:#fff;
+  @extend %base-btn;
+  background: $mainColor;
+  border:1px solid $mainColor;/*no*/
+  display: block;
+  button{
+    display: inline-block;
+    height: 100%;
+    width:80%;
+    color:#fff;
+    text-align: center;
+  }
+  a{
+    color:#fff;
+
+  }
+}

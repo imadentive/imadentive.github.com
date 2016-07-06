@@ -1,0 +1,78 @@
+/**
+ * actionsheet
+ */
+//.actionSheet-wrap{
+//	position: fixed;
+//	bottom:0;
+//	left:0;
+//	height:100%;
+//	width:100%;
+//	display:none;
+//}
+.actionSheet-mask {
+	width: 750px;
+	position: fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	top:0;
+	z-index: -1;
+	//display:none;
+	background: rgba(0, 0, 0, 0);
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+}
+
+.actionSheet{
+	&.buy{
+		min-height:800px;
+	}
+	width: 750px;
+	position: fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	background: #fff;
+	//top:0;
+	z-index: -1;
+	//display:none;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	transform:translate(0,100%);
+	-webkit-transform:translate(0,100%);
+}
+//过渡之后
+.actionSheet-mask-toggle{
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 9;
+}
+.actionSheet-toggle{
+	transform:translate(0,0);
+	-webkit-transform:translate(0,0);
+	z-index: 999;
+}
+
+.actionSheet2{
+	// width: 750px;
+	// // position: fixed;
+	// // bottom:0;
+	// // left:0;
+	// // right:0;
+	// // margin:auto;
+	// background: #fff;
+	// // top:0;
+	// // z-index: -1;
+	// //display:none;
+	// transition: 0.5s;
+	// transform:translate(0,0);
+	// -webkit-transition: 0.5s;
+	// -webkit-transform:translate(0,0);
+}
+
+.actionSheet-toggle2{
+	// transform:translate(0,-100%);
+	// -webkit-transform:translate(0,-100%);
+	// z-index: 10;
+}

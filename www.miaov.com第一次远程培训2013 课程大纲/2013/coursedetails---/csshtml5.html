@@ -1,0 +1,854 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>妙味课堂 CSS3+HTML5</title>
+<script src="CourseDetails.js"></script>
+<link href="CourseDetails.css" rel="stylesheet" />
+</head>
+
+<body>
+
+<ul id="menu">
+	<li>+ 全部展开</li>
+	<li>- 全部收缩</li>
+    <li>↑返回顶部</li>
+</ul>
+
+<div id="CourseDetails">
+	<h1>妙味课堂 CSS3+HTML5</h1>
+    <ol>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第一章：CSS3课程入门</h2>
+                <dl>
+					<dt>前言内容介绍：</dt>
+                    <dd class="indent1">css3主要内容在各个浏览器的兼容情况</dd>
+				</dl>
+                
+                <dl>
+					<dt>浏览器内核前缀:</dt>
+                    <dd class="indent1">Transition简介</dd>
+                    <dd class="indent1">各浏览器下的兼容性写法</dd>
+                    <dd class="indent2">老版Chrome&nbsp;&nbsp;-webkit-xxx</dd>
+                    <dd class="indent2">FF&nbsp;&nbsp;-moz-xxx </dd>
+                    <dd class="indent2">IE9&nbsp;&nbsp;-ms-xxx</dd>
+                    <dd class="indent2">opera&nbsp;&nbsp;-o-xxx</dd>
+                    <dd class="indent2">标准、高版本Chrome&nbsp;xxx</dd>
+				</dl>
+                
+                <dl>
+					<dt>JS兼容型写法</dt>
+                    <dd class="indent1">大写：Webkit Transition =…</dd>
+                    <dd class="indent1">全都加一遍：Webkit…、Moz…、O…、ms…、…</dd>
+				</dl>
+                
+                <dl>
+					<dt>CSS3 选择器 -- 属性选择器</dt>
+                    <dd class="indent1">E[attr]只使用属性名，但没有确定任何属性值</dd>
+                    <dd class="indent1">E[attr="value"]指定属性名，并指定了该属性的属性值</dd>
+                    <dd class="indent1">E[attr~="value"]指定属性名，并且具有属性值，此属性值是一个词列表，并且以空格隔开，其中词列表中包含了一个value词，而且等号前面的"〜"不能不写</dd>
+                    <dd class="indent1">E[attr^="value"]指定了属性名，并且有属性值，属性值是以value开头的</dd>
+                    <dd class="indent1">E[attr$="value"]指定了属性名，并且有属性值，而且属性值是以value结束的</dd>
+                    <dd class="indent1">E[attr*="value"]指定了属性名，并且有属性值，而且属值中包含了value</dd>
+                    <dd class="indent1">E[attr|="value"]指定了属性名，并且属性值是value或者以"value-"开头的值（比如说zh-cn）</dd>
+                    <dd class="indent1">实例：百度文库;</dd>
+                    <dd class="indent1">备注：IE7及以上支持; </dd>
+				</dl>
+                <dl>
+					<dt>CSS3 选择器 -- 结构性伪类</dt>
+                    <dd class="indent1">E:nth-child(n)  表示E父元素中的第n个字节点</dd>
+                    <dd class="indent2">p:nth-child(odd){background:red}/*匹配奇数行*/</dd>
+                    <dd class="indent2">p:nth-child(even){background:red}/*匹配偶数行*/</dd>
+                    <dd class="indent2">p:nth-child(2n){background:red}</dd>
+                    <dd class="indent1">E:nth-last-child(n) 表示E父元素中的第n个字节点，从后向前计算</dd>
+                    <dd class="indent1">E:nth-of-type(n)  表示E父元素中的第n个字节点，且类型为E</dd>
+                    <dd class="indent1">E:nth-last-of-type(n)表示E父元素中的第n个字节点，且类型为E,从后向前计算</dd>
+                    <dd class="indent1">E:empty 表示E元素中没有子节点。注意：子节点包含文本节点</dd>
+                    <dd class="indent1">E:first-child 表示E元素中的第一个子节点</dd>
+                    <dd class="indent1">E:last-child 表示E元素中的最后一个子节点</dd>
+                    <dd class="indent1">E:first-of-type 表示E父元素中的第一个子节点且节点类型是E的</dd>
+                    <dd class="indent1">E:last-of-type 表示E父元素中的最后一个子节点且节点类型是E的</dd>
+                    <dd class="indent1">E:only-child表示E元素中只有一个子节点。注意：子节点不包含文本节点</dd>
+                    <dd class="indent1">E:only-of-type 表示E的父元素中只有一个子节点，且这个唯一的子节点的类型必须是E。注意：子节点不包含文本节点</dd>
+                    <dd class="indent1">实例：新浪头部导航</dd>
+				</dl>
+                <dl>
+					<dt>CSS3 选择器 -- 伪类</dt>
+                    <dd class="indent1">E:target 表示当前的URL片段的元素类型，这个元素必须是E</dd>
+                    <dd class="indent1">E:disabled 表示不可点击的表单控件</dd>
+                    <dd class="indent1">E:enabled 表示可点击的表单控件</dd>
+                    <dd class="indent1">E:checked 表示已选中的checkbox或radio</dd>
+                    <dd class="indent1">E:first-line 表示E元素中的第一行</dd>
+                    <dd class="indent1">E:first-letter 表示E元素中的第一个字符</dd>
+                    <dd class="indent1">E::selection表示E元素在用户选中文字时</dd>
+                    <dd class="indent1">E::before 生成内容在E元素前</dd>
+                    <dd class="indent1">E::after 生成内容在E元素后</dd>
+                    <dd class="indent1">E:not(s) 表示E元素不被匹配</dd>
+                    <dd class="indent1">E~F表示E元素毗邻的F元素</dd>
+                    <dd class="indent1">Content 属性</dd>
+				</dl>
+                
+                <dl>
+					<dt>新增颜色模式</dt>
+                    <dd class="indent1">rgba</dd>
+                    <dd class="indent2">实例: 背景透明，文字不透明</dd>
+                    <dd class="indent2">问题：注意边框颜色透明有问题</dd>
+                    <dd class="indent1">Hsl</dd>
+                    <dd class="indent2">H	Hue			色调</dd>
+                    <dd class="indent2">S	saturation	饱和度</dd>
+                    <dd class="indent2">L	Lightness	亮度</dd>
+				</dl>
+                
+                <dl>
+					<dt>文字阴影：</dt>
+                    <dd class="indent1">text-shadow：x y blur color, …</dd>
+                    <dt>文字阴影应用：</dt>
+                    <dd class="indent1">常规用法</dd>
+                    <dd class="indent2">text-shadow:2px 2px 4px black</dd>
+                    <dd class="indent1">阴影叠加</dd>
+                    <dd class="indent2">text-shadow:2px 2px 0px red, 2px 2px 4px green;</dd>
+                    <dd class="indent1">先渲染后面的，再渲染前面的</dd>
+                    <dd class="indent1">代码艺术实践：</dd>
+                    <dd class="indent2">光晕：color:white; font-size:100px; text-shadow:0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;</dd>
+                    <dd class="indent2">层叠：color:red; font-size:100px; font-weight:bold; text-shadow:2px 2px 0px white, 4px 4px 0px red;</dd>
+                    <dd class="indent2">火焰：text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e; font-family:Verdana, Geneva, sans-serif; font-size:100px; font-weight:bold; color:white;</dd>
+                    <dt>文字描边：</dt>
+                    <dd class="indent1">-webkit-text-stroke:宽度 颜色</dd>
+				</dl>
+                
+                <dl>
+					<dt>新增文本功能</dt>
+                    <dd class="indent1">Direction  定义文字排列方式(全兼容)</dd>
+                    <dd class="indent1">Rtl 从右向左排列</dd>
+                    <dd class="indent1">Ltr 从右向左排列</dd>
+                    <dd class="indent1">配合unicode-bidi 使用</dd>
+				</dl>
+                
+                <dl>
+					<dt>Text-overflow 定义省略文本的处理方式</dt>
+                    <dd class="indent1">clip  无省略号</dd>
+                    <dd class="indent1">Ellipsis 省略号 (配合overflow:hidden、white-space:nowrap) </dd>
+				</dl>
+                
+                <dl>
+					<dt>自定义文字</dt>
+                    <dd class="indent1">@font-face {</dd>
+                    <dd class="indent2">font-family: 'miaov';</dd>
+                    <dd class="indent2">src: url('111-webfont.eot');</dd>
+                    <dd class="indent2">src: url('111-webfont.eot?#iefix') format('embedded-opentype'),</dd>
+                    <dd class="indent2">url('111-webfont.woff') format('woff'),</dd>
+                    <dd class="indent2">url('111-webfont.ttf') format('truetype'),</dd>
+                    <dd class="indent2">url('111-webfont.svg#untitledregular') format('svg');</dd>
+                    <dd class="indent2">font-weight: normal;</dd>
+                    <dd class="indent2">font-style: normal;</dd>
+                    <dd class="indent1">}</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第二章：盒模型设计、响应式布局</h2>
+                <dl>
+					<dt>弹性盒模型：</dt>
+                    <dd class="indent1">display:box 或 display:inline-box</dd>
+				</dl>
+                
+                 <dl>
+					<dt>Box-orient 定义盒模型的布局方向</dt>
+                    <dd class="indent1">Horizontal	    水平显示</dd>
+                    <dd class="indent1">vertical		垂直方向</dd>
+				</dl>
+                
+                 <dl>
+					<dt>box-direction 元素排列顺序</dt>
+                    <dd class="indent1">Normal		正序</dd>
+                    <dd class="indent1">Reverse		反序</dd>
+				</dl>
+                 <dl>
+					<dt>box-ordinal-group 设置元素的具体位置</dt>
+				</dl>
+                 <dl>
+					<dt>Box-flex 定义盒子的弹性空间</dt>
+                    <dd class="indent1">子元素的尺寸=盒子的尺寸*子元素的box-flex属性值 / 所有子元素的box-flex属性值的和</dd>
+				</dl>
+                 <dl>
+					<dt>box-pack 对盒子富裕的空间进行管理</dt>
+                    <dd class="indent1">Star 所有子元素在盒子左侧显示，富裕空间在右侧</dd>
+                    <dd class="indent1">End 所有子元素在盒子右侧显示，富裕空间在左侧</dd>
+                    <dd class="indent1">Center 所有子元素居中</dd>
+                    <dd class="indent1">Justify	富余空间在子元素之间平均分布</dd>
+				</dl>
+                <dl>
+					<dt>box-align 在垂直方向上对元素的位置进行管理</dt>
+                    <dd class="indent1">Star 所有子元素在据顶</dd>
+                    <dd class="indent1">End 所有子元素在据底</dd>
+                    <dd class="indent1">Center 所有子元素居中</dd>
+				</dl>
+                 <dl>
+					<dt>盒模型阴影</dt>
+                    <dd class="indent1">box-shadow:[inset] x y blur [spread] color</dd>
+				</dl>
+                 <dl>
+					<dt>参数</dt>
+                    <dd class="indent1">inset：投影方式</dd>
+                    <dd class="indent1">inset：内投影</dd>
+                    <dd class="indent1">不给：外投影</dd>
+                    <dd class="indent1">x、y：阴影偏移</dd>
+                    <dd class="indent1">blur：模糊半径</dd>
+                    <dd class="indent1">spread：扩展阴影半径</dd>
+                    <dd class="indent1">color</dd>
+				</dl>
+                
+                <dl>
+					<dt>盒模型新增属性</dt>
+                    <dd class="indent1">box-reflect 倒影</dd>
+                    <dd class="indent2">direction  方向     above|below|left|right;</dd>
+                    <dd class="indent2">距离</dd>
+                    <dd class="indent2">渐变（可选）</dd>
+                    <dd class="indent1">resize 自由缩放</dd>
+                    <dd class="indent2">Both 水平垂直都可以缩放</dd>
+                    <dd class="indent2">Horizontal 只有水平方向可以缩放</dd>
+                    <dd class="indent2">Vertical 只有垂直方向可以缩放</dd>
+                    <dd class="indent2">注：配合overflow:auto、水平方向可以缩放</dd>
+				</dl>
+                
+                <dl>
+					<dt>box-sizing 盒模型解析模式</dt>
+                    <dd class="indent1">Content-box	标准盒模型 width/height=border+padding+content</dd>
+                    <dd class="indent1">Border-box		怪异盒模型 width/height=content</dd>
+				</dl>
+                
+                <dl>
+					<dt>CSS3 分栏布局</dt>
+                    <dd class="indent1">column-width		栏目宽度</dd>
+                    <dd class="indent1">column-count		栏目列数</dd>
+                    <dd class="indent1">column-gap		栏目距离</dd>
+                    <dd class="indent1">column-rule		栏目间隔线</dd>
+                    <dd class="indent1">column-fill			栏目高度是否统一</dd>
+				</dl>
+                
+                <dl>
+					<dt>CSS3 响应式布局</dt>
+                    <dd class="indent1">link rel="stylesheet" media="all and (orientation:portrait)" href="portrait.css"</dd>
+                    <dd class="indent1">link rel="stylesheet" media="all and (orientation:landscape)"href="landscape.css"</dd>
+                    <dd class="indent1">@media screen and (min-width:400px) and (max-width:500px) {.box {margin: 0 auto;}}</dd>
+                    <dd class="indent1">link rel="stylesheet" type="text/css" href="styleA.css"  media="screen and (min-width: 800px)"</dd>
+                    <dd class="indent1">link rel="stylesheet" type="text/css" href="styleB.css" media="screen and (min-width: 600px) and (max-width: 800px)"</dd>
+                    <dd class="indent1">link rel="stylesheet" type="text/css" href="styleC.css"    media="screen and (max-width: 600px)"</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第三章：新的UI方案</h2>
+                <dl>
+					<dt>圆角</dt>
+                    <dd class="indent1">border-radius: 1-4个数字 / 1-4个数字</dd>
+                    <dd class="indent2">前面是水平，后面是垂直</dd>
+                    <dd class="indent2">不给"/"则水平和垂直一样</dd>
+                    <dd class="indent3">border-radius: 10px/5px;</dd>
+                    <dd class="indent1">参数</dd>
+                    <dd class="indent2">各种长度单位都可以：px，%，…</dd>
+                    <dd class="indent2">%有时很方便</dd>
+                    <dd class="indent3">宽高不一致时不太好</dd>
+                    <dd class="indent1">用法</dd>
+                    <dd class="indent2">1个：都一样</dd>
+                    <dd class="indent3">border-radius: 一样</dd>
+                    <dd class="indent2">2个：对角</dd>
+                    <dd class="indent3">border-radius: 左上&右下	右上&左下</dd>
+                    <dd class="indent2">3个：斜对角</dd>
+                    <dd class="indent3">border-radius: 左上	右上&左下	右下</dd>
+                    <dd class="indent2">4个：全部，顺时针</dd>
+                    <dd class="indent3">border-radius: 左上	右上	右下	左下</dd>
+				</dl>
+                
+                <dl>
+					<dt>边框</dt>
+                    <dd class="indent1">边框图片 border-image</dd>
+                    <dd class="indent2">border-image-sourceg 引入图片</dd>
+                    <dd class="indent2">border-image-slice 切割图片</dd>
+                    <dd class="indent2">border-image-width 边框宽度</dd>
+                    <dd class="indent2">border-image-repeat 图片的排列方式</dd>
+                    <dd class="indent2">round 平铺,repeat 重复,stretch拉伸 </dd>
+                    <dd class="indent1">边框颜色 border-colors</dd>
+				</dl>
+                
+                <dl>
+					<dt>线性渐变</dt>
+                    <dd class="indent1">线性渐变格式</dd>
+                    <dd class="indent2">linear-gradient([<起点> || <角度>,]? <点>, <点>…)</dd>
+                    <dd class="indent2">只能用在背景上</dd>
+                    <dd class="indent2">IE：filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#ff0000',GradientType='1');</dd>
+                    <dd class="indent1">参数</dd>
+                    <dd class="indent2">起点：从什么方向开始渐变		默认：top</dd>
+                    <dd class="indent2">left、top、left top</dd>
+                    <dd class="indent2">角度：从什么角度开始渐变</dd>
+                    <dd class="indent2">xxx deg的形式</dd>
+                    <dd class="indent2">点：渐变点的颜色和位置</dd>
+                    <dd class="indent2">black 50%，位置可选</dd>
+				</dl>
+                
+                <dl>
+					<dt>线性渐变实例（1）</dt>
+                    <dd class="indent1">最简单</dd>
+                    <dd class="indent2">red, green</dd>
+                    <dd class="indent2">从上到下</dd>
+                    <dd class="indent1">起点位置</dd>
+                    <dd class="indent2">left top, red, green</dd>
+                    <dd class="indent2">30deg, red, green</dd>
+                    <dd class="indent2">逆时针</dd>
+                    <dd class="indent1">repeating-linear-gradient</dd>
+				</dl>
+                
+                <dl>
+					<dt>线性渐变实例(2)</dt>
+                    <dd class="indent1">加入点的位置</dd>
+                    <dd class="indent2">top, red 40%, green 60%</dd>
+                    <dd class="indent2">top, red 50%, green 50%</dd>
+                    <dd class="indent2">同一个位置两个点——直接跳变</dd>
+                    <dd class="indent2">也可以用px</dd>
+                    <dd class="indent1">配合rgba</dd>
+                    <dd class="indent2">top, rgba(255,255,255,1), rgba(255,255,255,0)</dd>
+                    <dd class="indent1">加入背景图片</dd>
+                    <dd class="indent2">background: -webkit-linear-gradient (top, rgba(255,255,255,1) 30%, rgba(255,255,255,0)), url(a.gif)</dd>
+                    <dd class="indent1">实例：百度音乐图片光影效果</dd>
+				</dl>
+                
+                <dl>
+					<dt>径向渐变</dt>
+                    <dd class="indent1">radial-gradient([<起点>]? [<形状> || <大小>,]? <点>, <点>…);</dd>
+                    <dd class="indent2">起点：可以是关键字（left,top,right,bottom），具体数值或百分比</dd>
+                    <dd class="indent2">形状：ellipse、circle</dd>
+                    <dd class="indent2">大小：具体数值或百分比，也可以是关键字（最近端，最近角，最远端，最远角，包含或覆盖 (closest-side, closest-corner, farthest-side, farthest-corner, contain or cover)）;</dd>
+                    <dd class="indent2">注意firefox目前只支持关键字</dd>
+				</dl>
+                
+                <dl>
+					<dt>背景</dt>
+                    <dd class="indent1">多背景</dd>
+                    <dd class="indent2">逗号分开：background: url(a.jpg) 0 0, url(b.jpg) 0 100%;</dd>
+                    <dd class="indent1">背景尺寸</dd>
+                    <dd class="indent2">background-size:x y</dd>
+                    <dd class="indent3">background-size:100% 100%</dd>
+                    <dd class="indent3">Cover 放大</dd>
+                    <dd class="indent3">Contain 缩小</dd>
+                    <dd class="indent2">background-origin ： border | padding | content </dd>
+                    <dd class="indent3">border-box：从border区域开始显示背景。</dd>
+                    <dd class="indent3">padding-box：从padding区域开始显示背景。</dd>
+                    <dd class="indent3">content-box：从content区域开始显示背景。</dd>
+                    <dd class="indent2">background-clip</dd>
+                    <dd class="indent3">border：从border区域向外裁剪背景。</dd>
+                    <dd class="indent3">padding：从padding区域向外裁剪背景。 </dd>
+                    <dd class="indent3">content：从content区域向外裁剪背景。</dd>
+                    <dd class="indent3">no-clip：从border区域向外裁剪背景。</dd>
+                    <dd class="indent1">实例：iphone开机动画</dd>
+				</dl>
+                
+                <dl>
+					<dt>遮罩</dt>
+                    <dd class="indent1">Mask-image</dd>
+                    <dd class="indent1">Mask-position</dd>
+                    <dd class="indent1">Mask-repeat</dd>
+                    <dd class="indent1">实例：特殊形状的幻灯片效果</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第四章：过渡和2d变换</h2>
+                <dl>
+					<dt>Transition过渡</dt>
+                    <dd class="indent1">transition-property  要运动的样式  （all || [attr] || none）</dd>
+                    <dd class="indent1">transition-duration 运动时间</dd>
+                    <dd class="indent1">transition-delay 延迟时间</dd>
+                    <dd class="indent1">transition-timing-function 运动形式 </dd>
+                    <dd class="indent2">ease：（逐渐变慢）默认值</dd>
+                    <dd class="indent2">linear：（匀速）</dd>
+                    <dd class="indent2">ease-in：(加速)</dd>
+                    <dd class="indent2">ease-out：（减速）</dd>
+                    <dd class="indent2">ease-in-out：（先加速后减速）</dd>
+                    <dd class="indent2">cubic-bezier 贝塞尔曲线（ x1, y1, x2, y2 ） http://matthewlein.com/ceaser/</dd>
+                    <dd class="indent1">实例：幻灯片效果</dd>
+				</dl>
+                
+                <dl>
+					<dt>过渡完成事件</dt>
+                    <dd class="indent1">Webkit内核： obj.addEventListener('webkitTransitionEnd',function(){},false);</dd>
+                    <dd class="indent1">firefox: obj.addEventListener('transitionend',function(){},false);</dd>
+                    <dd class="indent1">实例2：360浏览器 ipad 版导航</dd>
+				</dl>
+                
+                <dl>
+					<dt>2D变换</dt>
+                    <dd class="indent1">transform</dd>
+                    <dd class="indent2">rotate()  旋转函数 取值度数</dd>
+                    <dd class="indent3">deg  度数</dd>
+                    <dd class="indent3">Transform-origin 旋转的基点</dd>
+                    <dd class="indent2">skew() 倾斜函数 取值度数 </dd>
+                    <dd class="indent3">skewX()</dd>
+                    <dd class="indent3">skewY()</dd>
+                    <dd class="indent2">scale() 缩放函数 取值 正数、负数和小数</dd>
+                    <dd class="indent3">scaleX()</dd>
+                    <dd class="indent3">scaleY()</dd>
+                    <dd class="indent2">translate() 位移函数</dd>
+                    <dd class="indent3">translateX()</dd>
+                    <dd class="indent3">translateY()</dd>
+                    <dd class="indent1">实例1：钟表效果</dd>
+                    <dd class="indent1">实例2：怪异的导航</dd>
+				</dl>
+                
+                <dl>
+					<dt>Transform 执行顺序问题 — 后写先执行</dt>
+				</dl>
+                
+                <dl>
+					<dt>matrix(a,b,c,d,e,f) 矩阵函数</dt>
+                    <dd class="indent1">通过矩阵实现缩放</dd>
+                    <dd class="indent2">x轴缩放 a=x*a    c=x*c     e=x*e;</dd>
+                    <dd class="indent2">y轴缩放 b=y*b   d=y*d     f=y*f;</dd>
+                    <dd class="indent1">通过矩阵实现位移</dd>
+                    <dd class="indent2">x轴位移: e=e+x</dd>
+                    <dd class="indent2">y轴位移: f=f+y</dd>
+                    <dd class="indent1">通过矩阵实现倾斜</dd>
+                    <dd class="indent2">x轴倾斜: c=Math.tan(xDeg/180*Math.PI)</dd>
+                    <dd class="indent2">y轴倾斜: b=Math.tan(yDeg/180*Math.PI)</dd>
+                    <dd class="indent1">通过矩阵实现旋转</dd>
+                    <dd class="indent2">a=Math.cos(deg/180*Math.PI); </dd>
+                    <dd class="indent2">b=Math.sin(deg/180*Math.PI);</dd>
+                    <dd class="indent2">c=-Math.sin(deg/180*Math.PI);</dd>
+                    <dd class="indent2">d=Math.cos(deg/180*Math.PI);</dd>
+                    <dt>变换兼容IE9以下IE版本只能通过矩阵来实现</dt>
+                    <dd class="indent1">filter: progid:DXImageTransform.Microsoft.Matrix( M11= 1, M12= 0, M21= 0 , M22=1,SizingMethod='auto expand');</dd>
+                    <dd class="indent1">IE下的矩阵没有E和F两个参数 M11==a; M12==c; M21==b; M22==d</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第五章：3d变换和动画</h2>
+                <dl>
+					<dt>3d变换</dt>
+                    <dd class="indent1">transform-style（preserve-3d） 建立3D空间</dd>
+                    <dd class="indent1">Perspective 景深</dd>
+                    <dd class="indent1">Perspective- origin 景深基点</dd>
+                    <dd class="indent1">backface-visibility 隐藏背面</dd>
+                    <dd class="indent1">Transform 新增函数</dd>
+                    <dd class="indent2">rotateX()</dd>
+                    <dd class="indent2">rotateY()</dd>
+                    <dd class="indent2">rotateZ()</dd>
+                    <dd class="indent2">translateZ()</dd>
+                    <dd class="indent2">scaleZ()</dd>
+                    <dd class="indent1">实例1：3D盒子</dd>
+                    <dd class="indent1">实例2：3D图片切换</dd>
+                    <dd class="indent1">实例3：折纸效果</dd>
+				</dl>
+                
+                <dl>
+					<dt>animation</dt>
+                    <dd class="indent1">关键帧——keyFrames</dd>
+                    <dd class="indent2">类似于flash</dd>
+                    <dd class="indent3">只需指明两个状态，之间的过程由计算机自动计算</dd>
+                    <dd class="indent2">关键帧的时间单位</dd>
+                    <dd class="indent3">数字：0%、25%、100%等</dd>
+                    <dd class="indent3">字符：from(0%)、to(100%)</dd>
+                    <dd class="indent2">格式（1）</dd>
+                    <dd class="indent3">@keyframes 动画名称</dd>
+                    <dd class="indent3">{</dd>
+                    <dd class="indent3">动画状态</dd>
+                    <dd class="indent3">}</dd>
+                    <dd class="indent2">格式（2）</dd>
+                    <dd class="indent3">@keyframes  miaov_test</dd>
+                    <dd class="indent3">{</dd>
+                    <dd class="indent3">from { background:red; }</dd>
+                    <dd class="indent3">to { background:green; }</dd>
+                    <dd class="indent3">}</dd>
+                    <dd class="indent3">可以只有to</dd>
+				</dl>
+                
+                <dl>
+					<dt>animate——调用动画</dt>
+                    <dd class="indent1">调用的标签(#div1、xxx:hover之类的)</dd>
+                    <dd class="indent2">必要属性</dd>
+                    <dd class="indent3">animation-name		动画名称（关键帧名称）</dd>
+                    <dd class="indent3">animation-duration		动画持续时间</dd>
+                    <dd class="indent2">例如：</dd>
+                    <dd class="indent3">-webkit-animation-name: 'miaov';</dd>
+                    <dd class="indent3">-webkit-animation-duration: 4s;</dd>
+                    <dd class="indent2">实例：进度条</dd>
+                    <dd class="indent3">animation-play-state 播放状态（ running 播放 和paused 暂停 ）</dd>
+				</dl>
+                
+                <dl>
+					<dt>animate——可选属性</dt>
+                    <dd class="indent1">animation-timing-function	动画运动形式</dd>
+                    <dd class="indent2">linear 匀速。</dd>
+                    <dd class="indent2">ease 缓冲。</dd>
+                    <dd class="indent2">ease-in	由慢到快</dd>
+                    <dd class="indent2">ease-out	由快到慢</dd>
+                    <dd class="indent2">ease-in-out	由慢到快再到慢。</dd>
+                    <dd class="indent2">cubic-bezier(number, number, number, number)：特定的贝塞尔曲线类型，4个数值需在[0, 1]区间内</dd>
+                    <dd class="indent1">animation-delay 动画延迟</dd>
+                    <dd class="indent2">只是第一次</dd>
+                    <dd class="indent1">animation-iteration-count 重复次数</dd>
+                    <dd class="indent2">infinite为无限次</dd>
+                    <dd class="indent1">animation-direction 播放前重置</dd>
+                    <dd class="indent2">动画是否重置后再开始播放</dd>
+                    <dd class="indent2">alternate 动画直接从上一次停止的位置开始执行</dd>
+                    <dd class="indent2">normal 动画第二次直接跳到0%的状态开始执行</dd>
+                </dl>
+                <dl>
+					<dt>animate——和JS结合</dt>
+                    <dd class="indent1">通过class</dd>
+                    <dd class="indent2">在class里加入animation的各种属性</dd>
+                    <dd class="indent2">直接给元素加-webkit-animation-xxx样式</dd>
+                    <dd class="indent1">animation的问题</dd>
+                    <dd class="indent2">写起来麻烦</dd>
+                    <dd class="indent2">没法动态改变目标点位置</dd>
+                    <dd class="indent1">obj.addEventListener('webkitAnimationEnd', function (){}, false);</dd>
+                    <dd class="indent1">实例1：无缝滚动</dd>
+                    <dd class="indent1">实例2：3D图片轮换</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第一章：初识 HTML5</h2>
+                <dl>
+					<dt>HTML5页面结构、宽松的语法规范</dt>
+                    <dd class="indent1">&#8249;!doctype html&#8250;</dd>
+                    <dd class="indent1">&#8249;meta charset="utf-8"/&#8250;</dd>
+                    <dd class="indent1">&#8249;title&#8250;miaov—html5&#8249;/title&#8250;</dd>
+                    <dd class="indent1">&#8249;h1&#8250;妙味课堂html5语义化标签&#8249;/h1&#8250;</dd>
+				</dl>
+                
+                <dl>
+					<dt>新的结构化元素</dt>
+                    <dd class="indent1">语义化标签的由来</dd>
+                    <dd class="indent1">http://devfiles.myopera.com/articles/572/idlist-url.htm</dd>
+				</dl>
+                
+                <dl>
+					<dt>语义化标签</dt>
+                    <dd class="indent1">header：页眉-主要用于页面的头部的信息介绍，也可用于板块头部</dd>
+                    <dd class="indent1">hgroup：页面上的一个标题组合</dd>
+                    <dd class="indent1">nav：导航 （包含链接的的一个列表）列举nav实际应用框架</dd>
+                    <dd class="indent1">footer：页脚  页面的底部 或者 版块底部</dd>
+                    <dd class="indent1">section：页面上的版块-用于划分页面上的不同区域,或者划分文章里不同的节</dd>
+                    <dd class="indent1">article：用来在页面中表示一套结构完整且独立的内容部分</dd>
+                    <dd class="indent1">aside：元素标签可以包含与当前页面或主要内容相关的引用、侧边栏、广告、nav元素组，以及其他类似的有别与主要内容的部分</dd>
+                    <dd class="indent1">figure：用于对元素进行组合。一般用于图片或视频</dd>
+                    <dd class="indent1">figcaption：figure的子元素 用于对figure的内容 进行说明</dd>
+                    <dd class="indent1">figure、figcaption</dd>
+                    <dd class="indent1">time：用来表现时间或日期</dd>
+                    <dd class="indent1">datalist：选项列表。与 input 元素配合使用，来定义 input 可能的值</dd>
+                    <dd class="indent1">details：用于描述文档或文档某个部分的细节</dd>
+                    <dd class="indent1">summary：details 元素的标题</dd>
+                    <dd class="indent1">dialog：定义一段对话</dd>
+                    <dd class="indent1">address：定义文章 或页面作者的详细联系信息</dd>
+                    <dd class="indent1">mark：需要标记的词或句子</dd>
+                    <dd class="indent1">keygen：给表单添加一个公钥</dd>
+                    <dd class="indent1">progress：定义进度条</dd>
+				</dl>
+                <dl>
+					<dt>IE下的兼容</dt>
+                    <dd class="indent1">标签兼容性解决方案</dd>
+                    <dd class="indent2">&#8249;script&#8250;</dd>
+                    <dd class="indent3">document.createElement("header");</dd>
+                    <dd class="indent3">document.createElement("nav");</dd>
+                    <dd class="indent3">document.createElement("footer");</dd>
+                    <dd class="indent3">……</dd>
+                    <dd class="indent2">&#8249;/script&#8250;</dd>
+                    <dd class="indent1">样式兼容性解决方案</dd>
+                    <dd class="indent2">HTML5语义化标签用js创建后全新设置默认样式</dd>
+				</dl>
+                
+                <dl>
+					<dt>Forms 新的输入型控件</dt>
+                    <dd class="indent1">email：电子邮箱文本框，跟普通的没什么区别</dd>
+                    <dd class="indent2">当输入不是邮箱的时候，验证通不过</dd>
+                    <dd class="indent2">移动端的键盘会有变化</dd>
+                    <dd class="indent1">tel：电话号码</dd>
+                    <dd class="indent1">url：网页的URL</dd>
+                    <dd class="indent1">search：搜索引擎</dd>
+                    <dd class="indent1">chrome下输入文字后，会多出一个关闭的X</dd>
+                    <dd class="indent1">range：特定范围内的数值选择器</dd>
+                    <dd class="indent1">min、max、step( 步数 )</dd>
+                    <dd class="indent1">实例 :  用JS来显示当前数值</dd>
+                    <dd class="indent1">number：只能包含数字的输入框</dd>
+                    <dd class="indent1">color：颜色选择器</dd>
+                    <dd class="indent1">datetime：显示完整日期</dd>
+                    <dd class="indent1">datetime-local：显示完整日期，不含时区</dd>
+                    <dd class="indent1">time：显示时间，不含时区</dd>
+                    <dd class="indent1">date：显示日期</dd>
+                    <dd class="indent1">week：显示周</dd>
+                    <dd class="indent1">month：显示月</dd>
+				</dl>
+                
+                <dl>
+					<dt>新的表单特性和函数</dt>
+                    <dd class="indent1">placeholder  :  输入框提示信息</dd>
+                    <dd class="indent2">实例 :  微博的密码框提示</dd>
+                    <dd class="indent1">autocomplete  :  是否保存用户输入值</dd>
+                    <dd class="indent2">默认为on，关闭提示选择off</dd>
+                    <dd class="indent1">autofocus  :  指定表单获取输入焦点</dd>
+                    <dd class="indent1">list和datalist  :  为输入框构造一个选择列表</dd>
+                    <dd class="indent2">list值为datalist标签的id</dd>
+                    <dd class="indent1">required  :  此项必填，不能为空</dd>
+                    <dd class="indent1">Pattern : 正则验证  pattern="\d{1,5}"</dd>
+                    <dd class="indent1">Formaction 在submit里定义提交地址</dd>
+				</dl>
+                
+                <dl>
+					<dt>表单验证</dt>
+                    <dd class="indent1">validity对象</dd>
+                    <dd class="indent2">oText.addEventListener("invalid",fn1,false);</dd>
+                    <dd class="indent2">ev.preventDefault()</dd>
+                    <dd class="indent3">valueMissing  :  输入值为空时</dd>
+                    <dd class="indent3">typeMismatch :  控件值与预期类型不匹配</dd>
+                    <dd class="indent3">patternMismatch  :  输入值不满足pattern正</dd>
+                    <dd class="indent3">tooLong  :  超过maxLength最大限制</dd>
+                    <dd class="indent3">rangeUnderflow : 验证的range最小值</dd>
+                    <dd class="indent3">rangeOverflow：验证的range最大值</dd>
+                    <dd class="indent3">stepMismatch: 验证range 的当前值 是否符合min、max及step的规则</dd>
+                    <dd class="indent3">customError 不符合自定义验证</dd>
+                    <dd class="indent3">setCustomValidity(); 自定义验证</dd>
+                    <dd class="indent1">Invalid事件  :  验证反馈</dd>
+                    <dd class="indent1">input.addEventListener('invalid',fn,false)</dd>
+                    <dd class="indent2">阻止默认验证：ev.preventDefault()</dd>
+                    <dd class="indent1">formnovalidate属性  :  关闭验证</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第二章：HTML5的新特性</h2>
+                <dl>
+					<dt>课程内容介绍:</dt>
+                    <dd class="indent1">HTML5新特性的浏览器支持情况</dd>
+                    <dd class="indent2">http://www.caniuse.com/#index</dd>
+                    <dd class="indent1">新的选择器——querySelector querySelectorAll</dd>
+                    <dd class="indent1">新的选择器——getElementsByClassName</dd>
+                    <dd class="indent1">获取class列表属性——classList length add remove toggle</dd>
+                    <dd class="indent1">Json的新方法——parse():把字符串转成json</dd>
+                    <dd class="indent1">Json的新方法—stringify():把json转化成字符串</dd>
+                    <dd class="indent1">Json的新方法——新方法与eval的区别及应用</dd>
+                    <dd class="indent1">Json的新方法应用——深度克隆新对象</dd>
+                    <dd class="indent1">Json的新方法兼容性——json2.js</dd>
+                    <dd class="indent1">data自定义数据 dataset Data数据在jquery mobile中有着重要作用</dd>
+                    <dd class="indent1">Html5的defer和async</dd>
+                    <dd class="indent1">defer:延迟加载，会按顺序执行，在onload执行前被触发</dd>
+                    <dd class="indent1">async:异步加载，加载完就触发，有顺序问题</dd>
+                    <dd class="indent1">Labjs库介绍</dd>
+                    <dd class="indent1">历史管理——onhashchange：改变hash值来管理</dd>
+                    <dd class="indent1">历史管理——pushState : 三个参数：数据 标题(都没实现)地址(可选)</dd>
+                    <dd class="indent1">历史管理——popstate事件:读取数据 event.state</dd>
+                    <dd class="indent1">拖放事件——draggable：设置为true，元素就可以拖拽了</dd>
+                    <dd class="indent1">拖放事件——拖拽元素事件 dragstart drag dragend</dd>
+                    <dd class="indent1">拖放事件——事件的执行顺序 drop不触发的时候如何执行</dd>
+                    <dd class="indent1">dragstart > drag > dragenter > dragover > dragleave > dragend</dd>
+                    <dd class="indent1">拖放事件——事件的执行顺序 drop触发的时候如何执行</dd>
+                    <dd class="indent1">dragstart > drag > dragenter > dragover > drop > dragend</dd>
+                    <dd class="indent1">解决火狐拖放问题：必须设置dataTransfer对象才可以拖拽除图片外的其他标签</dd>
+                    <dd class="indent1">dataTransfer对象——setData() :设置数据 key和value(必须是字符串)</dd>
+                    <dd class="indent1">dataTransfer对象——getData() :获取数据，根据key值，获取对应的value</dd>
+                    <dd class="indent1">dataTransfer对象——effectAllowed:设置光标样式</dd>
+                    <dd class="indent1">dataTransfer对象——dropEffect:获取光标样式</dd>
+                    <dd class="indent1">dataTransfer对象——dropEffect:必须写在dragover中</dd>
+                    <dd class="indent1">dataTransfer对象——setDragImage 三个参数：指定的元素，坐标X，坐标Y</dd>
+                    <dd class="indent1">dataTransfer对象——files 获取外部拖拽的文件，返回一个filesList列表</dd>
+                    <dd class="indent1">FileReader——readAsDataURL参数为要读取的文件对象</dd>
+                    <dd class="indent1">FileReader——当读取文件成功完成的时候触发此事件</dd>
+                    <dd class="indent1">FileReader——实例 拖拽删除列表 拖拽购物车 上传图片预览功能</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第三章：canvas（上）</h2>
+                <dl>
+					<dt>课程内容介绍:</dt>
+                    <dd class="indent1">标签canvas——不支持canvas的浏览器可以看到的内容</dd>
+                    <dd class="indent1">绘制环境——getContext('2d') : 目前支持2d的场景</dd>
+                    <dd class="indent1">绘制方块——fillRect(L,T,W,H) :默认颜色是黑色</dd>
+                    <dd class="indent1">绘制方块—— strokeRect(L,T,W,H):带边框的方块</dd>
+                    <dd class="indent1">设置绘图——fillStyle填充颜色 lineWidth线宽度 strokeStyle边线颜色</dd>
+                    <dd class="indent1">边界绘制——lineJoin:边界连接点样式lineCap:端点样式</dd>
+                    <dd class="indent1">绘制路径——beginPath closePath moveTo lineTo stroke</dd>
+                    <dd class="indent1">绘制路径——fill rect clearRect save restore</dd>
+                    <dd class="indent1">实例——鼠标画线 方块移动</dd>
+                    <dd class="indent1">绘制圆——arc(x, y, 半径, 起始弧度, 结束弧度, 旋转方向)</dd>
+                    <dd class="indent1">实例——用arc去画个钟表</dd>
+                    <dd class="indent1">绘制其他曲线——arcTo(x1,y1,x2,y2,r)第一组坐标、第二组坐标、半径</dd>
+                    <dd class="indent1">quadraticCurveTo(dx,dy,x1,y1)贝塞尔曲线：一组控制点的</dd>
+                    <dd class="indent1">bezierCurveTo(dx1,dy1,dx2,dy2,x1,y1)贝塞尔曲线 ：两组控制点的</dd>
+                    <dd class="indent1">变换——translate rotate scale</dd>
+                    <dd class="indent1">变换实例：旋转加缩放的小方块</dd>
+                    <dd class="indent1">插入图片——等图片加载完，再执行canvas操作drawImage(oImg,x,y,w,h)</dd>
+                    <dd class="indent1">实例——微博的图片旋转效果</dd>
+                    <dd class="indent1">设置背景——createPattern(oImg,平铺方式)</dd>
+                    <dd class="indent1">渐变——createLinearGradient(x1,y1,x2,y2) 线性渐变</dd>
+                    <dd class="indent1">渐变——createRadialGradient(x1,y1,r1,x2,y2,r2)放射性渐变</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第四章：canvas（下）</h2>
+                <dl>
+					<dt>课程内容介绍：</dt>
+                    <dd class="indent1">文本——strokeText(文字,x,y) 文字边框 fillText(文字,x,y) 文字填充</dd>
+                    <dd class="indent1">文本——font 文字大小 : '60px impact'</dd>
+                    <dd class="indent1">文本——textAlign 默认是start 跟left一样的效果 end right center</dd>
+                    <dd class="indent1">文本——textBaseline 文字上下的位置的方式 默认 : alphabetic</dd>
+                    <dd class="indent1">文本——measureText() measureText(str).width : 只有宽度，没有高度</dd>
+                    <dd class="indent1">阴影——shadowOffsetX、shadowOffsetY X轴偏移、Y轴偏移</dd>
+                    <dd class="indent1">阴影——shadowBlur 高斯模糊值 shadowColor 阴影颜</dd>
+                    <dd class="indent1">像素——getImageData(x,y,w,h) 获取图像数据</dd>
+                    <dd class="indent1">像素——putImageData(获取图像,x,y) 设置新的图像数据</dd>
+                    <dd class="indent1">像素——属性 width Height data</dd>
+                    <dd class="indent1">像素——createImageData(w,h)生成新的像素矩阵，即(0,0,0,0)</dd>
+                    <dd class="indent1">实例——像素显字</dd>
+                    <dd class="indent1">像素——获取和设置指定坐标 封装 : getXY、setXY</dd>
+                    <dd class="indent1">像素——图片的像素操作 必须是同源下 实例：反色、倒影、渐变等</dd>
+                    <dd class="indent1">实例——马赛克效果</dd>
+                    <dd class="indent1">合成——globalAlpha  globalCompositeOperation属性</dd>
+                    <dd class="indent1">source-over     destination-over     source-atop</dd>
+                    <dd class="indent1">destination-atop    source-in     destination-in等</dd>
+                    <dd class="indent1">将画布导出为图像——toDataURL</dd>
+                    <dd class="indent1">事件操作——isPointInPath:是否在点击范围内</dd>
+                    <dd class="indent1">jCanvaScript(canvas中的jquery)库:简单使用</dd>
+                    <dd class="indent1">让IE支持canvas jCanvaScript(canvas中的jquery)</dd>
+                    <dd class="indent1">Three.js(canvas中的3D库) Box2dWeb(canvas中的物理引擎库)</dd>
+				</dl>
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第五章：跨文档消息通信</h2>
+                <dl>
+					<dt>课程内容介绍：</dt>
+                    <dd class="indent1">postMessage对象—— 一参 : 发送的数据，二参 : 发送的域</dd>
+                    <dd class="indent1">交互方式iframe父页面 : contentWindow、子页面 : window.top</dd>
+                    <dd class="indent1">交互方式窗口页 : 父页面 : window.open、子页面 : window.opener</dd>
+                    <dd class="indent1">接收事件：message ev.origin : 发送数据来源的域 ev.data : 发送的数据</dd>
+                    <dd class="indent1">XMLHttpRequest 改进版 请求页面与数据页面必须属性不同的域</dd>
+                    <dd class="indent1">服务器要设置响应头信息 Origin值展现 新的事件 : onload等</dd>
+                    <dd class="indent1">进度事件 upload. onprogress : 上传onprogress : 下载</dd>
+                    <dd class="indent1">实例:仿QQ邮箱上传文件，带进度条</dd>
+                    <dd class="indent1">websocket——互联网协议 TCP/IP协议 HTTP协议 实时web交互</dd>
+                    <dd class="indent1">websocket——基于TCP的双向的、全双工的数据连接 建立socket应用</dd>
+                    <dd class="indent1">node.JS——环境搭建和基础语法</dd>
+                    <dd class="indent1">node.JS一个简单的web服务器——创建HTTP服务 监听客户端HTTP请求连接</dd>
+                    <dd class="indent1">node.JS——处理请求响应，向客户端输出返回内容,基于http</dd>
+                    <dd class="indent1">Websocket连接——客户端发送Websocket连接请求</dd>
+                    <dd class="indent1">Websocket连接——服务器监听来自Websocket连接请求</dd>
+                    <dd class="indent1">实例:基于Websocket的聊天室</dd>
+                    <dd class="indent1">JS跨域总结方案</dd>
+				</dl>
+                
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第六章：地理信息 本地存储 离线存储</h2>
+                <dl>
+					<dt>课程内容介绍：</dt>
+                    <dd class="indent1">地理位置——IP地址 GPS全球定位系统 Wi-Fi无线网络</dd>
+                    <dd class="indent1">地理位置对象——navigator.geolocation</dd>
+                    <dd class="indent1">单次定位请求：getCurrentPosition(请求成功，请求失败，数据收集方式)</dd>
+                    <dd class="indent1">请求成功函数——经度 : coords.longitude 纬度 : coords.latitude</dd>
+                    <dd class="indent1">准确度 : coords.accuracy 海拔 : coords.altitude</dd>
+                    <dd class="indent1">海拔准确度 : coords.altitudeAcuracy 行进方向 : coords.heading</dd>
+                    <dd class="indent1">地面速度 : coords.speed</dd>
+                    <dd class="indent1">navigator.geolocation 时间戳 : new Date(position.timestamp)</dd>
+                    <dd class="indent1">国家 : address.country 省 : address.region 市 : address.city</dd>
+                    <dd class="indent1">navigator.geolocation 请求失败函数 失败编号 ：code</dd>
+                    <dd class="indent1">数据收集 : json的形式 enableHighAcuracy : 更精确的查找，默认false</dd>
+                    <dd class="indent1">timeout : 获取位置允许最长时间，默认infinity</dd>
+                    <dd class="indent1">maximumAge : 位置可以缓存的最大时间，默认0</dd>
+                    <dd class="indent1">navigator.geolocation 多次定位请求</dd>
+                    <dd class="indent1">关闭更新请求 : clearWatch(像clearInterval)</dd>
+                    <dd class="indent1">百度地图API实例</dd>
+                    <dd class="indent1">本地存储——Cookie Cookie的特点</dd>
+                    <dd class="indent1">本地存储——Storage sessionStorage localStorage</dd>
+                    <dd class="indent1">本地存储——Storage的特点存储量限制(5M)客户端完成，不会请求服务器处理</dd>
+                    <dd class="indent1">本地存储——sessionStorage数据是不共享、 localStorage共享</dd>
+                    <dd class="indent1">Storage API——setItem() getItem() removeItem() clear()</dd>
+                    <dd class="indent1">Storage API——存储事件 Key newValue oldValue storageArea</dd>
+                    <dd class="indent1">实例——保存注册信息 同步购物车</dd>
+                    <dd class="indent1">applicationCache 离线应用 离线存储 搭建离线应用程序 检测离线状态</dd>
+                    <dd class="indent1">服务器设置头信息 : AddType text/cache-manifest .manifest</dd>
+                    <dd class="indent1">navigator.onLine : 当前是否在线 online\offline:在线离线的两个事件</dd>
+                    <dd class="indent1">applicationCache API——status(0,1,2,3,4,5): 缓存状态</dd>
+                    <dd class="indent1">事件——oncached onchecking ondownloading onupdateready</dd>
+                    <dd class="indent1">事件——onobsolete onerror onnoupdate onprogress</dd>
+                    <dd class="indent1">综合实例——行走日记APP  离线  地图  本地存储</dd>
+				</dl>
+                
+            </div>
+        </li>
+        <li>
+        	<em>5</em>
+            <div class="CourseContent">
+            	<h2>第七章：音频与视频 webWorkers 移动端HTML5</h2>
+                <dl>
+					<dt>课程内容介绍：</dt>
+                    <dd class="indent1">音频和视频——标签audio，video，source</dd>
+                    <dd class="indent1">音频和视频——视频容器，容器文件，类似于压缩了一组文件</dd>
+                    <dd class="indent1">编解码器 原始的视频容器非常大，添加需编码，播放需解码</dd>
+                    <dd class="indent1">媒体元素——controls : 显示或隐藏用户控制界面</dd>
+                    <dd class="indent1">媒体元素——autoplay : 媒体是否自动播放</dd>
+                    <dd class="indent1">媒体元素——loop :媒体是否循环播放</dd>
+                    <dd class="indent1">媒体元素——currentTime : 开始到播放现在所用的时间</dd>
+                    <dd class="indent1">媒体元素——duration : 媒体总时间(只读)</dd>
+                    <dd class="indent1">媒体元素——volume : 0.0-1.0的音量相对值</dd>
+                    <dd class="indent1">媒体元素——muted : 是否静音 等。。。</dd>
+                    <dd class="indent1">相关方法——play() pause()  load() </dd>
+                    <dd class="indent1">相关事件——play  pause ended等</dd>
+                    <dd class="indent1">Video额外特性——poster : 视频播放前的预览图片</dd>
+                    <dd class="indent1">Video额外特性——width、height : 设置视频的尺寸</dd>
+                    <dd class="indent1">Video额外特性——videoWidth、 videoHeight : 视频的实际尺寸(只读)</dd>
+                    <dd class="indent1">实例：视频与canvas结合</dd>
+                    <dd class="indent1">实例：自制播放器</dd>
+                    <dd class="indent1">什么是worker——JS的单线程，可以让web应用程序具备后台处理能力。</dd>
+                    <dd class="indent1">Worker API——new Worker 利用postMessage传输数据 importScripts</dd>
+                    <dd class="indent1">Worker运行环境——navgator: appName、appVersion、userAgent</dd>
+                    <dd class="indent1">Worker运行环境——location: 所有属性都是只读的</dd>
+                    <dd class="indent1">Worker运行环境——self: 指向全局 worker 对象</dd>
+                    <dd class="indent1">Worker运行环境——所有的ECMA对象，Object、Array、Date等</dd>
+                    <dd class="indent1">Worker运行环境——XMLHttpRequest构造器</dd>
+                    <dd class="indent1">Worker运行环境——setTimeout和setInterval方法</dd>
+                    <dd class="indent1">Worker运行环境——close()方法，立刻停止worker运行</dd>
+                    <dd class="indent1">实例：利用Worker来提高canvas的性能</dd>
+                    <dd class="indent1">内容编辑——contenteditable="true"</dd>
+                    <dd class="indent1">语言输入——&#8249;input type="text" x-webkit-speech /&#8250</dd>
+                    <dd class="indent1">桌面提醒——window.webkitNotifications</dd>
+                    <dd class="indent1">app是什么——Web App Native App  Hybrid App</dd>
+                    <dd class="indent1">视口——viewport : width=device-width,initial-scale=1</dd>
+                    <dd class="indent1">样式模块——Media Queries适配不同设备</dd>
+                    <dd class="indent1">横向和纵向设置</dd>
+                    <dd class="indent1">移动端事件——touchstart touchmove touchend</dd>
+                    <dd class="indent1">移动端事件——方向事件orientationchange</dd>
+                    <dd class="indent1">移动端事件——多手指事件gesturestart gesturechange</dd>
+				</dl>
+                
+            </div>
+        </li>
+    </ol>
+    <p>妙味咨询QQ：2265389082（小美）  <a href="http://www.miaov.com/" target="_blank">www.miaov.com</a></p>
+</div>
+
+</body>
+</html>
