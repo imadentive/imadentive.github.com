@@ -56,7 +56,7 @@
 				 	(function (i) {
 				 		sel.onchange = function () {
 				 			// console.log(This.aSelect[i-1].selectedIndex)
-				 			 This.change(This.aSelect[i-1].selectedIndex);
+				 			 This.change(i);
 				 		}
 				 	})(i)
 				 }
@@ -80,9 +80,34 @@
 			change:function (iNow) {
 				var str = '0';
 				for (var i = 0; i < iNow; i++) {
-					str += '_'+i;
+					str += '_'+ (this.aSelect[i].selectedIndex-1);
 				}
-				console.log(str)
+				// console.log(str)
+				var arr = this.data[str];
+				
+				if(iNow < this.aSelect.length){
+
+					this.aSelect[iNow].options.length = 1;//清空下一个的select内容，保留第一个‘默认’
+				}
+				
+				if(arr){//能找到下一个select的时候
+					for (var i = 0; i < arr.length; i++) {
+						var opt = document.createElement('option');
+						 opt.innerHTML = arr[i];
+						 this.aSelect[iNow].appendChild(opt);
+					}
+					//选中第一个
+					this.aSelect[iNow].options[1].selected = true;
+					/*递归 让三级联动起来*/
+					iNow++;
+					if(iNow  < this.aSelect.length){
+						this.change(iNow);
+					}
+					/*递归 让三级联动起来*/
+
+				}else{
+					//没事做
+				}
 			}
 
 
