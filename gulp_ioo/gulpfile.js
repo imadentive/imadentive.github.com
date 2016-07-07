@@ -144,9 +144,12 @@ gulp.task('postcss', function () {//什么名字合适呢？sass_postcss_px2rem
   var processors = [postcssPx2rem({remUnit: 75})];
   return gulp.src(config.scssFiles)
       .pipe(sourcemaps.init())
+
       .pipe(sass().on('error', sass.logError))
-      .pipe(sourcemaps.write({includeContent: false}))
       .pipe(postcss(processors))
+
+      // .pipe(sourcemaps.write({includeContent: false}))
+      .pipe(sourcemaps.write('./maps'))
       .pipe(gulp.dest(config.dest+'css'))
 
       //监听reload
@@ -175,9 +178,9 @@ gulp.task('watch', function () {
   gulp.watch(config.htmlFiles, ['html']);
 });
 
-//清除不必要的文件
+//清除不必要的文件 如sourcemaps
 gulp.task('clean', function() {
-    gulp.src(['./dist/css', './dist/js','./dist/images'], {read: false})
+    gulp.src([config.dest+'css/maps'], {read: false})
     // gulp.src(['./dist/css', './dist/js','./dist/images'], {read: false})
         .pipe(clean());
 });
@@ -189,4 +192,4 @@ gulp.task('default',['watch'],function () {
 });
 
 //发布环境（生产环境）
-// gulp.task("release", ["set-production", "clean", "postcss",'base64']);
+gulp.task("release", ["clean",'base64']);
