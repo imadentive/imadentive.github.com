@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			//获取像素比
+//			console.log(window.devicePixelRatio);
+			var pixelRatio = 1 / window.devicePixelRatio;
+//			console.log(pixelRatio);
+			//通过js动态设置视口(viewport)
+			document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+			
+			// 条件：尺寸越大，则字体大小越大。尺寸越小，则字体大小越小。
+			
+			// 获取html节点
+			var html = document.getElementsByTagName('html')[0];
+			// 获取屏幕宽度
+			var pageWidth = html.getBoundingClientRect().width;
+			console.log(pageWidth)
+			// 屏幕宽度 / 固定数值 = 基准值
+			html.style.fontSize = pageWidth / 10 + "px";
+		</script>
+		<style>
+			body{
+				margin: 0;
+			}
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			.clearfix:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			html{
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				font-size: 30px;
+			}
+			body{
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+			}
+			.head_box{
+				width: 100%;
+				height: 179px;
+				background-color: #ef3239;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			.list{
+				margin-top: 179px;
+				font-size: 30px;
+			}
+			.list .item{
+				float: left;
+				width: 4.6875rem;
+				height: 4.6875rem;
+				margin: 0.15625rem;
+				border: 1px solid black;
+				box-sizing: border-box;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="head_box">
+			<div class="head_top"></div>
+			<div class="head_bottom"></div>
+		</header>
+		<ul class="list clearfix">
+			<li class="item">11111</li>
+			<li class="item"></li>
+			<li class="item"></li>
+			<li class="item"></li>
+			<li class="item"></li>
+			<li class="item"></li>
+			<li class="item"></li>
+			<li class="item"></li>
+		</ul>
+	</body>
+</html>
