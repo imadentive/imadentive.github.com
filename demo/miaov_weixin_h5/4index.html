@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+*{ margin:0; padding:0;}
+#img1{ position:absolute; left:0; top:0; background:#5cb2a9; display:none;}
+#c1{ background:#5cb2a9;}
+</style>
+</head>
+
+<body>
+<img id="img1" src="img/detailsCanvas1.png">
+<canvas id="c1" width="510" height="423"></canvas>
+<script>
+var oImg = document.getElementById('img1');
+var oC = document.getElementById('c1');
+var oGC = oC.getContext('2d');
+var objImg = new Image();
+objImg.src = oImg.src;
+objImg.onload = function(){
+	oGC.drawImage(objImg,0,0);
+	var dataImg = oGC.getImageData(0,0,oC.width,oC.height);
+	oGC.clearRect(0,0,oC.width,oC.height);
+	var step = 8;
+	var arr = [];
+	//console.log(dataImg.width);
+	//console.log(dataImg.height);
+	var stepW = parseInt(dataImg.width/step);
+	var stepH = parseInt(dataImg.height/step);
+	//console.log(stepW);
+	//console.log(stepH);
+	for(var i=0;i<stepH;i++){
+		for(var j=0;j<stepW;j++){
+			var color = getColor(dataImg,j*step,i*step);
+			if(color != 0){
+				arr.push({x : j*step , y : i*step , bx : Math.random()*oC.width , by : Math.random()*oC.height});
+			}
+		}
+	}
+	
+	for(var i=0;i<arr.length;i++){
+		oGC.beginPath();
+		oGC.arc(arr[i].bx,arr[i].by,1,0,360*Math.PI/180);
+		oGC.closePath();
+		oGC.fill();
+	}
+	
+	setTimeout(function(){
+		move(arr);
+	},1000);
+	
+};
+
+function getColor(dataImg,x,y){
+	var w = dataImg.width;
+	var h = dataImg.height;
+	var d = dataImg.data;
+	//d = [0,0,0,1,0,0,0,1,0,0,0,1]
+	return d[(y*w+x)*4+3];
+}
+function move(arr){
+	var d = 500;
+	var startTime = now();
+	var timer = setInterval(function(){
+		var changeTime = now();
+		oGC.clearRect(0,0,oC.width,oC.height);
+		var t = Math.min(changeTime - startTime,d); //从0越来越大
+		
+		if(t == d){
+			clearInterval(timer);
+			oImg.style.display = 'block';
+		}
+		
+		for(var i=0;i<arr.length;i++){
+			var nowX = (arr[i].x - arr[i].bx)*t/d + arr[i].bx;
+			var nowY = (arr[i].y - arr[i].by)*t/d + arr[i].by;
+			
+			oGC.beginPath();
+			oGC.arc(nowX,nowY,1,0,360*Math.PI/180);
+			oGC.closePath();
+			oGC.fill();
+			
+		}
+		
+	},15);
+}
+function now(){
+	return (new Date()).getTime();
+}
+
+
+</script>
+</body>
+</html>
