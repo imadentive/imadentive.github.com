@@ -146,10 +146,13 @@ gulp.task('postcss', function () {//什么名字合适呢？sass_postcss_px2rem
       .pipe(sourcemaps.init())
 
       .pipe(sass().on('error', sass.logError))
-      .pipe(postcss(processors))
+      .pipe(sourcemaps.write({includeContent: false}))
 
+      .pipe(postcss(processors))
       // .pipe(sourcemaps.write({includeContent: false}))
-      .pipe(sourcemaps.write('./maps'))
+      // .pipe(sourcemaps.write('./maps'))
+      // .pipe(sourcemaps.write())
+
       .pipe(gulp.dest(config.dest+'css'))
 
       //监听reload
